@@ -1,0 +1,140 @@
+
+/* Icone procura no header inicio */
+header.header-transparent i.fa-search{
+    color: white !important;
+}
+
+header.header-transparent i.fa-search:hover{
+    color: #ff3f00 !important;
+}
+
+html.sticky-header-active header.header-transparent i.fa-search {
+    color: #000 !important;
+}
+
+html.sticky-header-active header.header-transparent i.fa-search:hover {
+    color: #ff3f00 !important;
+}
+
+/* Others headers icon search */
+header.header-effect-shrink i.fa-search{
+    color: black !important;
+}
+
+header.header-effect-shrink i.fa-search:hover{
+    color: #ff3f00 !important;
+}
+
+html.sticky-header-active header.header-effect-shrink i.fa-search {
+    color: #000 !important;
+}
+
+html.sticky-header-active header.header-effect-shrink i.fa-search:hover {
+    color: #ff3f00 !important;
+}
+
+
+/* Icone login e logout no header inicio */
+html header.header-transparent a.signin{
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: white !important;
+}
+
+html.sticky-header-active header.header-transparent a.signin{
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: black !important;
+}
+
+html header.header-transparent a.signin:hover{
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: #ff3f00 !important;
+}
+
+html.sticky-header-active header.header-transparent a.signin:hover{
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: #ff3f00 !important;
+}
+
+html header.header-transparent a.logout{
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: white !important;
+}
+
+html.sticky-header-active header.header-transparent a.logout{
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: black !important;
+}
+
+html header.header-transparent a.logout:hover{
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: #ff3f00 !important;
+}
+
+html.sticky-header-active header.header-transparent a.logout:hover{
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: #ff3f00 !important;
+}
+
+
+
+
+
+
+
+
+/* Others headers log in and log out */
+html header.header-effect-shrink a.signin{
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: black !important;
+}
+
+html.sticky-header-active header.header-effect-shrink a.signin{
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: black !important;
+}
+
+html header.header-effect-shrink a.signin:hover{
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: #ff3f00 !important;
+}
+
+html.sticky-header-active header.header-effect-shrink a.signin:hover{
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: #ff3f00 !important;
+}
+
+html header.header-effect-shrink a.logout{
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: black !important;
+}
+
+html.sticky-header-active header.header-effect-shrink a.logout{
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: black !important;
+}
+
+html header.header-effect-shrink a.logout:hover{
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: #ff3f00 !important;
+}
+
+html.sticky-header-active header.header-effect-shrink a.logout:hover{
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: #ff3f00 !important;
+}
