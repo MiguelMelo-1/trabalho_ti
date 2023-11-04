@@ -1,0 +1,11 @@
+.bg-transparente{
+    background-color: rgba(0,0,0,0.7) !important;
+}
+
+
+
+body{
+    background-image: url(../../img/fundo/foto_fundo.jpg);
+    background-position: center;
+    background-size: cover;
+}
