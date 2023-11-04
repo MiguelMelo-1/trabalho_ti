@@ -2,7 +2,11 @@
     background-color: rgba(0,0,0,0.7) !important;
 }
 
-
+.btn-cmhandy {
+    background-color: #FF7A13;
+    border: none;
+    color: white;
+}
 
 body{
     background-image: url(../../img/fundo/foto_fundo.jpg);
