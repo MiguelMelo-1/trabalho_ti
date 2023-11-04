@@ -1,64 +1,98 @@
-@extends('../layout/' . $layout)
+<!DOCTYPE html>
 
-@section('head')
-    <title>{{config('constants.APP_NAME')}} - Login</title>
-@endsection
+<html>
 
-@section('content')
 
+
+<head>
+    <meta charset="utf-8">
+    <link href="{{ asset('bielco/iconeEmpresa.png') }}" rel="shortcut icon">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Rubick admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+    <meta name="keywords"
+        content="admin template, Rubick Admin Template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="LEFT4CODE">
+    <link rel="stylesheet" href="{{ asset('dist/css/app.css') }}" />
+    <link rel="stylesheet" href="{{ asset('fontawesome-free-6.1.1-web\css\all.css') }}">
+    <title>{{ config('constants.APP_NAME') }} - Resgistro</title>
+</head>
+
+<body>
     <!-- BEGIN: Login Form -->
     <div class="relative h-screen ">
         <div class="flex py-5 xl:py-0 ">
-            <div class="mx-auto  px-5 sm:px-8 py-8 rounded-md shadow-md w-full sm:w-3/4 md:w-1/2 xl:w-1/4" style="background-color: rgba(0,0,0,0.6)">
-                <img alt="cmhandymanlogo" src="{{ asset('cm/img/cmhandy_logo_branco.png') }}" height="81px" width="350px">
-                <h2 class="intro-x font-bold text-2xl xl:text-3xl text-center xl:text-left text-white mt-5">Registar</h2>
+            <div class="mx-auto  px-5 sm:px-8 py-8 rounded-md shadow-md w-full sm:w-3/4 md:w-1/2 xl:w-1/4"
+                style="background-color: rgba(0,0,0,0.6)">
+                <img alt="cmhandymanlogo" src="{{ asset('cm/img/cmhandy_logo_branco.png') }}" height="81px"
+                    width="350px">
+                <h2 class="intro-x font-bold text-2xl xl:text-3xl text-center xl:text-left text-white mt-5">Registar
+                </h2>
 
                 <form action="{{ route('registar-utilizador')}} " method="POST">
                     {{-- crsf --}}
                     @csrf
 
                     <div class="intro-x mt-3">
-                        <input type="text" name="text_userNome" class="intro-x login__input form-control py-3 px-4 border-gray-300 block" placeholder="Nome do utilizador" value="{{old('text_userNome')}}">
-                        <input type="email" name="text_userEmail" class="intro-x login__input form-control py-3 px-4 border-gray-300 block mt-3" placeholder="Email" value="{{old('text_userEmail')}}">
-                        <input type="password" id="text_userPassword" name="text_userPassword" class="intro-x login__input form-control py-3 px-4 border-gray-300 block mt-3" placeholder="Palavra-passe" value="{{old('text_password')}}">
-                        <input type="password" id="text_userPassword_confirmation" name="text_userPassword_confirmation" class="intro-x login__input form-control py-3 px-4 border-gray-300 block mt-3" placeholder="Confirmação da Palavra-passe" value="{{old('text_userPasswordConfirm')}}">
+                        <input type="text" name="text_userNome"
+                            class="intro-x login__input form-control py-3 px-4 border-gray-300 block"
+                            placeholder="Nome do utilizador" value="{{old('text_userNome')}}">
+                        <input type="email" name="text_userEmail"
+                            class="intro-x login__input form-control py-3 px-4 border-gray-300 block mt-3"
+                            placeholder="Email" value="{{old('text_userEmail')}}">
+                        <input type="password" id="text_userPassword" name="text_userPassword"
+                            class="intro-x login__input form-control py-3 px-4 border-gray-300 block mt-3"
+                            placeholder="Palavra-passe" value="{{old('text_password')}}">
+                        <input type="password" id="text_userPassword_confirmation" name="text_userPassword_confirmation"
+                            class="intro-x login__input form-control py-3 px-4 border-gray-300 block mt-3"
+                            placeholder="Confirmação da Palavra-passe" value="{{old('text_userPasswordConfirm')}}">
 
                         {{-- Erros da validação do formulário --}}
                         @if($errors->any())
-                            <div id="error-email" class="login__input-error text-danger mt-2">
-                                @foreach ($errors->all() as $mensagem)
-                                    <p class="list-disc text-xs style:text-justify">{{$mensagem}}</p>
-                                @endforeach
-                            </div>
+                        <div id="error-email" class="login__input-error text-danger mt-2">
+                            @foreach ($errors->all() as $mensagem)
+                            <p class="list-disc text-xs style:text-justify">{{$mensagem}}</p>
+                            @endforeach
+                        </div>
                         @endif
 
                         <div class="intro-x text-slate-400 mt-3 text-xs sm:text-sx">
-                            <p class="style: text-justify">O <b>nome do utilizador</b> só aceita letras e espaços. A <b>Palavra-passe</b> deve ter no mínimo 8 caracteres, 1 caractere maiúsculo, 1 dígito e 1 caractere especial (permitidos: @ $ ! % * ? &)</p>
+                            <p class="style: text-justify">O <b>nome do utilizador</b> só aceita letras e espaços. A
+                                <b>Palavra-passe</b> deve ter no mínimo 8 caracteres, 1 caractere maiúsculo, 1 dígito e
+                                1 caractere especial (permitidos: @ $ ! % * ? &)</p>
                         </div>
 
                         <div class="mt-3 text-white">
-                            <input type="checkbox" class="h-4 w-4" onclick="myFunction()"><label class="ml-2">Vizualizar a Palavra-passe</label>
+                            <input type="checkbox" class="h-4 w-4" onclick="myFunction()"><label class="ml-2">Vizualizar
+                                a Palavra-passe</label>
                         </div>
                     </div>
 
                     <div class="intro-x flex text-white mt-4 text-xs sm:text-sm">
                         <input name="box_politica" id="box_politica" type="checkbox" class="h-4 w-4">
                         <label class="cursor-pointer select-none ml-2" for="box_politica">Concordo com a </label>
-                        <a class="text-agrodireto-3 ml-1" href="{{ route('politicaPrivacidade', ['pagina' => 'registo']) }}">Política de Privacidade.</a>
+                        <a class="text-agrodireto-3 ml-1"
+                            href="{{ route('politicaPrivacidade', ['pagina' => 'registo']) }}">Política de
+                            Privacidade.</a>
                     </div>
 
                     <div class="intro-x mt-5 text-center xl:text-center">
-                        <input type="submit" value="Registar" class="btn btn-cmhandy py-3 px-4 w-full xl:w-32 xl:mr-3 align-top">
-                        <a href="{{ route('login.index') }}" class="btn btn-outline-secondary py-3 px-4 w-full xl:w-32 mt-3 xl:mt-0 align-top text-white">Cancelar</a>
+                        <input type="submit" value="Registar"
+                            class="btn btn-cmhandy py-3 px-4 w-full xl:w-32 xl:mr-3 align-top">
+                        <a href="{{ route('login.index') }}"
+                            class="btn btn-outline-secondary py-3 px-4 w-full xl:w-32 mt-3 xl:mt-0 align-top text-white">Cancelar</a>
                     </div>
                 </form>
 
                 <div class="flex text-slate-600 mt-5">
                     <div class="flex w-full justify-center">
-                        <i data-lucide="mail" class="text-center w-5 h-5 mr-2 text-white"></i><label class="mr-5 text-white">{{ config('constants.CONTACTO_EMAIL') }}</label>
+                        <i data-lucide="mail" class="text-center w-5 h-5 mr-2 text-white"></i><label
+                            class="mr-5 text-white">{{ config('constants.CONTACTO_EMAIL') }}</label>
                     </div>
                     <div class="flex w-full justify-center">
-                        <i data-lucide="phone" class="w-5 h-5 mr-2 text-white"></i><label class="text-white">{{ config('constants.CONTACTO_TEL') }}</label>
+                        <i data-lucide="phone" class="w-5 h-5 mr-2 text-white"></i><label class="text-white">{{
+                            config('constants.CONTACTO_TEL') }}</label>
                     </div>
                 </div>
             </div>
@@ -69,22 +103,24 @@
     </div>
     <!-- END: Login Form -->
 
-@endsection
+    <!-- BEGIN: JS Assets-->
+    <script src="{{ asset('dist/js/app.js') }}"></script>
+    <!-- END: JS Assets-->
 
-@section('script')
-
-        <script>
-            function myFunction() {
-                var x = document.getElementById("text_userPassword");
-                var y = document.getElementById("text_userPassword_confirmation");
-                if (x.type === "password") {
+    <script>
+        function myFunction() {
+            var x = document.getElementById("text_userPassword");
+            var y = document.getElementById("text_userPassword_confirmation");
+            if (x.type === "password") {
                 x.type = "text";
                 y.type = "text";
-                } else {
+            } else {
                 x.type = "password";
                 y.type = "password";
-                }
             }
-        </script>
+        }
+    </script>
 
-@endsection
+</body>
+
+</html>
