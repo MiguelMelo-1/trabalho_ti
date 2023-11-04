@@ -1,0 +1,116 @@
+@extends('../layout/' . $layout)
+
+@section('head')
+    <title>{{ config('constants.APP_NAME') }} - Login</title>
+@endsection
+
+@section('content')
+
+    <!-- BEGIN: Login Form -->
+    <div class="relative">
+        <div class="flex items-center h-screen py-5 xl:py-0 ">
+            <div class="mx-auto  px-5 sm:px-8 py-8 rounded-md shadow-md w-full sm:w-3/4 lg:w-2/4 xl:w-auto" style="background-color: rgba(0,0,0,0.6)">
+                <img alt="cmhandymanlogo" src="{{ asset('cm/img/cmhandy_logo_branco.png') }}" height="81px" width="350px">
+                <h2 class="intro-x font-bold text-2xl xl:text-3xl text-center xl:text-left text-white mt-5">Entrar</h2>
+                <div class="intro-x mt-3">
+                    <form id="login-form">
+                        <input id="email" type="text" class="intro-x login__input form-control py-3 px-4 block" placeholder="Email" value="mediateste01@gmail.com">
+                        <input id="password" type="password" class="intro-x login__input form-control py-3 px-4 block mt-4" placeholder="Palavra-passe" value="Mediateste01*">
+                        <div id="error-password" class="login__input-error text-danger mt-2"></div>
+                        <div class="mt-5 text-white">
+                            <input type="checkbox" class="h-4 w-4" onclick="myFunction()"><label class="ml-2">Vizualizar a Palavra-passe</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="intro-x flex text-xs sm:text-sm mt-4">
+                    <a class="text-agrodireto-3" href=" {{ route('ForgetPasswordGet') }}">Recuperar a Palavra-passe?</a>
+                </div>
+                <div class="intro-x mt-5 xl:mt-8 text-center">
+                    <button id="btn-login" class="btn btn-cmhandy py-3 px-4 w-full sm:w-32 mr-3 align-top">Entrar</button>
+                    <a href="{{ route('registoView') }}"> <button class="btn btn-outline-secondary py-3 px-4 w-full sm:w-32 sm:mt-0 mt-3 align-top text-white">Registar-me</button></a>
+                </div>
+                <div class="intro-x mt-5 text-slate-400 text-center">
+                    Ao prosseguir está a concordar com os nossos<br> <a class="text-agrodireto-3" href="{{ route('termosCondicoes') }}">Termos e Condições</a> & <a class="text-agrodireto-3" href="{{ route('politicaPrivacidade', ['pagina' => 'login']) }}">Política de Privacidade.</a>
+                </div>
+                <div>
+                    <button onclick="location.href='{{ route('inicio') }}'" class="btn btn-outline-secondary py-3 px-4 w-full sm:w-32 sm:mt-0 mt-3 absolute top-0 left-0 text-white">Voltar atrás</button>
+                </div>
+                <div class="flex text-slate-600 mt-5">
+                    <div class="flex w-full justify-center">
+                        <i data-lucide="mail" class="text-center w-5 h-5 mr-2 text-white"></i><label class="mr-5 text-white">{{ config('constants.CONTACTO_EMAIL') }}</label>
+                    </div>
+                    <div class="flex w-full justify-center">
+                        <i data-lucide="phone" class="w-5 h-5 mr-2 text-white"></i><label class="text-white">{{ config('constants.CONTACTO_TEL') }}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full absolute inset-x-0 bottom-5 text-slate-400 text-center">
+            <p>&copy; {{date('Y')}} Created by <i class="text-white">Miguel Melo</i> - Todos os direitos reservados.</p>
+        </div>
+    </div>
+    <!-- END: Login Form -->
+
+
+@endsection
+
+@section('script')
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+            x.type = "text";
+            } else {
+            x.type = "password";
+            }
+        }
+    </script>
+
+    <script>
+        (function () {
+            async function login() {
+                // Reset state
+                $('#login-form').find('.login__input').removeClass('border-danger')
+                $('#login-form').find('.login__input-error').html('')
+
+                // Post form
+                let email = $('#email').val()
+                let password = $('#password').val()
+
+                // Loading state
+                $('#btn-login').html('<i data-loading-icon="oval" data-color="white" class="w-5 h-5 mx-auto"></i>')
+                tailwind.svgLoader()
+                await helper.delay(1500)
+
+                axios.post(`login`, {
+                    email: email,
+                    password: password
+                }).then(res => {
+                    location.href = './area-reservada'
+                }).catch(err => {
+                    $('#btn-login').html('Login')
+                    if (err.response.data.message != 'Wrong email or password.') {
+                        for (const [key, val] of Object.entries(err.response.data.errors)) {
+                            $(`#${key}`).addClass('border-danger')
+                            $(`#error-${key}`).html(val)
+                        }
+                    } else {
+                        $(`#password`).addClass('border-danger')
+                        $(`#error-password`).html(err.response.data.message)
+                    }
+                })
+            }
+
+            $('#login-form').on('keyup', function(e) {
+                if (e.keyCode === 13) {
+                    login()
+                }
+            })
+
+            $('#btn-login').on('click', function() {
+                login()
+            })
+        })()
+    </script>
+@endsection
