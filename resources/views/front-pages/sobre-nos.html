@@ -23,31 +23,31 @@
 		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" type="text/css">
 
 		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="resources/vendor/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="resources/vendor/fontawesome-free/css/all.min.css">
-		<link rel="stylesheet" href="resources/vendor/animate/animate.compat.css">
-		<link rel="stylesheet" href="resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
-		<link rel="stylesheet" href="resources/vendor/owl.carousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
-		<link rel="stylesheet" href="resources/vendor/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="../../vendor/animate/animate.compat.css">
+		<link rel="stylesheet" href="../../vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="../../vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="../../vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="../../vendor/magnific-popup/magnific-popup.min.css">
 
 		<!-- Theme CSS -->
-		<link rel="stylesheet" href="resources/css/theme.css">
-		<link rel="stylesheet" href="resources/css/theme-elements.css">
-		<link rel="stylesheet" href="resources/css/theme-blog.css">
-		<link rel="stylesheet" href="resources/css/theme-shop.css">
+		<link rel="stylesheet" href="../../css/theme.css">
+		<link rel="stylesheet" href="../../css/theme-elements.css">
+		<link rel="stylesheet" href="../../css/theme-blog.css">
+		<link rel="stylesheet" href="../../css/theme-shop.css">
 
 		<!-- Demo CSS -->
-		<link rel="stylesheet" href="resources/css/demos/demo-construction-2.css">
+		<link rel="stylesheet" href="../../css/demos/demo-construction-2.css">
 
 		<!-- Skin CSS -->
-		<link id="skinCSS" rel="stylesheet" href="resources/css/skins/skin-construction-2.css">
+		<link id="skinCSS" rel="stylesheet" href="../../css/skins/skin-construction-2.css">
 
 		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="resources/css/custom.css">
+		<link rel="stylesheet" href="../../css/custom.css">
 
 		<!-- Head Libs -->
-		<script src="resources/vendor/modernizr/modernizr.min.js"></script>
+		<script src="../../vendor/modernizr/modernizr.min.js"></script>
 
 	</head>
 	<body>
@@ -60,7 +60,7 @@
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="index.html">
-											<img alt="Porto" width="190" height="48" data-sticky-width="156" data-sticky-height="40" src="resources/img/cmhandy_logo_preto.png">
+											<img alt="cmhandyman" width="190" height="48" data-sticky-width="156" data-sticky-height="40" src="../../img/logo/cmhandy_logo_preto.png">
 										</a>
 									</div>
 								</div>
@@ -97,10 +97,8 @@
 										<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
 											<i class="fas fa-bars"></i>
 										</button>
-										@if (session()->has('userID'))
-												
 											<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
-												<div class="header-nav-feature header-nav-features-user header-nav-features-user-logged d-inline-flex mx-2 pe-2" id="headerAccount">
+												<!-- <div class="header-nav-feature header-nav-features-user header-nav-features-user-logged d-inline-flex mx-2 pe-2" id="headerAccount">
 													<a href="#" class="header-nav-features-toggle logout">
 														<i class="far fa-user"></i> {{ session('userNome') }}
 													</a>
@@ -112,27 +110,13 @@
 															</div>
 															<div class="col-4">
 																<div class="d-flex justify-content-end">
-																	<img class="rounded-circle" width="40" height="40" alt="" src="resources/img/avatars/user.png">
+																	<img class="rounded-circle" width="40" height="40" alt="" src="../../img/avatars/user.png">
 																</div>
 															</div>
 														</div>
-														<div class="row">	
-															<div class="col">
-																<ul class="nav nav-list-simple flex-column text-3">
-																	
-																	@if (session('estado') == 'activo')
-																	<li class="nav-item"><a class="nav-link" href="{{ route('pagina-inicio') }}">Aplicação</a></li>
-																	@endif
-																	<li class="nav-item"><a class="nav-link border-bottom-0" href="{{ route('logout') }}">Log Out</a></li>
-																</ul>
-															</div>
-														</div>
 													</div>
-												</div>
+												</div> -->
 											</div>
-
-											@else
-											
 											<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
 												<div class="header-nav-feature header-nav-features-user d-inline-flex mx-2 pe-2 signin" id="headerAccount">
 													<a href="{{ route('pagina-inicio') }}" class="signin">
@@ -140,8 +124,6 @@
 													</a>
 												</div>
 											</div>
-											
-											@endif
 										<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
 											<div class="header-nav-feature header-nav-features-search d-inline-flex">
 												<a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch"><i class="fas fa-search header-nav-top-icon"></i></a>
@@ -168,7 +150,7 @@
 
 
 		<div class="body">
-			{{-- <header id="header" class="header-effect-shrink bg-color-tertiary custom-header" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 100, 'stickyHeaderContainerHeight': 83}">
+			<!-- {{-- <header id="header" class="header-effect-shrink bg-color-tertiary custom-header" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 100, 'stickyHeaderContainerHeight': 83}">
 				<div class="header-body border-0 box-shadow-none">
 					<div class="header-top header-top-default bg-color-white border-bottom-0">
 						<div class="container-fluid px-lg-4">
@@ -286,7 +268,7 @@
 						</div>
 					</div>
 				</div>
-			</header> --}}
+			</header> --}} -->
 
 			<div role="main" class="main">
 <section class="page-header bg-color-tertiary custom-page-header page-header-modern page-header-background page-header-background-sm parallax mt-0" data-plugin-parallax data-plugin-options="{'speed': 1.2}" data-image-src="img/demos/construction-2/page-header.jpg">
@@ -377,17 +359,17 @@
 						<div class="row row-gutter-sm my-4 py-2 lightbox" data-plugin-options="{'delegate': 'a', 'type': 'image', 'gallery': {'enabled': true}, 'mainClass': 'mfp-with-zoom', 'zoom': {'enabled': true, 'duration': 300}}">
 							<div class="col-md-4 pb-4 pb-md-0">
 								<a href="img/demos/construction-2/about-us/about-us-1.jpg" class="appear-animation" data-appear-animation="fadeInDownShorter" data-appear-animation-delay="100">
-									<img src="resources/img/sobre-nos-1.jpg" class="img-fluid" alt="">
+									<img src="../../img/sobre-nos-1.jpg" class="img-fluid" alt="">
 								</a>
 							</div>
 							<div class="col-md-4 pb-4 pb-md-0">
 								<a href="img/demos/construction-2/about-us/about-us-2.jpg" class="appear-animation" data-appear-animation="fadeInDownShorter" data-appear-animation-delay="300">
-									<img src="resources/img/sobre-nos-2.jpg" class="img-fluid" alt="">
+									<img src="../../img/sobre-nos-2.jpg" class="img-fluid" alt="">
 								</a>
 							</div>
 							<div class="col-md-4">
 								<a href="img/demos/construction-2/about-us/about-us-3.jpg" class="appear-animation" data-appear-animation="fadeInDownShorter" data-appear-animation-delay="500">
-									<img src="resources/img/sobre-nos-3.jpg" class="img-fluid" alt="">
+									<img src="../../img/sobre-nos-3.jpg" class="img-fluid" alt="">
 								</a>
 							</div>
 						</div>
@@ -402,7 +384,7 @@
 						
 						</div>
 					</div>
-					<div class="row counters counters-md text-secondary appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">
+					<div class="row counters counters-md text-secondary appear-animation pb-5" data-appear-animation="fadeIn" data-appear-animation-delay="100">
 						<div class="col-7 col-lg-4 mb-4 mb-lg-0 mt-4">
 							<div class="counter">
 								<strong data-to="10" data-append="+">10+</strong>
@@ -422,11 +404,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
+					<!-- <div class="row">
 						<div class="col">
 							<hr class="my-5">
 						</div>
-					</div>
+					</div> -->
 					
 					
 					
@@ -444,7 +426,7 @@
 						<div class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-lg-between px-3">
 							<span class="p-3">
 								<a href="https://www.gresdias.pt/" target="_blank">
-									<img src="resources/img/parcerias/logo-gresdias.png" alt="gresdiaslogo" class="img-fluid">
+									<img src="../../img/parcerias/logo-gresdias.png" alt="gresdiaslogo" class="img-fluid">
 								</a>
 							</span>
 						</div>
@@ -454,18 +436,18 @@
 			<footer id="footer" class="bg-color-secondary border-top-0 mt-0 custom-footer">
 				<div class="container container-xl-custom py-md-4">
 					<div class="row justify-content-md-center py-5">
-						<div class="col-md-12 col-lg-3 d-flex align-items-center justify-content-center justify-content-lg-start mb-5 mb-lg-0">
-							<a href="../../../index.html"><img src="resources/img/cmhandy_logo_branco.png" alt="cmhandymanlogo" class="img-fluid logo"></a>
+						<div class="col-md-6 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-start m-5 mb-lg-0">
+							<a href="index.html"><img src="../../img/logo/cmhandy_logo_branco.png" alt="cmhandymanlogo" class="img-fluid logo"></a>
 						</div>
-						<div class="col-md-3 col-lg-3 text-center text-md-start m-5">
+						<div class="col-md-6 col-lg-4 text-center text-md-start m-5">
 							<p class="text-5 text-color-light font-weight-bold mb-3 mt-4 mt-lg-0">Entre em contacto</p>
 							<p class="text-3 mb-0 font-weight-bold text-color-light opacity-7 text-uppercase">Morada</p>
 							<p class="text-3 mb-2 text-color-light">Av. João de deus, 2070-011, Cartaxo.</p>
 							<p class="text-3 mb-0 font-weight-bold text-color-light opacity-7 text-uppercase">Telemóvel</p>
-							<p class="text-3 mb-2 text-color-light"><a href="tel:{{ config('constants.CONTACTO_TEL') }}" class="text-color-light">{{ config('constants.CONTACTO_TEL') }}</a></p>
+							<p class="text-3 mb-2 text-color-light"><a href="tel:123456789" class="text-color-light">123456789</a></p>
 							<p class="text-3 mb-0 font-weight-bold text-color-light opacity-7 text-uppercase">Email</p>
-							<p class="text-3 mb-2 "><a href="mailto:{{ config('constants.CONTACTO_EMAIL') }}" class="text-color-light">{{ config('constants.CONTACTO_EMAIL') }}</a></p>							
-							{{-- <ul class="social-icons social-icons-dark social-icons-clean">
+							<p class="text-3 mb-2 "><a href="mailto:geral@cmhandymans.pt" class="text-color-light">geral@cmhandymans.pt</a></p>							
+							<ul class="social-icons social-icons-dark social-icons-clean">
 								<li class="social-icons-instagram">
 									<a href="http://www.instagram.com/" target="_blank" title="Instagram">
 										<i class="fab fa-instagram font-weight-semibold"></i>
@@ -481,10 +463,10 @@
 										<i class="fab fa-facebook-f font-weight-semibold"></i>
 									</a>
 								</li>
-							</ul> --}}
+							</ul>
 						</div>						
-						<div class="col-md-3 text-center text-md-start m-5">
-							<p class="text-5 text-color-light font-weight-bold mb-3 mt-4 mt-lg-0">Latest Projects</p>
+						<!-- <div class="col-md-3 text-center text-md-start m-5">
+							<p class="text-5 text-color-light font-weight-bold mb-3 mt-4 mt-lg-0">Últimos Projetos</p>
 
 							<p class="text-3 mb-0 text-color-light opacity-7">Painting, Plumbing</p>
 							<p class="text-3 mb-0 font-weight-bold text-color-light">House Renovation - New York / NY</p>
@@ -497,7 +479,7 @@
 							<p class="text-3 mb-0 text-color-light opacity-7">Flooring</p>
 							<p class="text-3 mb-0 font-weight-bold text-color-light">House Repair - New York / NY</p>
 							<p class="text-3 font-weight-bold"><a href="#" class="link-hover-style-1 text-primary">VIEW MORE+</a></p>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div class="container container-xl-custom">
@@ -505,7 +487,7 @@
 						<div class="py-2">
 							<div class="row py-4">
 								<div class="col d-flex align-items-center justify-content-center mb-4 mb-lg-0">
-									<p class="text-3 text-color-light"><b class="text-white">CMHandyMans</b>. © {{date('Y')}}. All Rights Reserved</p>
+									<p class="text-3 text-color-light"><b class="text-white">CMHandyMans</b>. © 2023. Todos os Direitos Reservados</p>
 								</div>
 							</div>
 						</div>
@@ -515,38 +497,38 @@
 		</div>
 
 		<!-- Vendor -->
-		<script src="resources/vendor/jquery/jquery.min.js"></script>
-		<script src="resources/vendor/jquery.appear/jquery.appear.min.js"></script>
-		<script src="resources/vendor/jquery.easing/jquery.easing.min.js"></script>
-		<script src="resources/vendor/jquery.cookie/jquery.cookie.min.js"></script>
-		<script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-		<script src="resources/vendor/jquery.validation/jquery.validate.min.js"></script>
-		<script src="resources/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
-		<script src="resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
-		<script src="resources/vendor/lazysizes/lazysizes.min.js"></script>
-		<script src="resources/vendor/isotope/jquery.isotope.min.js"></script>
-		<script src="resources/vendor/owl.carousel/owl.carousel.min.js"></script>
-		<script src="resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script src="resources/vendor/vide/jquery.vide.min.js"></script>
-		<script src="resources/vendor/vivus/vivus.min.js"></script>
+		<script src="../../vendor/jquery/jquery.min.js"></script>
+		<script src="../../vendor/jquery.appear/jquery.appear.min.js"></script>
+		<script src="../../vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="../../vendor/jquery.cookie/jquery.cookie.min.js"></script>
+		<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="../../vendor/jquery.validation/jquery.validate.min.js"></script>
+		<script src="../../vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+		<script src="../../vendor/jquery.gmap/jquery.gmap.min.js"></script>
+		<script src="../../vendor/lazysizes/lazysizes.min.js"></script>
+		<script src="../../vendor/isotope/jquery.isotope.min.js"></script>
+		<script src="../../vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="../../vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="../../vendor/vide/jquery.vide.min.js"></script>
+		<script src="../../vendor/vivus/vivus.min.js"></script>
 
 		<!-- Theme Base, Components and Settings -->
-		<script src="resources/js/theme.js"></script>
+		<script src="../../js/theme.js"></script>
 
 		<!-- Current Page Vendor and Views -->
-		<script src="resources/js/views/view.contact.js"></script>
+		<script src="../../js/views/view.contact.js"></script>
 
 		<!-- Demo -->
-		<script src="resources/js/demos/demo-construction-2.js"></script>
+		<script src="../../js/demos/demo-construction-2.js"></script>
 
 		<!-- Theme Custom -->
-		<script src="resources/js/custom.js"></script>
+		<script src="../../js/custom.js"></script>
 
 		<!-- Theme Initialization Files -->
-		<script src="resources/js/theme.init.js"></script>
+		<script src="../../js/theme.init.js"></script>
 
 	<!-- Examples -->
-		<script src="resources/examples/examples.gallery.js"></script>
+		<script src="../../examples/examples.gallery.js"></script>
 
 	</body>
 
