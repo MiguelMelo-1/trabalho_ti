@@ -1,11 +1,15 @@
 .bg-transparente{
-    background-color: rgba(255,255,255,0.7) !important;
+    background-color: rgba(34, 12, 60, 0.7) !important;
 }
 
 .btn-cmhandy {
     background-color: #FF7A13;
     border: none;
     color: white;
+}
+
+.btn-cmhandy:hover {
+    background-color: #8f450c;
 }
 
 body{
