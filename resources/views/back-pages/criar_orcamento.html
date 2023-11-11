@@ -187,12 +187,44 @@
 
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-transparente rounded p-4">
-                    <h6 class="mb-4">Basic Form</h6>
+                    <h6 class="mb-4">Dados do cliente</h6>
                     <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                        <div class="row g-3 mt-5">
+                            <div class="col-6">
+                                <label for="inputNome" class="form-label">Nome <i class="text-danger">*</i></label>
+                                <input type="text" class="form-control" id="inputNome" placeholder="Insira o nome">
+                            </div>
+                            <div class="col-6">
+                                <label for="inputNif" class="form-label">NIF <i class="text-danger">*</i></label>
+                                <input type="number" class="form-control" id="inputNif" aria-describedby="nifHelp" placeholder="Insira o NIF" maxlength="9" minlength="9">
+                                <div id="nifHelp" class="form-text">Aceita: 0...9</div>
+                            </div>
+                        </div>
+                        <div class="row g-3 mt-5">
+                            <div class="col-6">
+                                <label for="inputNome" class="form-label">Morada <i class="text-danger">*</i></label>
+                                <input type="text" class="form-control" id="inputNome" placeholder="Insira a morada">
+                            </div>
+                            <div class="col-6">
+                                <label for="inputNif" class="form-label">Cód.Postal <i class="text-danger">*</i></label>
+                                <input type="number" class="form-control" id="inputNif" aria-describedby="nifcodPostalFormat" placeholder="Insira o cód. postal" maxlength="8" minlength="8">
+                                <div id="codPostalFormat" class="form-text">Formato: 1234-123</div>
+                            </div>
+                        </div>
+                        <div class="row g-3 mt-5">
+                            <div class="col-4">
+                                <label for="inputNome" class="form-label">Morada <i class="text-danger">*</i></label>
+                                <input type="text" class="form-control" id="inputNome" placeholder="Insira a morada">
+                            </div>
+                            <div class="col-4">
+                                <label for="inputNif" class="form-label">Cód.Postal <i class="text-danger">*</i></label>
+                                <input type="number" class="form-control" id="inputNif" aria-describedby="nifcodPostalFormat" placeholder="Insira o cód. postal" maxlength="8" minlength="8">
+                                <div id="codPostalFormat" class="form-text">Formato: 1234-123</div>
+                            </div>
+                            <div class="col-4 ">
+                                <label for="inputNif" class="form-label">Cód.Postal <i class="text-danger">*</i></label>
+                                <input type="number" class="form-control" id="inputNif" aria-describedby="nifcodPostalFormat" placeholder="Insira o cód. postal" maxlength="8" minlength="8">
+                                <div id="codPostalFormat" class="form-text">Formato: 1234-123</div>
                             </div>
                         </div>
                         <div class="mb-3">

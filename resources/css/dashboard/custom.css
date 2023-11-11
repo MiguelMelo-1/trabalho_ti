@@ -1,11 +1,14 @@
+/* background */
 .bg-transparente{
     background-color: rgba(34, 12, 60, 0.7) !important;
 }
 
+/* texto */
 .text-cmhandy{
     color: #FF7A13;
 }
 
+/* botoes */
 .btn-cmhandy {
     background-color: #FF7A13;
     border: none;
@@ -16,10 +19,21 @@
     background-color: #8f450c;
 }
 
+
+/* body */
 body{
     background-image: url(../../img/fundo/foto_fundo.jpg);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+
+/* Esconder as setas no input number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
