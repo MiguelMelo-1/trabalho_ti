@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CMHandyMans - Criar Orçamento</title>
+    <title>CMHandyMans - Ver Trabalhos</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -81,18 +81,18 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
                                 class="fa fa-hammer me-2"></i>Trabalhos</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="../trabalho/trabalhos_pendentes.html" class="nav-link dropdown-item">Pendentes</a>
-                            <a href="../trabalho/trabalhos_desenvolvimento.html" class="nav-link dropdown-item">Em
+                            <a href="trabalhos_pendentes.html" class="nav-link dropdown-item">Pendentes</a>
+                            <a href="trabalhos_desenvolvimento.html" class="nav-link dropdown-item">Em
                                 desenvolvimento</a>
-                            <a href="../trabalho/trabalhos_concluidos.html" class="nav-link dropdown-item">Concluidos</a>
+                            <a href="trabalhos_concluidos.html" class="nav-link dropdown-item">Concluidos</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
                                 class="fa fa-file-alt me-2"></i>Orçamentos</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="consultar_orcamentos.html" class="nav-link dropdown-item">Consultar orçamentos</a>
-                            <a href="criar_orcamento.html" class="nav-link dropdown-item active">Criar Orçamento</a>
+                            <a href="../orcamento/consultar_orcamentos.html" class="nav-link dropdown-item">Consultar orçamentos</a>
+                            <a href="../orcamento/criar_orcamento.html" class="nav-link dropdown-item active">Criar Orçamento</a>
                         </div>
                     </div>
                 </div>
@@ -196,61 +196,64 @@
             </nav>
             <!-- Navbar End -->
 
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-transparente rounded p-4">
+                    <div class="row align-items-center mt-2">
+                        <div class="col-6 text-start">
+                            <h2 class="text-lg font-medium me-auto">TRABALHO Nº1</h2>
+                        </div>
+
+                        <div class="col-6 d-flex justify-content-end">
+                            <div class="mt-4 text-end">
+                                <label class="text-lg font-medium justify-center me-2">Estado:</label>
+                                <i class="fa fa-circle-check fa-xl mt-3 font-medium text-warning"> Pendente</i>
+                            </div>
+                            <div class="mt-4 ms-5 text-end">
+                                <a class="btn btn-cmhandy shadow-md mr-2" href="#" target="_blank">PDF</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
             <form>
                 <div class="container-fluid pt-4 px-4">
                     <div class="bg-transparente rounded p-4">
                         <h6 class="mb-4">Dados do cliente</h6>
                         <div class="row g-3 mt-5">
                             <div class="col-6">
-                                <label for="inputNome" class="form-label">Nome <i class="text-danger">*</i></label>
-                                <input type="text" class="form-control" id="inputNome" placeholder="Insira o nome" required>
+                                <label for="inputNome" class="form-label">Nome </label>
+                                <input type="text" class="form-control" id="inputNome" value="António Silva" disabled>
                             </div>
                             <div class="col-6">
-                                <label for="inputNif" class="form-label">NIF <i class="text-danger">*</i></label>
-                                <input type="number" class="form-control" id="inputNif" aria-describedby="nifHelp"
-                                    placeholder="Insira o NIF" pattern="[0-9]{9}" required>
-                                <div id="nifHelp" class="form-text text-light">Aceita: 0...9</div>
-                            </div>
+                                <label for="inputNif" class="form-label">NIF </label>
+                                <input type="number" class="form-control" id="inputNif" value="654678415" disabled>
+                             </div>
                         </div>
                         <div class="row g-3 mt-5">
                             <div class="col-6">
-                                <label for="inputMorada" class="form-label">Morada <i class="text-danger">*</i></label>
-                                <input type="text" class="form-control" id="inputMorada" placeholder="Insira a morada"
-                                    required>
+                                <label for="inputMorada" class="form-label">Morada </label>
+                                <input type="text" class="form-control" id="inputMorada" value="Rua da direita" disabled>
                             </div>
                             <div class="col-6">
-                                <label for="inputCodPostal" class="form-label">Cód.Postal <i
-                                        class="text-danger">*</i></label>
-                                <input type="text" class="form-control" id="inputCodPostal"
-                                    aria-describedby="nifcodPostalFormat" placeholder="Insira o cód. postal"
-                                    maxlength="8" minlength="8" required>
-                                <div id="codPostalFormat" class="form-text text-light">Formato: 1234-123</div>
+                                <label for="inputCodPostal" class="form-label">Cód.Postal </label>
+                                <input type="text" class="form-control" id="inputCodPostal" value="2580-383" disabled>
                             </div>
                         </div>
                         <div class="row g-3 mt-5">
                             <div class="col-4">
-                                <label for="inputLocalidade" class="form-label">Localidade <i
-                                        class="text-danger">*</i></label>
-                                <input type="text" class="form-control" id="inputLocalidade"
-                                    placeholder="Insira a Localidade" required>
+                                <label for="inputLocalidade" class="form-label">Localidade </label>
+                                <input type="text" class="form-control" id="inputLocalidade" value="Lisboa" disabled>
                             </div>
                             <div class="col-4">
-                                <label for="inputEmail" class="form-label">Email <i class="text-danger">*</i></label>
-                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
-                                    placeholder="Insira o Email" required>
-                                <div id="emailHelp" class="form-text text-light">Caso cliente não ter email inserir:
-                                    null@gmail.com</div>
+                                <label for="inputEmail" class="form-label">Email </label>
+                                <input type="email" class="form-control" id="inputEmail" value="tousim@gmail.com" disabled>
                             </div>
                             <div class="col-4 ">
-                                <label for="inputTlm" class="form-label">Telemóvel <i class="text-danger">*</i></label>
-                                <input type="number" class="form-control" id="inputTlm" aria-describedby="tlmFormat"
-                                    placeholder="Insira o cód. postal" pattern="[0-9]{9}" required>
-                                <div id="tlmFormat" class="form-text text-light">Formato: 123456789</div>
+                                <label for="inputTlm" class="form-label">Telemóvel </label>
+                                <input type="number" class="form-control" id="inputTlm" value="968371833" disabled>
                             </div>
-                        </div>
-                        <div class="text-end mt-5">
-                            <input type="button" name="limpar" value="Limpar Cliente" id="limparCliente"
-                                class="btn btn-outline-cmhandy w-32">
                         </div>
                     </div>
                 </div>
@@ -355,12 +358,12 @@
                                 value="{{ session('acesso') }}"> -->
                             <div class="row">
                                 <div class="col-6 text-start">
-                                    <a href="consultar_orcamentos.html" class="btn btn-warning"><i
+                                    <a href="consultar_orcamentos.html" class="btn btn-cmhandy"><i
                                             class="fa fa-arrow-left mx-2"></i>Voltar</a>
                                 </div>
                                 <div class="col-6 text-end">
-                                    <button type="submit" class="btn btn-success"><i
-                                            class="fa fa-arrow-up-from-bracket mx-2"></i>Submeter</button>
+                                    <a class="btn btn-success mx-2"><i class="fa fa-check mx-2"></i>Iniciar Trabalho</a>
+                                    <a class="btn btn-warning mx-2"><i class="fa fa-file-import mx-2"></i>Salvar</a>
                                 </div>
                             </div>
                     </div>

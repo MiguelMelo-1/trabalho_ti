@@ -21,17 +21,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="../../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="../../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="../../../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../../../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="../../css/dashboard/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/dashboard/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="../../css/dashboard/style.css" rel="stylesheet">
+    <link href="../../../css/dashboard/style.css" rel="stylesheet">
 
     <!-- Custom css -->
-    <link rel="stylesheet" href="../../css/dashboard/custom.css">
+    <link rel="stylesheet" href="../../../css/dashboard/custom.css">
 </head>
 
 <body>
@@ -50,7 +50,7 @@
             <nav class="navbar bg-transparente navbar-dark rounded">
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
                     <!-- <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>DarkPan</h3> -->
-                    <img src="../../img/logo/cmhandy_logo_branco.png" alt="cmhandymanlogo" class="img-fluid">
+                    <img src="../../../img/logo/cmhandy_logo_branco.png" alt="cmhandymanlogo" class="img-fluid">
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
@@ -59,7 +59,7 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">Jhon Doe</h6>
+                        <h6 class="mb-0">John Doe</h6>
                         <span>Admin</span>
                     </div>
                 </div>
@@ -71,15 +71,15 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-hammer me-2"></i>Trabalhos</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="trabalhos_pendentes.html" class="nav-link dropdown-item">Pendentes</a>
-                            <a href="trabalhos_desenvolvimento.html" class="nav-link dropdown-item active">Em desenvolvimento</a>
-                            <a href="trabalhos_concluidos.html" class="nav-link dropdown-item">Concluidos</a>
+                            <a href="trabalhos_desenvolvimento.html" class="nav-link dropdown-item">Em desenvolvimento</a>
+                            <a href="trabalhos_concluidos.html" class="nav-link dropdown-item active">Concluidos</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-file-alt me-2"></i>Orçamentos</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="orcamento/consultar_orcamentos.html" class="nav-link dropdown-item">Consultar orçamentos</a>
-                            <a href="orcamento/criar_orcamento.html" class="nav-link dropdown-item">Criar Orçamento</a>
+                            <a href="../orcamento/consultar_orcamentos.html" class="nav-link dropdown-item">Consultar orçamentos</a>
+                            <a href="../orcamento/criar_orcamento.html" class="nav-link dropdown-item">Criar Orçamento</a>
                         </div>
                     </div>
                 </div>
@@ -175,23 +175,21 @@
                         <div class="dropdown-menu dropdown-menu-end bg-transparente border-0 rounded-0 rounded-bottom m-0">
                             <!-- <a href="#" class="dropdown-item">My Profile</a>
                             <a href="#" class="dropdown-item">Settings</a> -->
-                            <a href="../../../index.html" class="dropdown-item">Log Out</a>
+                            <a href="../../../../index.html" class="dropdown-item">Log Out</a>
                         </div>
                     </div>
                 </div>
             </nav>
             <!-- Navbar End -->
 
-
             <!-- TABLE Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-transparente rounded h-100 p-4">
-                    <h6 class="mb-4">Trabalhos em desenvolvimento</h6>
+                    <h6 class="mb-4">Trabalhos Concluidos</h6>
                     <table class="table table-hover">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Nº Trabalho</th>
                                 <th scope="col">Tipo de Trabalho</th>
                                 <th scope="col">Cliente</th>
                                 <th scope="col">Morada</th>
@@ -201,16 +199,11 @@
                         <tbody>
                             <tr>
                                 <th scope="row">1</th>
-                                <td>1</td>
                                 <td>Construção</td>
                                 <td>John Doe</td>
                                 <td>Santarém</td>
-                                <td></td>
-                                <td>
-                                    <div class="flex">
-                                        <a href="btn btn-danger"><i class="fa-trash"></i></a>
-                                        <a href="#" class="btn btn-cmhandy"><i class="fa-solid fa-pencil"></i></a>
-                                    </div>
+                                <td><!-- Irá redirecionar para a página de criar orçamentos mas com dados já preenchidos e será só consulta n podendo alterar nada -->
+                                    <a href="#"><i class="fa fa-eye text-cmhandy" data-bs-toggle="tooltip" data-bs-placement="right" title="Consultar"></i></a>
                                 </td>
                             </tr>
                         </tbody>
@@ -247,16 +240,16 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../lib/chart/chart.min.js"></script>
-    <script src="../../lib/easing/easing.min.js"></script>
-    <script src="../../lib/waypoints/waypoints.min.js"></script>
-    <script src="../../lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="../../lib/tempusdominus/js/moment.min.js"></script>
-    <script src="../../lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="../../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="../../../lib/chart/chart.min.js"></script>
+    <script src="../../../lib/easing/easing.min.js"></script>
+    <script src="../../../lib/waypoints/waypoints.min.js"></script>
+    <script src="../../../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../../../lib/tempusdominus/js/moment.min.js"></script>
+    <script src="../../../lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="../../../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="../../js/dashboard/main.js"></script>
+    <script src="../../../js/dashboard/main.js"></script>
 </body>
 
 </html>
