@@ -49,7 +49,7 @@
 
 
         <!-- Sidebar Start -->
-        <div class="sidebar pe-2 pb-3 ps-2">
+        <div class="sidebar pe-2 pb-3 ps-2 mt-3">
             <nav class="navbar bg-transparente navbar-dark rounded">
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
                     <!-- <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>DarkPan</h3> -->
@@ -81,8 +81,8 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-file-alt me-2"></i>Orçamentos</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="consultar_orcamentos.html" class="nav-link dropdown-item active">Consultar orçamentos</a>
-                            <a href="#" class="nav-link dropdown-item">Criar Orçamento</a>
+                            <a href="consultar_orcamentos.html" class="nav-link dropdown-item">Consultar orçamentos</a>
+                            <a href="criar_orcamento.html" class="nav-link dropdown-item active">Criar Orçamento</a>
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
         <!-- Content Start -->
         <div class="content">
             <!-- Navbar Start -->
-            <nav class="navbar navbar-expand bg-transparente navbar-dark px-4 py-0">
+            <nav class="navbar navbar-expand bg-transparente navbar-dark px-4 py-0 mt-3 rounded">
                 <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
                     <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
                 </a>
@@ -185,45 +185,29 @@
             </nav>
             <!-- Navbar End -->
 
-
-            <!-- table Start -->
             <div class="container-fluid pt-4 px-4">
-                <div class="bg-transparente rounded h-100 p-4">
-                    <h6 class="mb-4">Hoverable Table</h6>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Estado</th>
-                                <th scope="col">Nº de Orçamento</th>
-                                <th scope="col">Tipo de trabalho</th>
-                                <th scope="col">Cliente</th>
-                                <th scope="col">Morada</th>
-                                <th scope="col">Ações</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Incompleto</td>
-                                <td>1</td>
-                                <td>Construção</td>
-                                <td>John Doe</td>
-                                <td>Santarém</td>
-                                <td></td>
-                                <td>
-                                    <div class="flex">
-                                        <a href="#" class="btn btn-danger mx-1"><i class="fa-solid fa-trash"></i></a>
-                                        <a href="#" class="btn btn-cmhandy mx-1"><i class="fa-solid fa-pencil"></i></a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="bg-transparente rounded p-4">
+                    <h6 class="mb-4">Basic Form</h6>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
                 </div>
             </div>
-            <!-- table End -->
-
+           
             <!-- Footer Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-transparente rounded-top p-4">
