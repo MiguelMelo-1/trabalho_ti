@@ -194,6 +194,7 @@
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Identificação</th>
+                                <th scope="col">Tipo</th>
                                 <th scope="col">Especificações</th>
                                 <th scope="col">Ações</th>
                             </tr>
@@ -202,10 +203,10 @@
                             <tr>
                                 <th scope="row">1</th>
                                 <td>Martelo</td>
+                                <td>Ferramenta de mão</td>
                                 <td>Martelar pregos</td>
                                 <td>
                                     <div class="flex">
-                                        <a href="#" class="btn btn-danger mx-1"><i class="fa-solid fa-trash"></i></a>
                                         <!-- Button trigger modal start -->
                                         <button type="button" class="btn btn-danger mx-1" data-bs-toggle="modal"
                                             data-bs-target="#eliminarFerramenta"><i class="fa fa-trash"></i></button>
@@ -230,6 +231,45 @@
                                                             data-bs-dismiss="modal">Sim</button>
                                                         <button type="button" class="btn btn-secondary">Cancelar</button>
                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal End -->
+                                        <!-- Button trigger modal start -->
+                                        <button type="button" class="btn btn-cmhandy mx-1" data-bs-toggle="modal"
+                                            data-bs-target="#editarFerramenta"><i class="fa fa-pencil"></i></button>
+                                        <!-- Button trigger modal end -->
+
+                                        <!-- Modal start -->
+                                        <div class="modal fade overflow-hidden" id="editarFerramenta" tabindex="-1"
+                                            aria-labelledby="editarFerramentaLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content bg-roxo">
+                                                    <form >
+                                                        <div class="modal-header text-light">
+                                                            <h5 class="modal-title" id="editarFerramentaLabel">Editar Ferramenta Nº1</h5>
+                                                            <button type="button" class="btn-fechar" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-light">
+                                                            <i class="fa fa-pen-to-square fa-3x text-warning my-3 d-block text-center"></i>                           
+                                                                <label class="form-label mt-5">Referência:</label>
+                                                                <input type="text" name="text_referencia_add" id="text_referencia_add" class="form-control mb-2">
+                                    
+                                                                <label class="form-label mt-2">Identificação:</label>
+                                                                <input type="text" name="text_identificacao_add" id="text_identificacao_add" class="form-control mb-2">
+                                    
+                                                                <label class="form-label mt-2">Tipo:</label>
+                                                                <select class="form-select mb-2"  name="cmb_tipo_add" id="cmb_tipo_add"></select>
+                                    
+                                                                <label class="form-label mt-2">Especificações:</label>
+                                                                <textarea type="text" name="text_especificacoes_add" id="text_especificacoes_add" class="form-control mb-2" rows="5" cols="5"></textarea>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Concluido</button>
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                        </div>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
@@ -282,15 +322,6 @@
 
     <!-- Template Javascript -->
     <script src="../../js/dashboard/main.js"></script>
-
-    <script>
-        var myModal = document.getElementById('myModal')
-        var myInput = document.getElementById('myInput')
-
-        myModal.addEventListener('shown.bs.modal', function () {
-            myInput.focus()
-        })
-    </script>
 </body>
 
 </html>
