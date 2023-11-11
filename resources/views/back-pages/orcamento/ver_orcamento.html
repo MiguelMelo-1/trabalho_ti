@@ -274,41 +274,18 @@
                     <div class="intro-y col-span-12 overflow-auto lg:overflow-visible">
                         <table class="table mt-5" id="tabelaMaoObra">
                             <tr>
-                                <th class="text-center whitespace-nowrap" style="display:none;">ID_PRODUTO</th>
-                                <th class="text-center whitespace-nowrap" style="display:none;">LINHA</th>
                                 <th class="text-center whitespace-nowrap w-6/12">DESCRIÇÃO</th>
                                 <th class="text-center whitespace-nowrap w-2/12">PRECO UN.</th>
                                 <th class="text-center whitespace-nowrap w-2/12">HORAS</th>
-                                <th class="text-center whitespace-nowrap w-2/12">ACÇÕES</th>
+                                <th class="text-center whitespace-nowrap w-2/12">TOTAL</th>
                             </tr>
                             <tr class="w-full">
-                                <td style="display:none;"><input type="hidden" name="multiInputMaoObra[1][produto_id]"
-                                        id="produto_id" class="form-control" /></td>
-                                <td style="display:none;"><input type="hidden" name="multiInputMaoObra[1][linha]"
-                                        id="multiInputMaoObra[1][linha]" class="form-control text-center" value="1"
-                                        readonly /></td>
-                                <td><input type="text" name="multiInputMaoObra[1][designacao]"
-                                        id="multiInputMaoObra[1][designacao]" class="form-control" autocomplete="off"
-                                        onfocus="deleteTxt(this)" required /></td>
-                                <td><input type="text" name="multiInputMaoObra[1][preco]"
-                                        id="multiInputMaoObra[1][preco]" class="form-control text-center" /></td>
-                                <td><input type="text" name="multiInputMaoObra[1][quantidade]"
-                                        id="multiInputMaoObra[1][quantidade]" class="form-control text-center"
-                                        onfocus="deleteTxt(this)" value="1" min="1" required /></td>
-                                <td class="text-center"><button type="button"
-                                        class="remove-item btn btn-danger">Eliminar</button></td>
+                                <td><input type="text" class="form-control" value="Pavimentar o chão" disabled/></td>
+                                <td><input type="text" class="form-control text-center" value="5€" disabled/></td>
+                                <td><input type="text" class="form-control text-center" value="4" disabled/></td>
+                                <td><input type="text" class="text-center form-control" value="20€" disabled></td>
                             </tr>
                         </table>
-                        <div class="row m-1">
-                            <div class="text-start col-6">
-                                <input type="button" name="add" value="Adicionar Linha" id="addRemoveIpMaoObra"
-                                    class="btn btn-success w-32">
-                            </div>
-                            <div class="text-end col-6">
-                                <input type="button" name="limpar" value="Limpar Mão de obra" id="limparMaoObra"
-                                    class="btn btn-outline-cmhandy w-35">
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -318,12 +295,11 @@
                                 value="{{ session('acesso') }}"> -->
                     <div class="row">
                         <div class="col-6 text-start">
-                            <a href="consultar_orcamentos.html" class="btn btn-warning"><i
-                                    class="fa fa-arrow-left mx-2"></i>Voltar</a>
+                            <a href="consultar_orcamentos.html" class="btn btn-warning"><i class="fa fa-arrow-left mx-2"></i>Voltar</a>
                         </div>
                         <div class="col-6 text-end">
-                            <button type="submit" class="btn btn-success"><i
-                                    class="fa fa-arrow-up-from-bracket mx-2"></i>Submeter</button>
+                            <a href="#" class="btn btn-success mx-2"><i class="fa fa-check mx-2"></i>Aprovar</a>
+                            <a href="#" class="btn btn-danger mx-2"><i class="fa fa-ban mx-2"></i>Recusar</a>
                         </div>
                     </div>
                 </div>
