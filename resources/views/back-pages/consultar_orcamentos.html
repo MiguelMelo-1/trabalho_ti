@@ -222,65 +222,8 @@
                                 <td>John Doe</td>
                                 <td>Santarém</td>
                                 <td>
-                                    <div class="flex">
-                                        <!-- Button trigger modal start -->
-                                        <button type="button" class="btn btn-danger mx-1" data-bs-toggle="modal"
-                                            data-bs-target="#eliminarOrcamento"><i class="fa fa-trash"></i></button>
-                                        <!-- Button trigger modal end -->
-
-                                        <!-- Modal start -->
-                                        <div class="modal fade" id="eliminarOrcamento" tabindex="-1"
-                                            aria-labelledby="eliminarOrcamentoLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title text-dark" id="eliminarOrcamentoLabel">Remoção permanente de dados</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body text-center">
-                                                        <i class="fa fa-triangle-exclamation fa-3x text-danger my-3"></i>
-                                                        <p class="fs-4">Tem a certeza que deseja remover permanentemente o orçamento?</p>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-danger"
-                                                            data-bs-dismiss="modal">Sim</button>
-                                                        <button type="button" class="btn btn-secondary">Cancelar</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Modal End -->
-                                        <!-- Button trigger modal start -->
-                                        <button type="button" class="btn btn-danger mx-1" data-bs-toggle="modal"
-                                            data-bs-target="#eliminarOrcamento"><i class="fa fa-trash"></i></button>
-                                        <!-- Button trigger modal end -->
-
-                                        <!-- Modal start -->
-                                        <div class="modal fade" id="eliminarOrcamento" tabindex="-1"
-                                            aria-labelledby="eliminarOrcamentoLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title text-dark" id="eliminarOrcamentoLabel">Remoção permanente de dados</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body text-center">
-                                                        <i class="fa fa-triangle-exclamation fa-3x text-danger my-3"></i>
-                                                        <p class="fs-4">Tem a certeza que deseja remover permanentemente o orçamento?</p>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-danger"
-                                                            data-bs-dismiss="modal">Sim</button>
-                                                        <button type="button" class="btn btn-secondary">Cancelar</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Modal End -->
-                                        <a href="#" class="btn btn-cmhandy mx-1"><i class="fa-solid fa-pencil"></i></a>
-                                    </div>
+                                    <!-- Irá redirecionar para a página de criar orçamentos mas com dados já preenchidos e será só consulta n podendo alterar nada -->
+                                    <a href="#"><i class="fa fa-eye text-cmhandy" data-bs-toggle="tooltip" data-bs-placement="right" title="Consultar"></i></a>
                                 </td>
                             </tr>
                         </tbody>
@@ -328,12 +271,11 @@
     <!-- Template Javascript -->
     <script src="../../js/dashboard/main.js"></script>
 
+    <!-- tooltip script -->
     <script>
-        var myModal = document.getElementById('myModal')
-        var myInput = document.getElementById('myInput')
-
-        myModal.addEventListener('shown.bs.modal', function () {
-            myInput.focus()
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
         })
     </script>
 </body>

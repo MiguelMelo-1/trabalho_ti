@@ -2,6 +2,10 @@
     background-color: rgba(34, 12, 60, 0.7) !important;
 }
 
+.text-cmhandy{
+    color: #FF7A13;
+}
+
 .btn-cmhandy {
     background-color: #FF7A13;
     border: none;

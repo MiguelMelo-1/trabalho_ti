@@ -206,6 +206,34 @@
                                 <td>
                                     <div class="flex">
                                         <a href="#" class="btn btn-danger mx-1"><i class="fa-solid fa-trash"></i></a>
+                                        <!-- Button trigger modal start -->
+                                        <button type="button" class="btn btn-danger mx-1" data-bs-toggle="modal"
+                                            data-bs-target="#eliminarFerramenta"><i class="fa fa-trash"></i></button>
+                                        <!-- Button trigger modal end -->
+
+                                        <!-- Modal start -->
+                                        <div class="modal fade" id="eliminarFerramenta" tabindex="-1"
+                                            aria-labelledby="eliminarFerramentaLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title text-dark" id="eliminarFerramentaLabel">Remoção permanente de dados</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body text-center">
+                                                        <i class="fa fa-triangle-exclamation fa-3x text-danger my-3"></i>
+                                                        <p class="fs-4">Tem a certeza que deseja remover permanentemente o orçamento?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-danger"
+                                                            data-bs-dismiss="modal">Sim</button>
+                                                        <button type="button" class="btn btn-secondary">Cancelar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal End -->
                                         <a href="#" class="btn btn-cmhandy mx-1"><i class="fa-solid fa-pencil"></i></a>
                                     </div>
                                 </td>
@@ -254,6 +282,15 @@
 
     <!-- Template Javascript -->
     <script src="../../js/dashboard/main.js"></script>
+
+    <script>
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+            myInput.focus()
+        })
+    </script>
 </body>
 
 </html>
