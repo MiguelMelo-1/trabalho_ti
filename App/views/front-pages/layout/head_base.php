@@ -1,43 +1,41 @@
 <!-- Basic -->
 <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+<meta name="keywords" content="WebSite Template" />
+<meta name="description" content="Porto - Multipurpose Website Template">
+<meta name="author" content="okler.net">
 
+<!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
-	<meta name="keywords" content="WebSite Template" />
-	<meta name="description" content="Porto - Multipurpose Website Template">
-	<meta name="author" content="okler.net">
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<!-- Web Fonts  -->
+<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" type="text/css">
 
-	<!-- Mobile Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<!-- Vendor CSS -->
+<link rel="stylesheet" href="/trabalho_ti/public/assets/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/trabalho_ti/public/assets/vendor/fontawesome-free/css/all.min.css">
+<link rel="stylesheet" href="/trabalho_ti/public/assets/vendor/animate/animate.compat.css">
+<link rel="stylesheet" href="/trabalho_ti/public/assets/vendor/simple-line-icons/css/simple-line-icons.min.css">
+<link rel="stylesheet" href="/trabalho_ti/public/assets/vendor/owl.carousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="/trabalho_ti/public/assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="/trabalho_ti/public/assets/vendor/magnific-popup/magnific-popup.min.c">
 
-	<!-- Web Fonts  -->
-	<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" type="text/css">
+<!-- Theme CSS -->
+<link rel="stylesheet" href="/trabalho_ti/public/assets/css/theme.css">
+<link rel="stylesheet" href="/trabalho_ti/public/assets/css/theme-elements.css">
+<link rel="stylesheet" href="/trabalho_ti/public/assets/css/theme-blog.css">
+<link rel="stylesheet" href="/trabalho_ti/public/assets/css/theme-shop.css">
 
-	<!-- Vendor CSS -->
-	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
-	<link rel="stylesheet" href="assets/vendor/animate/animate.compat.css">
-	<link rel="stylesheet" href="assets/vendor/simple-line-icons/css/simple-line-icons.min.css">
-	<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
-	<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.min.c">
+<!-- Demo CSS -->
+<link rel="stylesheet" href="/trabalho_ti/public/assets/css/demos/demo-construction-2.css">
 
-	<!-- Theme CSS -->
-	<link rel="stylesheet" href="assets/css/theme.css">
-	<link rel="stylesheet" href="assets/css/theme-elements.css">
-	<link rel="stylesheet" href="assets/css/theme-blog.css">
-	<link rel="stylesheet" href="assets/css/theme-shop.css">
+<!-- Skin CSS -->
+<link id="skinCSS" rel="stylesheet" href="/trabalho_ti/public/assets/css/skins/skin-construction-2.css">
 
-	<!-- Demo CSS -->
-	<link rel="stylesheet" href="assets/css/demos/demo-construction-2.css">
-
-	<!-- Skin CSS -->
-	<link id="skinCSS" rel="stylesheet" href="assets/css/skins/skin-construction-2.css">
-
-	<!-- Theme Custom CSS -->
-	<link rel="stylesheet" href="assets/css/custom.css">
+<!-- Theme Custom CSS -->
+<link rel="stylesheet" href="/trabalho_ti/public/assets/css/custom.css">

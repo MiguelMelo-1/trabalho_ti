@@ -3,7 +3,7 @@
 
 <head>
 
-	<?php include './App/views/front-pages/layout/head_base.php' ?>
+	<?php include './../App/views/front-pages/layout/head_base.php' ?>
 
 	<title>CMHandyMans</title>
 
@@ -41,7 +41,7 @@
 							<div class="header-column">
 								<div class="header-row">
 									<div class="header-logo">
-										<a href="index.html">
+										<a href="index.php">
 											<img alt="cmhandyman" width="190" height="48" data-sticky-width="82" data-sticky-height="40" src="assets/img/logo/cmhandy_logo_preto.png" id="imagem-sticky">
 										</a>
 									</div>
@@ -54,22 +54,22 @@
 											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav">
 													<li class="dropdown">
-														<a class="dropdown-item active" href="index.html">
+														<a class="dropdown-item active" href="index.php">
 															Início
 														</a>
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item" href="assets/views/front-pages/sobre-nos.html">
+														<a class="dropdown-item" href="../App/views/front-pages/sobre_nos.php">
 															Sobre nós
 														</a>
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item" href="assets/views/front-pages/servicos.html">
+														<a class="dropdown-item" href="../App/views/front-pages/servicos.php">
 															Serviços
 														</a>
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item" href="assets/views/front-pages/contactos.html">
+														<a class="dropdown-item" href="../App/views/front-pages/contactos.php">
 															Contactos
 														</a>
 													</li>
@@ -114,7 +114,7 @@
 
 									<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
 										<div class="header-nav-feature header-nav-features-user d-inline-flex mx-2 pe-2 signin" id="headerAccount">
-											<a href="assets/views/back-pages/login/main.html" class="signin">
+											<a href="../App/views/back-pages/login/index.php" class="signin">
 												<i class="far fa-user"></i> Login
 											</a>
 										</div>
@@ -490,7 +490,7 @@
 													trabalho...
 												</p>
 												<p class="font-weight-bold mb-3">
-													<a href="assets/views/front-pages/sobre-nos.html" class="link-hover-style-1 text-color-primary">Ver Mais</a>
+													<a href="../App/views/front-pages/sobre_nos.php" class="link-hover-style-1 text-color-primary">Ver Mais</a>
 												</p>
 												<!-- {{-- <div class="row mb-4 counters counters-sm text-secondary">
 													<div class="col-6 col-lg-3 mb-4 mb-lg-0 mt-4">
@@ -620,7 +620,7 @@
 														</p>
 
 														<p class="mb-2 font-weight-bold">
-															<a href="assets/views/front-pages/contactos.html" class="link-hover-style-1 text-color-primary" style="text-decoration: none;">Contactar</a>
+															<a href="../App/views/front-pages/contactos.php" class="link-hover-style-1 text-color-primary" style="text-decoration: none;">Contactar</a>
 														</p>
 													</div>
 												</div>
@@ -667,7 +667,7 @@
 				<div class="container container-xl-custom py-md-4">
 					<div class="row justify-content-md-center py-5">
 						<div class="col-md-6 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-start m-5 mb-lg-0">
-							<a href="index.html"><img src="assets/img/logo/cmhandy_logo_branco.png" alt="cmhandymanlogo" class="img-fluid logo"></a>
+							<a href="index.php"><img src="assets/img/logo/cmhandy_logo_branco.png" alt="cmhandymanlogo" class="img-fluid logo"></a>
 						</div>
 						<div class="col-md-6 col-lg-4 text-center text-md-start m-5">
 							<p class="text-5 text-color-light font-weight-bold mb-3 mt-4 mt-lg-0">Entre em contacto</p>
@@ -728,7 +728,7 @@
 			</footer>
 		</div>
 
-		<?php include './App/views/front-pages/layout/script_base.php' ?>
+		<?php include './../App/views/front-pages/layout/script_base.php' ?>
 
 </body>
 
