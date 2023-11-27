@@ -19,25 +19,28 @@
 <link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" type="text/css">
 
 <!-- Vendor CSS -->
-<link rel="stylesheet" href="resources/vendor/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="resources/vendor/fontawesome-free/css/all.min.css">
-<link rel="stylesheet" href="resources/vendor/animate/animate.compat.css">
-<link rel="stylesheet" href="resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
-<link rel="stylesheet" href="resources/vendor/owl.carousel/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
-<link rel="stylesheet" href="resources/vendor/magnific-popup/magnific-popup.min.c">
+<link rel="stylesheet" href="public/assets/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
+<link rel="stylesheet" href="assets/vendor/animate/animate.compat.css">
+<link rel="stylesheet" href="assets/vendor/simple-line-icons/css/simple-line-icons.min.css">
+<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.min.c">
 
 <!-- Theme CSS -->
-<link rel="stylesheet" href="resources/css/theme.css">
-<link rel="stylesheet" href="resources/css/theme-elements.css">
-<link rel="stylesheet" href="resources/css/theme-blog.css">
-<link rel="stylesheet" href="resources/css/theme-shop.css">
+<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="assets/css/theme-elements.css">
+<link rel="stylesheet" href="assets/css/theme-blog.css">
+<link rel="stylesheet" href="assets/css/theme-shop.css">
 
 <!-- Demo CSS -->
-<link rel="stylesheet" href="resources/css/demos/demo-construction-2.css">
+<link rel="stylesheet" href="assets/css/demos/demo-construction-2.css">
 
 <!-- Skin CSS -->
-<link id="skinCSS" rel="stylesheet" href="resources/css/skins/skin-construction-2.css">
+<link id="skinCSS" rel="stylesheet" href="assets/css/skins/skin-construction-2.css">
 
 <!-- Theme Custom CSS -->
-<link rel="stylesheet" href="resources/css/custom.css">
+<link rel="stylesheet" href="assets/css/custom.css">
+
+
+include ''
