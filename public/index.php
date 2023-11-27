@@ -3,7 +3,49 @@
 
 <head>
 
-	<?php include 'views/front-pages/layout/head_base.php' ?>
+	<!-- Basic -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+	<meta name="keywords" content="WebSite Template" />
+	<meta name="description" content="Porto - Multipurpose Website Template">
+	<meta name="author" content="okler.net">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+	<!-- Web Fonts  -->
+	<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" type="text/css">
+
+	<!-- Vendor CSS -->
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
+	<link rel="stylesheet" href="assets/vendor/animate/animate.compat.css">
+	<link rel="stylesheet" href="assets/vendor/simple-line-icons/css/simple-line-icons.min.css">
+	<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.min.c">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="assets/css/theme.css">
+	<link rel="stylesheet" href="assets/css/theme-elements.css">
+	<link rel="stylesheet" href="assets/css/theme-blog.css">
+	<link rel="stylesheet" href="assets/css/theme-shop.css">
+
+	<!-- Demo CSS -->
+	<link rel="stylesheet" href="assets/css/demos/demo-construction-2.css">
+
+	<!-- Skin CSS -->
+	<link id="skinCSS" rel="stylesheet" href="assets/css/skins/skin-construction-2.css">
+
+	<!-- Theme Custom CSS -->
+	<link rel="stylesheet" href="assets/css/custom.css">
 
 	<title>CMHandyMans</title>
 
@@ -13,47 +55,28 @@
 
 	<div role="main" class="main">
 		<div class="p-relative">
-			<section class="section border-0 m-0"
-				style="background-image: url(resources/img/fundo/foto_fundo.jpg); background-size:cover;background-position: bottom; background-repeat: no-repeat; background-color:#ededed; height: 100vh;">
+			<section class="section border-0 m-0" style="background-image: url(assets/img/fundo/foto_fundo.jpg); background-size:cover;background-position: bottom; background-repeat: no-repeat; background-color:#ededed; height: 100vh;">
 				<div class="container h-100">
 					<div class="row h-100">
 						<div class="col-lg-6 pb-5">
 							<div class="d-flex flex-column align-items-center justify-content-center text-center h-100">
-								<h3 class="position-relative text-color-white text-5 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
-									data-appear-animation="fadeInDownShorter"
-									data-plugin-options="{'minWindowWidth': 0}">
+								<h3 class="position-relative text-color-white text-5 line-height-5 font-weight-medium px-4 mb-2 appear-animation" data-appear-animation="fadeInDownShorter" data-plugin-options="{'minWindowWidth': 0}">
 									<span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-6">
-										<img src="resources/img/slides/slide-title-border-light.png"
-											class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter"
-											data-appear-animation-delay="250"
-											data-plugin-options="{'minWindowWidth': 0}" alt="" />
+										<img src="assets/img/slides/slide-title-border-light.png" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
 									</span>
-									Empresa multi-<span class="position-relative">serviços<span
-											class="position-absolute left-50pct transform3dx-n50 top-0 mt-3"><img
-												src="resources/img/slides/slide-blue-line.png"
-												class="w-auto appear-animation"
-												data-appear-animation="fadeInLeftShorterPlus"
-												data-appear-animation-delay="1000"
-												data-plugin-options="{'minWindowWidth': 0}" alt="" /></span></span>
+									Empresa multi-<span class="position-relative">serviços<span class="position-absolute left-50pct transform3dx-n50 top-0 mt-3"><img src="assets/img/slides/slide-blue-line.png" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" alt="" /></span></span>
 									<span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-6">
-										<img src="resources/img/slides/slide-title-border-light.png"
-											class="w-auto appear-animation" data-appear-animation="fadeInRightShorter"
-											data-appear-animation-delay="250"
-											data-plugin-options="{'minWindowWidth': 0}" alt="" />
+										<img src="assets/img/slides/slide-title-border-light.png" class="w-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
 									</span>
 								</h3>
-								<h1 class="text-color-white font-weight-extra-bold text-12 mb-2 appear-animation"
-									data-appear-animation="blurIn" data-appear-animation-delay="500"
-									data-plugin-options="{'minWindowWidth': 0}">CMHandyMans</h1>
+								<h1 class="text-color-white font-weight-extra-bold text-12 mb-2 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="500" data-plugin-options="{'minWindowWidth': 0}">CMHandyMans</h1>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<header id="header"
-				class="header-narrow header-transparent header-bottom-slider header-transparent-light-top-border header-transparent-light-top-border-1 "
-				data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAtElement': '#header', 'stickySetTop': '0', 'stickyChangeLogo': false}">
+			<header id="header" class="header-narrow header-transparent header-bottom-slider header-transparent-light-top-border header-transparent-light-top-border-1 " data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAtElement': '#header', 'stickySetTop': '0', 'stickyChangeLogo': false}">
 				<div class="header-body header-body-bottom-border">
 					<div class="header-container header-container-height-sm container">
 						<div class="header-row">
@@ -61,9 +84,7 @@
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="index.html">
-											<img alt="cmhandyman" width="190" height="48" data-sticky-width="82"
-												data-sticky-height="40" src="resources/img/logo/cmhandy_logo_preto.png"
-												id="imagem-sticky">
+											<img alt="cmhandyman" width="190" height="48" data-sticky-width="82" data-sticky-height="40" src="assets/img/logo/cmhandy_logo_preto.png" id="imagem-sticky">
 										</a>
 									</div>
 								</div>
@@ -71,8 +92,7 @@
 							<div class="header-column justify-content-end">
 								<div class="header-row">
 									<div class="header-nav header-nav-links order-2 order-lg-1">
-										<div
-											class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+										<div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
 											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav">
 													<li class="dropdown">
@@ -81,28 +101,24 @@
 														</a>
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item"
-															href="resources/views/front-pages/sobre-nos.html">
+														<a class="dropdown-item" href="assets/views/front-pages/sobre-nos.html">
 															Sobre nós
 														</a>
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item"
-															href="resources/views/front-pages/servicos.html">
+														<a class="dropdown-item" href="assets/views/front-pages/servicos.html">
 															Serviços
 														</a>
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item"
-															href="resources/views/front-pages/contactos.html">
+														<a class="dropdown-item" href="assets/views/front-pages/contactos.html">
 															Contactos
 														</a>
 													</li>
 												</ul>
 											</nav>
 										</div>
-										<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
-											data-bs-target=".header-nav-main nav">
+										<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
 											<i class="fas fa-bars"></i>
 										</button>
 									</div>
@@ -119,7 +135,7 @@
 															</div>
 															<div class="col-4">
 																<div class="d-flex justify-content-end">
-																	<img class="rounded-circle" width="40" height="40" alt="" src="resources/img/avatars/user.png">
+																	<img class="rounded-circle" width="40" height="40" alt="" src="assets/img/avatars/user.png">
 																</div>
 															</div>
 														</div>
@@ -138,11 +154,9 @@
 												</div>
 											</div> -->
 
-									<div
-										class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
-										<div class="header-nav-feature header-nav-features-user d-inline-flex mx-2 pe-2 signin"
-											id="headerAccount">
-											<a href="resources/views/back-pages/login/main.html" class="signin">
+									<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
+										<div class="header-nav-feature header-nav-features-user d-inline-flex mx-2 pe-2 signin" id="headerAccount">
+											<a href="assets/views/back-pages/login/main.html" class="signin">
 												<i class="far fa-user"></i> Login
 											</a>
 										</div>
@@ -330,15 +344,12 @@
 					</div>
 				</div> -->
 
-				<section
-					class="section custom-angled section-angled bg-tertiary border-top-0 pt-0 pb-0 pb-lg-5 mb-5 mb-lg-0">
+				<section class="section custom-angled section-angled bg-tertiary border-top-0 pt-0 pb-0 pb-lg-5 mb-5 mb-lg-0">
 					<div class="section-angled-layer-bottom bg-light d-none d-lg-block"></div>
-					<div class="section-angled-content mb-0 mb-lg-5 pb-lg-5 appear-animation"
-						data-appear-animation="fadeIn" data-appear-animation-delay="300">
+					<div class="section-angled-content mb-0 mb-lg-5 pb-lg-5 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
 						<div class="container container-xl-custom pb-5">
 							<div class="row pb-lg-5">
-								<div class="col-lg-4 position-relative py-2" data-carousel-navigate
-									data-carousel-navigate-id="#slider" data-carousel-navigate-to="1">
+								<div class="col-lg-4 position-relative py-2" data-carousel-navigate data-carousel-navigate-id="#slider" data-carousel-navigate-to="1">
 									<div class="mt-5 mb-lg-5">
 										<h4 class="text-color-secondary font-weight-bold text-5">Limpeza de terrenos
 										</h4>
@@ -349,8 +360,7 @@
 										</p> -->
 									</div>
 								</div>
-								<div class="col-lg-4 position-relative py-2" data-carousel-navigate
-									data-carousel-navigate-id="#slider" data-carousel-navigate-to="2">
+								<div class="col-lg-4 position-relative py-2" data-carousel-navigate data-carousel-navigate-id="#slider" data-carousel-navigate-to="2">
 									<div class="mt-lg-5 mb-lg-5">
 										<h4 class="text-color-secondary font-weight-bold text-5">Trabalho de pedreiro
 										</h4>
@@ -361,8 +371,7 @@
 										</p> -->
 									</div>
 								</div>
-								<div class="col-lg-4 position-relative py-2" data-carousel-navigate
-									data-carousel-navigate-id="#slider" data-carousel-navigate-to="3">
+								<div class="col-lg-4 position-relative py-2" data-carousel-navigate data-carousel-navigate-id="#slider" data-carousel-navigate-to="3">
 									<div class="mt-lg-5 mb-lg-5">
 										<h4 class="text-color-secondary font-weight-bold text-5">Pinturas exterior e
 											interior</h4>
@@ -389,14 +398,12 @@
 						<div class="container py-2">
 							<div class="row mb-5 pb-3">
 
-								<div class="col-md-6 col-lg-3 my-5 mb-lg-0 appear-animation"
-									data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+								<div class="col-md-6 col-lg-3 my-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
 
 									<div class="card flip-card flip-card-3d text-center rounded-0">
 										<div class="flip-front p-5">
 											<div class="flip-content my-4">
-												<i
-													class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block fa fa-broom"></i>
+												<i class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block fa fa-broom"></i>
 												<h4 class="font-weight-bold text-color-primary text-4">Limpeza <br> de
 													terreno</h4>
 												<p>Venha conhecer o nosso serviço de limpezas de terreno.</p>
@@ -415,14 +422,12 @@
 									</div>
 								</div>
 
-								<div class="col-md-6 col-lg-3 my-5 mb-lg-0 appear-animation"
-									data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+								<div class="col-md-6 col-lg-3 my-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
 
 									<div class="card flip-card flip-card-3d text-center rounded-0">
 										<div class="flip-front p-5">
 											<div class="flip-content my-4">
-												<i
-													class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block fa fa-tree"></i>
+												<i class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block fa fa-tree"></i>
 												<h4 class="font-weight-bold text-color-primary text-4">Corte e Abate de
 													árvores</h4>
 												<p>Venha conhecer o nosso serviço de abate de árvores.</p>
@@ -441,14 +446,12 @@
 									</div>
 								</div>
 
-								<div class="col-md-6 col-lg-3 my-5 mb-lg-0 appear-animation"
-									data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+								<div class="col-md-6 col-lg-3 my-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
 
 									<div class="card flip-card flip-card-3d text-center rounded-0">
 										<div class="flip-front p-5">
 											<div class="flip-content my-4">
-												<i
-													class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block fa fa-hammer"></i>
+												<i class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block fa fa-hammer"></i>
 												<h4 class="font-weight-bold text-color-primary text-4">Serviço <br> de
 													pedreiro</h4>
 												<p>Venha conhecer o nosso serviço de pedreiro.</p>
@@ -466,14 +469,12 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-md-6 col-lg-3 my-5 mb-lg-0 w-lg appear-animation"
-									data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+								<div class="col-md-6 col-lg-3 my-5 mb-lg-0 w-lg appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
 
 									<div class="card flip-card flip-card-3d text-center rounded-0">
 										<div class="flip-front p-5">
 											<div class="flip-content my-4">
-												<i
-													class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block fa fa-brush"></i>
+												<i class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block fa fa-brush"></i>
 												<h4 class="font-weight-bold text-color-primary text-4">Pinturas exterior
 													e interior</h4>
 												<p>Venha conhecer o nosso serviço de pinturas.</p>
@@ -497,8 +498,7 @@
 					</div>
 				</section>
 
-				<section
-					class="section custom-angled section-angled bg-tertiary border-top-0 pb-0 pb-lg-5 mb-5 mb-lg-0">
+				<section class="section custom-angled section-angled bg-tertiary border-top-0 pb-0 pb-lg-5 mb-5 mb-lg-0">
 					<div class="section-angled-layer-top bg-light"></div>
 					<div class="section-angled-layer-bottom bg-light d-none d-lg-block"></div>
 					<div class="section-angled-content mb-0 mb-lg-5">
@@ -506,12 +506,8 @@
 							<div class="row align-items-center justify-content-center pt-5 pb-lg-5">
 								<div class="col-md-8 col-xl-6 mb-md-5 mb-xl-4">
 									<div class="position-relative pb-lg-5 mb-lg-5">
-										<img src="resources/img/trabalhador_eletrecista_inicio.jpg"
-											class="img-fluid custom-img border-radius-0 max-w-90 appear-animation"
-											data-appear-animation="fadeIn" data-appear-animation-delay="600ms" alt="">
-										<img src="resources/img/reparacao_casa_inicio.jpg"
-											class="img-fluid custom-img border-radius-0 position-absolute custom-img-about appear-animation"
-											data-appear-animation="expandIn" data-appear-animation-delay="600ms" alt="">
+										<img src="assets/img/trabalhador_eletrecista_inicio.jpg" class="img-fluid custom-img border-radius-0 max-w-90 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="600ms" alt="">
+										<img src="assets/img/reparacao_casa_inicio.jpg" class="img-fluid custom-img border-radius-0 position-absolute custom-img-about appear-animation" data-appear-animation="expandIn" data-appear-animation-delay="600ms" alt="">
 									</div>
 								</div>
 								<div class="col-xl-6 mt-lg-5 mt-xl-0 pb-lg-5 mb-lg-5">
@@ -536,8 +532,7 @@
 													trabalho...
 												</p>
 												<p class="font-weight-bold mb-3">
-													<a href="resources/views/front-pages/sobre-nos.html"
-														class="link-hover-style-1 text-color-primary">Ver Mais</a>
+													<a href="assets/views/front-pages/sobre-nos.html" class="link-hover-style-1 text-color-primary">Ver Mais</a>
 												</p>
 												<!-- {{-- <div class="row mb-4 counters counters-sm text-secondary">
 													<div class="col-6 col-lg-3 mb-4 mb-lg-0 mt-4">
@@ -589,7 +584,7 @@
 										<a href="{{ route('detalhes-portefolio') }}">
 											<span class="thumb-info thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
 												<span class="thumb-info-wrapper">
-													<img src="resources/img/demos/construction-2/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+													<img src="assets/img/demos/construction-2/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
 												</span>
 											</span>
 										</a>
@@ -653,8 +648,7 @@
 								<div class="section-angled-content">
 									<div class="container container-xl-custom">
 										<div class="row justify-content-lg-end py-3">
-											<div
-												class="col-lg-10 custom-col pt-5 pb-lg-5 mt-5 mb-lg-5 px-3 px-lg-1 pe-lg-3">
+											<div class="col-lg-10 custom-col pt-5 pb-lg-5 mt-5 mb-lg-5 px-3 px-lg-1 pe-lg-3">
 												<div class="col px-0">
 													<h3 class="text-light font-weight-bold mb-2">Peça já o seu orçamento
 													</h3>
@@ -668,9 +662,7 @@
 														</p>
 
 														<p class="mb-2 font-weight-bold">
-															<a href="resources/views/front-pages/contactos.html"
-																class="link-hover-style-1 text-color-primary"
-																style="text-decoration: none;">Contactar</a>
+															<a href="assets/views/front-pages/contactos.html" class="link-hover-style-1 text-color-primary" style="text-decoration: none;">Contactar</a>
 														</p>
 													</div>
 												</div>
@@ -681,10 +673,7 @@
 							</section>
 						</div>
 						<div class="col-lg-6 px-0 d-none d-lg-flex">
-							<section
-								class="section section-angled custom-angled section-angled-reverse section-center bg-secondary border-top-0 flex-grow-1 lazyload"
-								data-bg-src="resources/img/entrepreneur-working-with-bills.jpg"
-								style="align-self: left;">
+							<section class="section section-angled custom-angled section-angled-reverse section-center bg-secondary border-top-0 flex-grow-1 lazyload" data-bg-src="assets/img/entrepreneur-working-with-bills.jpg" style="align-self: left;">
 								<div class="section-angled-layer-top bg-light d-none d-lg-block"></div>
 								<div class="section-angled-layer-bottom bg-light"></div>
 								<div class="section-angled-content">
@@ -709,8 +698,7 @@
 						<div class="d-flex flex-column flex-md-row align-items-center justify-content-center px-3">
 							<span class="p-3">
 								<a href="https://www.gresdias.pt/" target="_blank">
-									<img src="resources/img/parcerias/logo-gresdias.png" alt="gresdiaslogo"
-										class="img-fluid">
+									<img src="assets/img/parcerias/logo-gresdias.png" alt="gresdiaslogo" class="img-fluid">
 								</a>
 							</span>
 						</div>
@@ -720,10 +708,8 @@
 			<footer id="footer" class="bg-color-secondary border-top-0 mt-0 custom-footer">
 				<div class="container container-xl-custom py-md-4">
 					<div class="row justify-content-md-center py-5">
-						<div
-							class="col-md-6 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-start m-5 mb-lg-0">
-							<a href="index.html"><img src="resources/img/logo/cmhandy_logo_branco.png"
-									alt="cmhandymanlogo" class="img-fluid logo"></a>
+						<div class="col-md-6 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-start m-5 mb-lg-0">
+							<a href="index.html"><img src="assets/img/logo/cmhandy_logo_branco.png" alt="cmhandymanlogo" class="img-fluid logo"></a>
 						</div>
 						<div class="col-md-6 col-lg-4 text-center text-md-start m-5">
 							<p class="text-5 text-color-light font-weight-bold mb-3 mt-4 mt-lg-0">Entre em contacto</p>
@@ -731,11 +717,9 @@
 							<p class="text-3 mb-2 text-color-light">Av. João de deus, 2070-011, Cartaxo.</p>
 							<p class="text-3 mb-0 font-weight-bold text-color-light opacity-7 text-uppercase">Telemóvel
 							</p>
-							<p class="text-3 mb-2 text-color-light"><a href="tel:123456789"
-									class="text-color-light">123456789</a></p>
+							<p class="text-3 mb-2 text-color-light"><a href="tel:123456789" class="text-color-light">123456789</a></p>
 							<p class="text-3 mb-0 font-weight-bold text-color-light opacity-7 text-uppercase">Email</p>
-							<p class="text-3 mb-2 "><a href="mailto:geral@cmhandymans.pt"
-									class="text-color-light">geral@cmhandymans.pt</a></p>
+							<p class="text-3 mb-2 "><a href="mailto:geral@cmhandymans.pt" class="text-color-light">geral@cmhandymans.pt</a></p>
 							<ul class="social-icons social-icons-dark social-icons-clean">
 								<li class="social-icons-instagram">
 									<a href="http://www.instagram.com/" target="_blank" title="Instagram">
@@ -786,7 +770,43 @@
 			</footer>
 		</div>
 
-		<?php include 'views/front-pages/layout/script_base.php' ?>
+		<!-- Head Libs -->
+		<script src="assets/vendor/modernizr/modernizr.min.js"></script>
+
+		<!-- Vendor -->
+		<script src="assets/vendor/owl.carousel/owl.carousel.js"></script>
+		<script src="assets/vendor/jquery/jquery.min.js"></script>
+		<script src="assets/vendor/jquery.appear/jquery.appear.min.js"></script>
+		<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="assets/vendor/jquery.cookie/jquery.cookie.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/vendor/jquery.validation/jquery.validate.min.js"></script>
+		<script src="assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+		<script src="assets/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+		<script src="assets/vendor/lazysizes/lazysizes.min.js"></script>
+		<script src="assets/vendor/isotope/jquery.isotope.min.js"></script>
+		<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="assets/vendor/vide/jquery.vide.min.js"></script>
+		<script src="assets/vendor/vivus/vivus.min.js"></script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="assets/js/theme.js"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="assets/js/views/view.contact.js"></script>
+
+		<!-- Demo -->
+		<script src="assets/js/demos/demo-construction-2.js"></script>
+
+		<!-- Theme Custom -->
+		<script src="assets/js/custom.js"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="assets/js/theme.init.js"></script>
+
+		<!-- Examples -->
+		<script src="assets/js/examples/examples.gallery.js"></script>
 
 
 </body>
