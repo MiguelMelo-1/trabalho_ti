@@ -1,128 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
-	<head>
 
-		<!-- Basic -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+<head>
 
-		<title>CMHandyMans</title>	
+	<?php include 'views/front-pages/layout/head_base.php' ?>
 
-		<meta name="keywords" content="WebSite Template" />
-		<meta name="description" content="Porto - Multipurpose Website Template">
-		<meta name="author" content="okler.net">
+	<title>CMHandyMans</title>
 
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+</head>
 
-		<!-- Mobile Metas -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<body>
 
-		<!-- Web Fonts  -->
-		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" type="text/css">
+	<div role="main" class="main">
+		<div class="p-relative">
+			<section class="section border-0 m-0"
+				style="background-image: url(resources/img/fundo/foto_fundo.jpg); background-size:cover;background-position: bottom; background-repeat: no-repeat; background-color:#ededed; height: 100vh;">
+				<div class="container h-100">
+					<div class="row h-100">
+						<div class="col-lg-6 pb-5">
+							<div class="d-flex flex-column align-items-center justify-content-center text-center h-100">
+								<h3 class="position-relative text-color-white text-5 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
+									data-appear-animation="fadeInDownShorter"
+									data-plugin-options="{'minWindowWidth': 0}">
+									<span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-6">
+										<img src="resources/img/slides/slide-title-border-light.png"
+											class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter"
+											data-appear-animation-delay="250"
+											data-plugin-options="{'minWindowWidth': 0}" alt="" />
+									</span>
+									Empresa multi-<span class="position-relative">serviços<span
+											class="position-absolute left-50pct transform3dx-n50 top-0 mt-3"><img
+												src="resources/img/slides/slide-blue-line.png"
+												class="w-auto appear-animation"
+												data-appear-animation="fadeInLeftShorterPlus"
+												data-appear-animation-delay="1000"
+												data-plugin-options="{'minWindowWidth': 0}" alt="" /></span></span>
+									<span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-6">
+										<img src="resources/img/slides/slide-title-border-light.png"
+											class="w-auto appear-animation" data-appear-animation="fadeInRightShorter"
+											data-appear-animation-delay="250"
+											data-plugin-options="{'minWindowWidth': 0}" alt="" />
+									</span>
+								</h3>
+								<h1 class="text-color-white font-weight-extra-bold text-12 mb-2 appear-animation"
+									data-appear-animation="blurIn" data-appear-animation-delay="500"
+									data-plugin-options="{'minWindowWidth': 0}">CMHandyMans</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="resources/vendor/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="resources/vendor/fontawesome-free/css/all.min.css">
-		<link rel="stylesheet" href="resources/vendor/animate/animate.compat.css">
-		<link rel="stylesheet" href="resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
-		<link rel="stylesheet" href="resources/vendor/owl.carousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
-		<link rel="stylesheet" href="resources/vendor/magnific-popup/magnific-popup.min.c">
-		
-		<!-- Theme CSS -->
-		<link rel="stylesheet" href="resources/css/theme.css">
-		<link rel="stylesheet" href="resources/css/theme-elements.css">
-		<link rel="stylesheet" href="resources/css/theme-blog.css">
-		<link rel="stylesheet" href="resources/css/theme-shop.css">
-		
-		<!-- Demo CSS -->
-		<link rel="stylesheet" href="resources/css/demos/demo-construction-2.css">
-
-		<!-- Skin CSS -->
-		<link id="skinCSS" rel="stylesheet" href="resources/css/skins/skin-construction-2.css">
-
-		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="resources/css/custom.css">
-
-		<!-- Head Libs -->
-		<script src="resources/vendor/modernizr/modernizr.min.js"></script>
-
-
-	</head>
-	<body>
-		
-			<div role="main" class="main">
-				<div class="p-relative">
-					<section class="section border-0 m-0" style="background-image: url(resources/img/fundo/foto_fundo.jpg); background-size:cover;background-position: bottom; background-repeat: no-repeat; background-color:#ededed; height: 100vh;">
-						<div class="container h-100">
-							<div class="row h-100">
-								<div class="col-lg-6 pb-5">
-									<div class="d-flex flex-column align-items-center justify-content-center text-center h-100">
-										<h3 class="position-relative text-color-white text-5 line-height-5 font-weight-medium px-4 mb-2 appear-animation" data-appear-animation="fadeInDownShorter" data-plugin-options="{'minWindowWidth': 0}">
-											<span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-6">
-												<img src="resources/img/slides/slide-title-border-light.png" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
-											</span>
-											Empresa multi-<span class="position-relative">serviços<span class="position-absolute left-50pct transform3dx-n50 top-0 mt-3"><img src="resources/img/slides/slide-blue-line.png" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" alt="" /></span></span>
-											<span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-6">
-												<img src="resources/img/slides/slide-title-border-light.png" class="w-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
-											</span>
-										</h3>
-										<h1 class="text-color-white font-weight-extra-bold text-12 mb-2 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="500" data-plugin-options="{'minWindowWidth': 0}">CMHandyMans</h1>
+			<header id="header"
+				class="header-narrow header-transparent header-bottom-slider header-transparent-light-top-border header-transparent-light-top-border-1 "
+				data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAtElement': '#header', 'stickySetTop': '0', 'stickyChangeLogo': false}">
+				<div class="header-body header-body-bottom-border">
+					<div class="header-container header-container-height-sm container">
+						<div class="header-row">
+							<div class="header-column">
+								<div class="header-row">
+									<div class="header-logo">
+										<a href="index.html">
+											<img alt="cmhandyman" width="190" height="48" data-sticky-width="82"
+												data-sticky-height="40" src="resources/img/logo/cmhandy_logo_preto.png"
+												id="imagem-sticky">
+										</a>
 									</div>
 								</div>
 							</div>
-						</div>
-					</section>
-
-					<header id="header" class="header-narrow header-transparent header-bottom-slider header-transparent-light-top-border header-transparent-light-top-border-1 " data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAtElement': '#header', 'stickySetTop': '0', 'stickyChangeLogo': false}">
-						<div class="header-body header-body-bottom-border">
-							<div class="header-container header-container-height-sm container">
+							<div class="header-column justify-content-end">
 								<div class="header-row">
-									<div class="header-column">
-										<div class="header-row">
-											<div class="header-logo">
-												<a href="index.html">
-													<img alt="cmhandyman" width="190" height="48" data-sticky-width="82" data-sticky-height="40" src="resources/img/logo/cmhandy_logo_preto.png" id="imagem-sticky">
-												</a>
-											</div>
+									<div class="header-nav header-nav-links order-2 order-lg-1">
+										<div
+											class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+											<nav class="collapse">
+												<ul class="nav nav-pills" id="mainNav">
+													<li class="dropdown">
+														<a class="dropdown-item active" href="index.html">
+															Início
+														</a>
+													</li>
+													<li class="dropdown">
+														<a class="dropdown-item"
+															href="resources/views/front-pages/sobre-nos.html">
+															Sobre nós
+														</a>
+													</li>
+													<li class="dropdown">
+														<a class="dropdown-item"
+															href="resources/views/front-pages/servicos.html">
+															Serviços
+														</a>
+													</li>
+													<li class="dropdown">
+														<a class="dropdown-item"
+															href="resources/views/front-pages/contactos.html">
+															Contactos
+														</a>
+													</li>
+												</ul>
+											</nav>
 										</div>
+										<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
+											data-bs-target=".header-nav-main nav">
+											<i class="fas fa-bars"></i>
+										</button>
 									</div>
-									<div class="header-column justify-content-end">
-										<div class="header-row">
-											<div class="header-nav header-nav-links order-2 order-lg-1">
-												<div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
-													<nav class="collapse">
-														<ul class="nav nav-pills" id="mainNav">
-															<li class="dropdown">
-																<a class="dropdown-item active" href="index.html">
-																	Início
-																</a>
-															</li>
-															<li class="dropdown">
-																<a class="dropdown-item" href="resources/views/front-pages/sobre-nos.html">
-																	Sobre nós
-																</a>
-															</li>
-															<li class="dropdown">
-																<a class="dropdown-item" href="resources/views/front-pages/servicos.html">
-																	Serviços
-																</a>
-															</li>
-															<li class="dropdown">
-																<a class="dropdown-item" href="resources/views/front-pages/contactos.html">
-																	Contactos
-																</a>
-															</li>
-														</ul>
-													</nav>
-												</div>	
-												<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
-													<i class="fas fa-bars"></i>
-												</button>
-											</div>												
-											<!-- <div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
+									<!-- <div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
 												<div class="header-nav-feature header-nav-features-user header-nav-features-user-logged d-inline-flex mx-2 pe-2" id="headerAccount">
 													<a href="#" class="header-nav-features-toggle logout">
 														<i class="far fa-user"></i> {{ session('userNome') }}
@@ -153,21 +137,23 @@
 													</div>
 												</div>
 											</div> -->
-										
-											<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
-												<div class="header-nav-feature header-nav-features-user d-inline-flex mx-2 pe-2 signin" id="headerAccount">
-													<a href="resources/views/back-pages/login/main.html" class="signin">
-														<i class="far fa-user"></i> Login
-													</a>
-												</div>
-											</div>
+
+									<div
+										class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
+										<div class="header-nav-feature header-nav-features-user d-inline-flex mx-2 pe-2 signin"
+											id="headerAccount">
+											<a href="resources/views/back-pages/login/main.html" class="signin">
+												<i class="far fa-user"></i> Login
+											</a>
 										</div>
 									</div>
 								</div>
-							</div>							
+							</div>
 						</div>
-					</header>
+					</div>
 				</div>
+			</header>
+		</div>
 		<div class="body">
 			<!-- <header id="header" class="header-effect-shrink bg-color-tertiary custom-header" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 100, 'stickyHeaderContainerHeight': 83}">
 				<div class="header-body border-0 box-shadow-none">
@@ -296,7 +282,7 @@
 						<div class="owl-stage">
 
 							 Carousel Slide 1 -->
-							<!-- <div class="owl-item position-relative" style="background-image: url(img/demos/construction-2/slides/slide-1.jpg); background-size: cover; background-position: center; height: 650px;">
+				<!-- <div class="owl-item position-relative" style="background-image: url(img/demos/construction-2/slides/slide-1.jpg); background-size: cover; background-position: center; height: 650px;">
 
 								<div class="d-none d-md-block position-absolute top-50pct left-50pct transform3dxy-n50 w-100 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="1500" style="max-width: 1080px;">
 									<img src="img/demos/construction-2/slides/slide-1-2.png" class="img-fluid" alt="" />
@@ -312,8 +298,8 @@
 								</div>
 							</div> -->
 
-							<!-- Carousel Slide 2 -->
-							<!-- <div class="owl-item position-relative" style="background-image: url(img/demos/construction-2/slides/slide-1.jpg); background-size: cover; background-position: center; height: 650px;">
+				<!-- Carousel Slide 2 -->
+				<!-- <div class="owl-item position-relative" style="background-image: url(img/demos/construction-2/slides/slide-1.jpg); background-size: cover; background-position: center; height: 650px;">
 
 								<div class="container h-100">
 									<div class="row align-items-center h-100">
@@ -326,7 +312,7 @@
 								</div>
 							</div> -->
 
-							<!-- Carousel Slide 2
+				<!-- Carousel Slide 2
 							<div class="owl-item position-relative" style="background-image: url(img/demos/construction-2/slides/slide-1.jpg); background-size: cover; background-position: center; height: 650px;">
 
 								<div class="container h-100">
@@ -344,33 +330,44 @@
 					</div>
 				</div> -->
 
-				<section class="section custom-angled section-angled bg-tertiary border-top-0 pt-0 pb-0 pb-lg-5 mb-5 mb-lg-0">
+				<section
+					class="section custom-angled section-angled bg-tertiary border-top-0 pt-0 pb-0 pb-lg-5 mb-5 mb-lg-0">
 					<div class="section-angled-layer-bottom bg-light d-none d-lg-block"></div>
-					<div class="section-angled-content mb-0 mb-lg-5 pb-lg-5 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+					<div class="section-angled-content mb-0 mb-lg-5 pb-lg-5 appear-animation"
+						data-appear-animation="fadeIn" data-appear-animation-delay="300">
 						<div class="container container-xl-custom pb-5">
 							<div class="row pb-lg-5">
-								<div class="col-lg-4 position-relative py-2" data-carousel-navigate data-carousel-navigate-id="#slider" data-carousel-navigate-to="1">
+								<div class="col-lg-4 position-relative py-2" data-carousel-navigate
+									data-carousel-navigate-id="#slider" data-carousel-navigate-to="1">
 									<div class="mt-5 mb-lg-5">
-										<h4 class="text-color-secondary font-weight-bold text-5">Limpeza de terrenos</h4>
-										<p class="mb-2">Serviços efetuados com profissionalismo e pessoal credenciado a operar com diversas maquinas.</p>
+										<h4 class="text-color-secondary font-weight-bold text-5">Limpeza de terrenos
+										</h4>
+										<p class="mb-2">Serviços efetuados com profissionalismo e pessoal credenciado a
+											operar com diversas maquinas.</p>
 										<!-- <p class="font-weight-bold mb-lg-3">
 											<a href="{{ route('sobre-nos') }}" class="link-hover-style-1 text-color-primary">Ver Mais</a>
 										</p> -->
 									</div>
 								</div>
-								<div class="col-lg-4 position-relative py-2" data-carousel-navigate data-carousel-navigate-id="#slider" data-carousel-navigate-to="2">
+								<div class="col-lg-4 position-relative py-2" data-carousel-navigate
+									data-carousel-navigate-id="#slider" data-carousel-navigate-to="2">
 									<div class="mt-lg-5 mb-lg-5">
-										<h4 class="text-color-secondary font-weight-bold text-5">Trabalho de pedreiro</h4>
-										<p class="mb-2">Remodelamos o interior do seu espaço, para que possa disfrutar da sua funcionalidade com todo o conforto.</p>
+										<h4 class="text-color-secondary font-weight-bold text-5">Trabalho de pedreiro
+										</h4>
+										<p class="mb-2">Remodelamos o interior do seu espaço, para que possa disfrutar
+											da sua funcionalidade com todo o conforto.</p>
 										<!-- <p class="font-weight-bold mb-lg-3">
 											<a href="{{ route('sobre-nos') }}" class="link-hover-style-1 text-color-primary">Ver Mais</a>
 										</p> -->
 									</div>
 								</div>
-								<div class="col-lg-4 position-relative py-2" data-carousel-navigate data-carousel-navigate-id="#slider" data-carousel-navigate-to="3">
+								<div class="col-lg-4 position-relative py-2" data-carousel-navigate
+									data-carousel-navigate-id="#slider" data-carousel-navigate-to="3">
 									<div class="mt-lg-5 mb-lg-5">
-										<h4 class="text-color-secondary font-weight-bold text-5">Pinturas exterior e interior</h4>
-										<p class="mb-2">Para qualquer trabalho de pinturas em moradias, condomínios, apartamentos ou empresas.</p>
+										<h4 class="text-color-secondary font-weight-bold text-5">Pinturas exterior e
+											interior</h4>
+										<p class="mb-2">Para qualquer trabalho de pinturas em moradias, condomínios,
+											apartamentos ou empresas.</p>
 										<!-- <p class="font-weight-bold mb-lg-3">
 											<a href="{{ route('sobre-nos') }}" class="link-hover-style-1 text-color-primary">Ver Mais</a>
 										</p> -->
@@ -380,7 +377,7 @@
 						</div>
 					</div>
 				</section>
-				
+
 				<section class="section bg-light border-0 p-0 m-0" id="services">
 					<div class="container container-xl-custom">
 						<div class="row">
@@ -392,79 +389,103 @@
 						<div class="container py-2">
 							<div class="row mb-5 pb-3">
 
-								<div class="col-md-6 col-lg-3 my-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
-		
+								<div class="col-md-6 col-lg-3 my-5 mb-lg-0 appear-animation"
+									data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+
 									<div class="card flip-card flip-card-3d text-center rounded-0">
 										<div class="flip-front p-5">
 											<div class="flip-content my-4">
-												<i class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block fa fa-broom"></i>
-												<h4 class="font-weight-bold text-color-primary text-4">Limpeza <br> de terreno</h4>
-												<p>Venha conhecer o nosso serviço de limpezas de terreno.</p>	
+												<i
+													class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block fa fa-broom"></i>
+												<h4 class="font-weight-bold text-color-primary text-4">Limpeza <br> de
+													terreno</h4>
+												<p>Venha conhecer o nosso serviço de limpezas de terreno.</p>
 											</div>
 										</div>
 										<div class="flip-back d-flex align-items-center p-5">
 											<div class="flip-content my-4">
-												<h4 class="font-weight-bold text-color-dark">Limpeza <br> de terreno</h4>
-												<p class="font-weight-light text-color-dark opacity-5">Serviços efetuados com profissionalismo e pessoal credenciado a operar com diversas maquinas.</p>
+												<h4 class="font-weight-bold text-color-dark">Limpeza <br> de terreno
+												</h4>
+												<p class="font-weight-light text-color-dark opacity-5">Serviços
+													efetuados com profissionalismo e pessoal credenciado a operar com
+													diversas maquinas.</p>
 												<!-- <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">VER MAIS</a> -->
 											</div>
 										</div>
 									</div>
 								</div>
 
-								<div class="col-md-6 col-lg-3 my-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+								<div class="col-md-6 col-lg-3 my-5 mb-lg-0 appear-animation"
+									data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
 
 									<div class="card flip-card flip-card-3d text-center rounded-0">
 										<div class="flip-front p-5">
 											<div class="flip-content my-4">
-												<i class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block fa fa-tree"></i>
-												<h4 class="font-weight-bold text-color-primary text-4">Corte e Abate de árvores</h4>
-												<p>Venha conhecer o nosso serviço de abate de árvores.</p>	
+												<i
+													class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block fa fa-tree"></i>
+												<h4 class="font-weight-bold text-color-primary text-4">Corte e Abate de
+													árvores</h4>
+												<p>Venha conhecer o nosso serviço de abate de árvores.</p>
 											</div>
 										</div>
 										<div class="flip-back d-flex align-items-center p-5">
 											<div class="flip-content my-4">
-												<h4 class="font-weight-bold text-color-dark">Corte e Abate de árvores</h4>
-												<p class="font-weight-light text-color-dark opacity-5">Serviços efetuados com profissionalismo e pessoal credenciado a operar com diversas maquinas.</p>
+												<h4 class="font-weight-bold text-color-dark">Corte e Abate de árvores
+												</h4>
+												<p class="font-weight-light text-color-dark opacity-5">Serviços
+													efetuados com profissionalismo e pessoal credenciado a operar com
+													diversas maquinas.</p>
 												<!-- <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">VER MAIS</a> -->
 											</div>
 										</div>
 									</div>
 								</div>
 
-								<div class="col-md-6 col-lg-3 my-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+								<div class="col-md-6 col-lg-3 my-5 mb-lg-0 appear-animation"
+									data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
 
 									<div class="card flip-card flip-card-3d text-center rounded-0">
 										<div class="flip-front p-5">
 											<div class="flip-content my-4">
-												<i class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block fa fa-hammer"></i>
-												<h4 class="font-weight-bold text-color-primary text-4">Serviço <br> de pedreiro</h4>
-												<p>Venha conhecer o nosso serviço de pedreiro.</p>	
+												<i
+													class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block fa fa-hammer"></i>
+												<h4 class="font-weight-bold text-color-primary text-4">Serviço <br> de
+													pedreiro</h4>
+												<p>Venha conhecer o nosso serviço de pedreiro.</p>
 											</div>
 										</div>
 										<div class="flip-back d-flex align-items-center p-5">
 											<div class="flip-content my-4">
-												<h4 class="font-weight-bold text-color-dark">Serviço <br> de pedreiro</h4>
-												<p class="font-weight-light text-color-dark opacity-5">Remodelamos o interior do seu espaço, para que possa disfrutar da sua funcionalidade com todo o conforto.</p>
+												<h4 class="font-weight-bold text-color-dark">Serviço <br> de pedreiro
+												</h4>
+												<p class="font-weight-light text-color-dark opacity-5">Remodelamos o
+													interior do seu espaço, para que possa disfrutar da sua
+													funcionalidade com todo o conforto.</p>
 												<!-- <a href="{{ route('pedreiro-detalhes') }}" class="btn btn-light btn-modern text-color-dark font-weight-bold">VER MAIS</a> -->
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-6 col-lg-3 my-5 mb-lg-0 w-lg appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+								<div class="col-md-6 col-lg-3 my-5 mb-lg-0 w-lg appear-animation"
+									data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
 
 									<div class="card flip-card flip-card-3d text-center rounded-0">
 										<div class="flip-front p-5">
 											<div class="flip-content my-4">
-												<i class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block fa fa-brush"></i>
-												<h4 class="font-weight-bold text-color-primary text-4">Pinturas exterior e interior</h4>
-												<p>Venha conhecer o nosso serviço de pinturas.</p>	
+												<i
+													class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block fa fa-brush"></i>
+												<h4 class="font-weight-bold text-color-primary text-4">Pinturas exterior
+													e interior</h4>
+												<p>Venha conhecer o nosso serviço de pinturas.</p>
 											</div>
 										</div>
 										<div class="flip-back d-flex align-items-center p-5">
 											<div class="flip-content my-4">
-												<h4 class="font-weight-bold text-color-dark">Pinturas exterior e interior</h4>
-												<p class="font-weight-light text-color-dark opacity-5">Para qualquer trabalho de pinturas em moradias, condomínios, apartamentos ou empresas.</p>
+												<h4 class="font-weight-bold text-color-dark">Pinturas exterior e
+													interior</h4>
+												<p class="font-weight-light text-color-dark opacity-5">Para qualquer
+													trabalho de pinturas em moradias, condomínios, apartamentos ou
+													empresas.</p>
 												<!-- <a href="{{ route('pinturas-detalhes') }}" class="btn btn-light btn-modern text-color-dark font-weight-bold">VER MAIS</a> -->
 											</div>
 										</div>
@@ -475,8 +496,9 @@
 						</div>
 					</div>
 				</section>
-				
-				<section class="section custom-angled section-angled bg-tertiary border-top-0 pb-0 pb-lg-5 mb-5 mb-lg-0">
+
+				<section
+					class="section custom-angled section-angled bg-tertiary border-top-0 pb-0 pb-lg-5 mb-5 mb-lg-0">
 					<div class="section-angled-layer-top bg-light"></div>
 					<div class="section-angled-layer-bottom bg-light d-none d-lg-block"></div>
 					<div class="section-angled-content mb-0 mb-lg-5">
@@ -484,8 +506,12 @@
 							<div class="row align-items-center justify-content-center pt-5 pb-lg-5">
 								<div class="col-md-8 col-xl-6 mb-md-5 mb-xl-4">
 									<div class="position-relative pb-lg-5 mb-lg-5">
-										<img src="resources/img/trabalhador_eletrecista_inicio.jpg" class="img-fluid custom-img border-radius-0 max-w-90 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="600ms" alt="">
-										<img src="resources/img/reparacao_casa_inicio.jpg" class="img-fluid custom-img border-radius-0 position-absolute custom-img-about appear-animation" data-appear-animation="expandIn" data-appear-animation-delay="600ms" alt="">
+										<img src="resources/img/trabalhador_eletrecista_inicio.jpg"
+											class="img-fluid custom-img border-radius-0 max-w-90 appear-animation"
+											data-appear-animation="fadeIn" data-appear-animation-delay="600ms" alt="">
+										<img src="resources/img/reparacao_casa_inicio.jpg"
+											class="img-fluid custom-img border-radius-0 position-absolute custom-img-about appear-animation"
+											data-appear-animation="expandIn" data-appear-animation-delay="600ms" alt="">
 									</div>
 								</div>
 								<div class="col-xl-6 mt-lg-5 mt-xl-0 pb-lg-5 mb-lg-5">
@@ -493,19 +519,25 @@
 										<div class="row">
 											<div class="col">
 												<p class="mb-1">Quem somos</p>
-												<h3 class="text-secondary font-weight-bold  text-7 mb-2">Mais sobre CMHandyMans</h3>
+												<h3 class="text-secondary font-weight-bold  text-7 mb-2">Mais sobre
+													CMHandyMans</h3>
 											</div>
 										</div>
 										<div class="row">
 											<div class="col">
 												<p class="text-4 pt-2 mb-4">
-													Sendo iniciada em 2011 com um colega de trabalho, esta equipa começou com corte e abate de árvores.
-												</p>					
+													Sendo iniciada em 2011 com um colega de trabalho, esta equipa
+													começou com corte e abate de árvores.
+												</p>
 												<p class="mb-3">
-													Mas com a mudança da lei, havendo a obrigatoriadade a certificados em certos trabalhos focou-se na formação de manobrador de máquinas e trabalhos em altura sendo estes os mais importantes para qualquer trabalho...
-												</p>	
+													Mas com a mudança da lei, havendo a obrigatoriadade a certificados
+													em certos trabalhos focou-se na formação de manobrador de máquinas e
+													trabalhos em altura sendo estes os mais importantes para qualquer
+													trabalho...
+												</p>
 												<p class="font-weight-bold mb-3">
-													<a href="resources/views/front-pages/sobre-nos.html" class="link-hover-style-1 text-color-primary">Ver Mais</a>
+													<a href="resources/views/front-pages/sobre-nos.html"
+														class="link-hover-style-1 text-color-primary">Ver Mais</a>
 												</p>
 												<!-- {{-- <div class="row mb-4 counters counters-sm text-secondary">
 													<div class="col-6 col-lg-3 mb-4 mb-lg-0 mt-4">
@@ -621,18 +653,24 @@
 								<div class="section-angled-content">
 									<div class="container container-xl-custom">
 										<div class="row justify-content-lg-end py-3">
-											<div class="col-lg-10 custom-col pt-5 pb-lg-5 mt-5 mb-lg-5 px-3 px-lg-1 pe-lg-3">
+											<div
+												class="col-lg-10 custom-col pt-5 pb-lg-5 mt-5 mb-lg-5 px-3 px-lg-1 pe-lg-3">
 												<div class="col px-0">
-													<h3 class="text-light font-weight-bold mb-2">Peça já o seu orçamento</h3>
+													<h3 class="text-light font-weight-bold mb-2">Peça já o seu orçamento
+													</h3>
 												</div>
 												<div class="row pe-3">
 													<div class="col">
 														<p class="text-4 pt-2 mb-4">
-															Entre em contacto connosco que nós iremos tentar dar o melhor orçamento para ajudar a resolver o seu problema com os melhores preços.
-														</p>												
-														
+															Entre em contacto connosco que nós iremos tentar dar o
+															melhor orçamento para ajudar a resolver o seu problema com
+															os melhores preços.
+														</p>
+
 														<p class="mb-2 font-weight-bold">
-															<a href="resources/views/front-pages/contactos.html" class="link-hover-style-1 text-color-primary" style="text-decoration: none;">Contactar</a>
+															<a href="resources/views/front-pages/contactos.html"
+																class="link-hover-style-1 text-color-primary"
+																style="text-decoration: none;">Contactar</a>
 														</p>
 													</div>
 												</div>
@@ -643,7 +681,10 @@
 							</section>
 						</div>
 						<div class="col-lg-6 px-0 d-none d-lg-flex">
-							<section class="section section-angled custom-angled section-angled-reverse section-center bg-secondary border-top-0 flex-grow-1 lazyload" data-bg-src="resources/img/entrepreneur-working-with-bills.jpg" style="align-self: left;">
+							<section
+								class="section section-angled custom-angled section-angled-reverse section-center bg-secondary border-top-0 flex-grow-1 lazyload"
+								data-bg-src="resources/img/entrepreneur-working-with-bills.jpg"
+								style="align-self: left;">
 								<div class="section-angled-layer-top bg-light d-none d-lg-block"></div>
 								<div class="section-angled-layer-bottom bg-light"></div>
 								<div class="section-angled-content">
@@ -653,8 +694,8 @@
 					</div>
 				</section>
 
-				
-				
+
+
 			</div>
 
 			<section class="section section-height-3 bg-light border-0 pt-3 pt-lg-0 pb-4">
@@ -668,7 +709,8 @@
 						<div class="d-flex flex-column flex-md-row align-items-center justify-content-center px-3">
 							<span class="p-3">
 								<a href="https://www.gresdias.pt/" target="_blank">
-									<img src="resources/img/parcerias/logo-gresdias.png" alt="gresdiaslogo" class="img-fluid">
+									<img src="resources/img/parcerias/logo-gresdias.png" alt="gresdiaslogo"
+										class="img-fluid">
 								</a>
 							</span>
 						</div>
@@ -678,17 +720,22 @@
 			<footer id="footer" class="bg-color-secondary border-top-0 mt-0 custom-footer">
 				<div class="container container-xl-custom py-md-4">
 					<div class="row justify-content-md-center py-5">
-						<div class="col-md-6 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-start m-5 mb-lg-0">
-							<a href="index.html"><img src="resources/img/logo/cmhandy_logo_branco.png" alt="cmhandymanlogo" class="img-fluid logo"></a>
+						<div
+							class="col-md-6 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-start m-5 mb-lg-0">
+							<a href="index.html"><img src="resources/img/logo/cmhandy_logo_branco.png"
+									alt="cmhandymanlogo" class="img-fluid logo"></a>
 						</div>
 						<div class="col-md-6 col-lg-4 text-center text-md-start m-5">
 							<p class="text-5 text-color-light font-weight-bold mb-3 mt-4 mt-lg-0">Entre em contacto</p>
 							<p class="text-3 mb-0 font-weight-bold text-color-light opacity-7 text-uppercase">Morada</p>
 							<p class="text-3 mb-2 text-color-light">Av. João de deus, 2070-011, Cartaxo.</p>
-							<p class="text-3 mb-0 font-weight-bold text-color-light opacity-7 text-uppercase">Telemóvel</p>
-							<p class="text-3 mb-2 text-color-light"><a href="tel:123456789" class="text-color-light">123456789</a></p>
+							<p class="text-3 mb-0 font-weight-bold text-color-light opacity-7 text-uppercase">Telemóvel
+							</p>
+							<p class="text-3 mb-2 text-color-light"><a href="tel:123456789"
+									class="text-color-light">123456789</a></p>
 							<p class="text-3 mb-0 font-weight-bold text-color-light opacity-7 text-uppercase">Email</p>
-							<p class="text-3 mb-2 "><a href="mailto:geral@cmhandymans.pt" class="text-color-light">geral@cmhandymans.pt</a></p>							
+							<p class="text-3 mb-2 "><a href="mailto:geral@cmhandymans.pt"
+									class="text-color-light">geral@cmhandymans.pt</a></p>
 							<ul class="social-icons social-icons-dark social-icons-clean">
 								<li class="social-icons-instagram">
 									<a href="http://www.instagram.com/" target="_blank" title="Instagram">
@@ -706,7 +753,7 @@
 									</a>
 								</li>
 							</ul>
-						</div>						
+						</div>
 						<!-- <div class="col-md-3 text-center text-md-start m-5">
 							<p class="text-5 text-color-light font-weight-bold mb-3 mt-4 mt-lg-0">Últimos Projetos</p>
 
@@ -729,7 +776,8 @@
 						<div class="py-2">
 							<div class="row py-4">
 								<div class="col d-flex align-items-center justify-content-center mb-4 mb-lg-0">
-									<p class="text-3 text-color-light"><b class="text-white">CMHandyMans</b>. © 2023. Todos os Direitos Reservados</p>
+									<p class="text-3 text-color-light"><b class="text-white">CMHandyMans</b>. © 2023.
+										Todos os Direitos Reservados</p>
 								</div>
 							</div>
 						</div>
@@ -738,41 +786,9 @@
 			</footer>
 		</div>
 
-		<!-- Vendor -->
-		<script src="resources/vendor/owl.carousel/owl.carousel.js"></script>
-		<script src="resources/vendor/jquery/jquery.min.js"></script>
-		<script src="resources/vendor/jquery.appear/jquery.appear.min.js"></script>
-		<script src="resources/vendor/jquery.easing/jquery.easing.min.js"></script>
-		<script src="resources/vendor/jquery.cookie/jquery.cookie.min.js"></script>
-		<script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-		<script src="resources/vendor/jquery.validation/jquery.validate.min.js"></script>
-		<script src="resources/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
-		<script src="resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
-		<script src="resources/vendor/lazysizes/lazysizes.min.js"></script>
-		<script src="resources/vendor/isotope/jquery.isotope.min.js"></script>
-		<script src="resources/vendor/owl.carousel/owl.carousel.min.js"></script>
-		<script src="resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script src="resources/vendor/vide/jquery.vide.min.js"></script>
-		<script src="resources/vendor/vivus/vivus.min.js"></script>
+		<?php include 'views/front-pages/layout/script_base.php' ?>
 
-		<!-- Theme Base, Components and Settings -->
-		<script src="resources/js/theme.js"></script>
 
-		<!-- Current Page Vendor and Views -->
-		<script src="resources/js/views/view.contact.js"></script>
-
-		<!-- Demo -->
-		<script src="resources/js/demos/demo-construction-2.js"></script>
-
-		<!-- Theme Custom -->
-		<script src="resources/js/custom.js"></script>
-
-		<!-- Theme Initialization Files -->
-		<script src="resources/js/theme.init.js"></script>
-
-	<!-- Examples -->
-		<script src="resources/js/examples/examples.gallery.js"></script>
-
-	</body>
+</body>
 
 </html>
