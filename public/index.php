@@ -3,49 +3,7 @@
 
 <head>
 
-	<!-- Basic -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-
-
-	<meta name="keywords" content="WebSite Template" />
-	<meta name="description" content="Porto - Multipurpose Website Template">
-	<meta name="author" content="okler.net">
-
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-
-	<!-- Mobile Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-
-	<!-- Web Fonts  -->
-	<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" type="text/css">
-
-	<!-- Vendor CSS -->
-	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
-	<link rel="stylesheet" href="assets/vendor/animate/animate.compat.css">
-	<link rel="stylesheet" href="assets/vendor/simple-line-icons/css/simple-line-icons.min.css">
-	<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
-	<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.min.c">
-
-	<!-- Theme CSS -->
-	<link rel="stylesheet" href="assets/css/theme.css">
-	<link rel="stylesheet" href="assets/css/theme-elements.css">
-	<link rel="stylesheet" href="assets/css/theme-blog.css">
-	<link rel="stylesheet" href="assets/css/theme-shop.css">
-
-	<!-- Demo CSS -->
-	<link rel="stylesheet" href="assets/css/demos/demo-construction-2.css">
-
-	<!-- Skin CSS -->
-	<link id="skinCSS" rel="stylesheet" href="assets/css/skins/skin-construction-2.css">
-
-	<!-- Theme Custom CSS -->
-	<link rel="stylesheet" href="assets/css/custom.css">
+	<?php include './App/views/front-pages/layout/head_base.php' ?>
 
 	<title>CMHandyMans</title>
 
@@ -770,44 +728,7 @@
 			</footer>
 		</div>
 
-		<!-- Head Libs -->
-		<script src="assets/vendor/modernizr/modernizr.min.js"></script>
-
-		<!-- Vendor -->
-		<script src="assets/vendor/owl.carousel/owl.carousel.js"></script>
-		<script src="assets/vendor/jquery/jquery.min.js"></script>
-		<script src="assets/vendor/jquery.appear/jquery.appear.min.js"></script>
-		<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-		<script src="assets/vendor/jquery.cookie/jquery.cookie.min.js"></script>
-		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-		<script src="assets/vendor/jquery.validation/jquery.validate.min.js"></script>
-		<script src="assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
-		<script src="assets/vendor/jquery.gmap/jquery.gmap.min.js"></script>
-		<script src="assets/vendor/lazysizes/lazysizes.min.js"></script>
-		<script src="assets/vendor/isotope/jquery.isotope.min.js"></script>
-		<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-		<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script src="assets/vendor/vide/jquery.vide.min.js"></script>
-		<script src="assets/vendor/vivus/vivus.min.js"></script>
-
-		<!-- Theme Base, Components and Settings -->
-		<script src="assets/js/theme.js"></script>
-
-		<!-- Current Page Vendor and Views -->
-		<script src="assets/js/views/view.contact.js"></script>
-
-		<!-- Demo -->
-		<script src="assets/js/demos/demo-construction-2.js"></script>
-
-		<!-- Theme Custom -->
-		<script src="assets/js/custom.js"></script>
-
-		<!-- Theme Initialization Files -->
-		<script src="assets/js/theme.init.js"></script>
-
-		<!-- Examples -->
-		<script src="assets/js/examples/examples.gallery.js"></script>
-
+		<?php include './App/views/front-pages/layout/script_base.php' ?>
 
 </body>
 
