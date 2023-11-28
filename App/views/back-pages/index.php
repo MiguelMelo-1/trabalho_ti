@@ -3,36 +3,11 @@
 
 
 <head>
+
+    <?php include './layout/head_base.php' ?>
+
     <title>CMHandyMans - Dashboard</title>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
-    
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="../../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="../../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="../../css/dashboard/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="../../css/dashboard/style.css" rel="stylesheet">
-
-    <!-- Custom css -->
-    <link rel="stylesheet" href="../../css/dashboard/custom.css">
+   
 </head>
 
 <body class="">
@@ -45,150 +20,12 @@
         </div>
         <!-- Spinner End -->
 
-
-        <!-- Sidebar Start -->
-        <div class="sidebar pe-2 pb-3 ps-2 mt-3">
-            <nav class="navbar bg-transparente navbar-dark rounded">
-                <a href="../../../index.html" class="navbar-brand mx-4 mb-3">
-                    <!-- <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>DarkPan</h3> -->
-                    <img src="../../img/logo/cmhandy_logo_branco.png" alt="cmhandymanlogo" class="img-fluid">
-                </a>
-                <div class="d-flex align-items-center ms-4 mb-4">
-                    <div class="position-relative">
-                        <!-- <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;"> -->
-                        <i class="fa fa-user fa-2x"></i>
-                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
-                    </div>
-                    <div class="ms-3">
-                        <h6 class="mb-0">John Doe</h6>
-                        <span>Admin</span>
-                    </div>
-                </div>
-                <div class="navbar-nav w-100">
-                    <a href="dashboard.html" class="nav-item nav-link active"><i
-                            class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-                    <a href="ferramentas.html" class="nav-item nav-link"><i
-                            class="fa fa-toolbox me-2"></i>Ferramentas</a>
-                    <a href="funcionários.html" class="nav-item nav-link"><i
-                            class="fa fa-hard-hat me-2"></i>Funcionários</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                class="fa fa-hammer me-2"></i>Trabalhos</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="trabalho/trabalhos_pendentes.html" class="nav-link dropdown-item">Pendentes</a>
-                            <a href="trabalho/trabalhos_desenvolvimento.html" class="nav-link dropdown-item">Em
-                                desenvolvimento</a>
-                            <a href="trabalho/trabalhos_concluidos.html" class="nav-link dropdown-item">Concluidos</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-                                class="fa fa-file-alt me-2"></i>Orçamentos</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="orcamento/consultar_orcamentos.html" class="nav-link dropdown-item">Consultar orçamentos</a>
-                            <a href="orcamento/criar_orcamento.html" class="nav-link dropdown-item">Criar Orçamento</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <!-- Sidebar End -->
-
+        <?php include './layout/sidebar.php' ?>
 
         <!-- Content Start -->
         <div class="content">
-            <!-- Navbar Start -->
-            <nav class="navbar navbar-expand bg-transparente navbar-dark px-4 py-0 rounded mt-3">
-                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
-                    <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
-                </a>
-                <a href="#" class="sidebar-toggler flex-shrink-0">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <form class="d-none d-md-flex ms-4">
-                    <input class="form-control bg-dark border-0" type="search" placeholder="Search">
-                </form>
-                <div class="navbar-nav align-items-center ms-auto">
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-envelope me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">Message</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-transparente border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <i class="fa fa-user fa-2x"></i>
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">See all message</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-bell me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">Notificatin</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-transparente border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Profile updated</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">New user added</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Password changed</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">See all notifications</a>
-                        </div>
-                    </div> -->
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <!-- <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;"> -->
-                            <i class="fa fa-user fa-2x"></i>
-                            <span class="d-none d-lg-inline-flex">John Doe</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-transparente border-0 rounded-0 rounded-bottom m-0">
-                            <!-- <a href="#" class="dropdown-item">My Profile</a>
-                            <a href="#" class="dropdown-item">Settings</a> -->
-                            <a href="../../../index.html" class="dropdown-item">Log Out</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <!-- Navbar End -->
-
+            
+        <?php include './layout/navbar.php' ?>
 
             <!-- Sale & Revenue Start -->
             <div class="container-fluid pt-4 px-4">
@@ -480,19 +317,8 @@
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../lib/chart/chart.min.js"></script>
-    <script src="../../lib/easing/easing.min.js"></script>
-    <script src="../../lib/waypoints/waypoints.min.js"></script>
-    <script src="../../lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="../../lib/tempusdominus/js/moment.min.js"></script>
-    <script src="../../lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="../../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="../../js/dashboard/main.js"></script>
+    <?php include './layout/script_base.php' ?> 
+    
 </body>
 
 </html>
