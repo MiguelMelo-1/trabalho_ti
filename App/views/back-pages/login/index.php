@@ -6,16 +6,16 @@
 
 <head>
     <meta charset="utf-8">
-    <link href="../../../img/logo/cmhandy_logo_branco.png" rel="shortcut icon">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link href="/trabalho_ti/public/assets/img/logo/cmhandy_logo_branco.png" rel="shortcut icon">
+    <!-- <meta name="csrf-token" content="{{ csrf_token() }}"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="Rubick admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
     <meta name="keywords"
         content="admin template, Rubick Admin Template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="LEFT4CODE">
-    <link rel="stylesheet" href="../../../css/app.css" />
-    <link rel="stylesheet" href="../../../fontawesome-free-6.1.1-web\css\all.css">
+    <link rel="stylesheet" href="/trabalho_ti/public/assets/css/app.css" />
+    <link rel="stylesheet" href="/trabalho_ti/public/assets/fontawesome-free-6.1.1-web\css\all.css">
     <title>CMHandyMans - Login</title>
 
     <style>
@@ -34,7 +34,7 @@
         <div class="flex items-center h-screen py-5 xl:py-0 ">
             <div class="mx-auto  px-5 sm:px-8 py-8 rounded-md shadow-md w-full sm:w-3/4 lg:w-2/4 xl:w-auto"
                 style="background-color: rgba(0,0,0,0.6)">
-                <img alt="cmhandymanlogo" src="../../../img/logo/cmhandy_logo_branco.png" height="81px"
+                <img alt="cmhandymanlogo" src="/trabalho_ti/public/assets/img/logo/cmhandy_logo_branco.png" height="81px"
                     width="350px">
                 <h2 class="intro-x font-bold text-2xl xl:text-3xl text-center xl:text-left text-white mt-5">Entrar</h2>
                 <div class="intro-x mt-3">
@@ -55,9 +55,9 @@
                     <a class="text-agrodireto-3" href=" {{ route('ForgetPasswordGet') }}">Recuperar a Palavra-passe?</a>
                 </div>
                 <div class="intro-x mt-5 xl:mt-8 text-center">
-                    <button id="btn-login" onclick="location.href='../dashboard.html'"
+                    <button id="btn-login" onclick="location.href='/trabalho_ti/App/views/back-pages/index.php'"
                         class="btn btn-cmhandy py-3 px-4 w-full sm:w-32 mr-3 align-top">Entrar</button>
-                    <a href="registo.html"> <button
+                    <a href="/trabalho_ti/App/views/back-pages/login/register.php"> <button
                             class="btn btn-outline-secondary py-3 px-4 w-full sm:w-32 sm:mt-0 mt-3 align-top text-white">Registar-me</button></a>
                 </div>
                 <div class="intro-x mt-5 text-slate-400 text-center">
@@ -66,7 +66,7 @@
                         href="#">Política de Privacidade.</a>
                 </div>
                 <div>
-                    <button onclick="location.href='../../../../index.html'"
+                    <button onclick="location.href='/trabalho_ti/public/index.php'"
                         class="btn btn-outline-secondary py-3 px-4 w-full sm:w-32 sm:mt-0 mt-3 absolute top-0 left-0 text-white">Voltar
                         atrás</button>
                 </div>
@@ -87,7 +87,7 @@
 
 
 <!-- BEGIN: JS Assets-->
-<script src="../../../js/app.js"></script>
+<script src="/trabalho_ti/public/assets/js/app.js"></script>
 <!-- END: JS Assets-->
 
     <script>
@@ -145,7 +145,7 @@
             $('#btn-login').on('click', function () {
                 login()
             })
-        })()
+        })
     </script>
 
 </body>

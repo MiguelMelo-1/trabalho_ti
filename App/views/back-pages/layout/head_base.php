@@ -27,3 +27,6 @@
 
 <!-- Custom css -->
 <link rel="stylesheet" href="/trabalho_ti/public/assets/css/dashboard/custom.css">
+
+<!-- fontawesome -->
+<link rel="stylesheet" href="/trabalho_ti/public/assets/fontawesome-free-6.1.1-web/css/all.css">
