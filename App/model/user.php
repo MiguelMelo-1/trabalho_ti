@@ -106,7 +106,7 @@ class User {
     // Métodos
     public function insert() {
 
-        $query = $this->connection->prepare("INSERT INTO " . $this->table . "(nome, email, acesso, password, nif, morada, cod_postal, localidade, telefone) VALUES (:nome, :email, :acesso, :password, :nif, :morada, :cod_postal, :localidade, :telefone");
+        $query = $this->connection->prepare("INSERT INTO " . $this->table . "(nome, email, acesso, password, nif, morada, cod_postal, localidade, telefone) valorS (:nome, :email, :acesso, :password, :nif, :morada, :cod_postal, :localidade, :telefone");
 
         $execute = $query->execute(array(
             "nome" => $this->nome,
@@ -128,17 +128,123 @@ class User {
 
     public function update() {
         
-        $query = $this->connection->prepare(" UPDATE " . $this->table . "SET 
-            name = :name,
+        $query = $this->connection->prepare(" UPDATE " . $this->table . 
+        "SET 
+            nome = :nome,
             email = :email,
             acesso = :acesso,
             password = :password,
             nif = :nif,
             morada = :morada,
-            
-        ")
+            cod_postal = :cod_postal,
+            localidade = :localidade,
+            telefone = :telefone
+            WHERE id = :id
+        ");
+
+        $execute = $query->execute(array(
+            "nome" => $this->nome,
+            "email" => $this->email, 
+            "acesso" => $this->acesso,
+            "password" => $this->password,
+            "nif" => $this->nif,
+            "morada" => $this->morada,
+            "cod_postal" => $this->cod_postal,
+            "localidade" => $this->localidade,
+            "telefone" => $this->telefone,
+            "id" => $this->id
+        ));
+
+        $this->connection = null;
+        
+        return $execute;
 
     }
+
+    public function fetchAll() {
+       
+        $query = $this->connection->prepare("SELECT * FROM " . $this->table);
+
+        $query->execute();
+
+        $result = $query->fetchAll();
+
+        $this->connection = null;
+
+        return $result;
+
+    }
+
+    public function fetchById($id) {
+
+        $query = $this->connection->prepare("SELECT * FROM ". $this->table . "WHERE id=:id");
+
+        $query->execute(array(
+            "id" => $this->id
+        ));
+
+        $result = $query->fetchObject();
+
+        $this->connection = null;
+
+        return $result;
+
+    }
+
+    public function getBy($coluna,$valor) {
+
+        $query = $this->connection->prepare("SELECT * FROM " . $this->table . " WHERE :coluna = :valor");
+
+        $query->execute(array(
+            "coluna" => $coluna,
+            "valor" => $valor
+        ));
+
+        $result = $query->fetchAll();
+
+        $this->connection = null;
+
+        return $result;
+
+    }
+
+    public function deleteById($id){
+
+        try {
+
+            $query = $this->connection->prepare("DELETE FROM " . $this->table . " WHERE id = :id");
+            $query->execute(array(
+                "id" => $id
+            ));
+            $this->connection = null;
+
+        } catch (Exception $e) {
+
+            echo 'Failed DELETE (deleteById): ' . $e->getMessage();
+            return -1;
+
+        }
+    }
+    
+    public function deleteBy($coluna,$valor){
+
+        try {
+
+            $query = $this->connection->prepare("DELETE FROM " . $this->table . " WHERE :coluna = :valor");
+            $query->execute(array(
+                "coluna" => $coluna,
+                "valor" => $valor,
+            ));
+            $this->connection = null;
+
+        } catch (Exception $e) {
+
+            echo 'Failed DELETE (deleteBy): ' . $e->getMessage();
+            return -1;
+
+        }
+    }
+
 
 }
 
