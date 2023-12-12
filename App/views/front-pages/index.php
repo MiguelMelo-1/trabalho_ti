@@ -3,7 +3,8 @@
 
 <head>
 
-	<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/trabalho_ti/App/views/front-pages/layout/head_base.php" ?>
+	<?php require SITE_ROOT . "/App/views/front-pages/layout/head_base.php"; ?>
+
 
 	<title>CMHandyMans</title>
 
@@ -54,12 +55,13 @@
 											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav">
 													<li class="dropdown">
-														<a class="dropdown-item active" href="index.php">
+
+														<a class="dropdown-item active" href="/trabalho_ti/public/index.php?view=index">
 															Início
-														</a>
+														</a>													
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item" href="../App/views/front-pages/sobre_nos.php">
+														<a class="dropdown-item" href="/trabalho_ti/public/sobre-nos">
 															Sobre nós
 														</a>
 													</li>
@@ -728,7 +730,7 @@
 			</footer>
 		</div>
 
-		<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/trabalho_ti/App/views/front-pages/layout/script_base.php' ?>
+		<?php require SITE_ROOT . "/App/views/front-pages/layout/script_base.php"; ?>
 
 </body>
 

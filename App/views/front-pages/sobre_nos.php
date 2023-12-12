@@ -3,7 +3,7 @@
 
 <head>
 
-	<?php include './layout/head_base.php' ?>
+	<?php require SITE_ROOT . '/App/views/front-pages/layout/head_base.php' ?>
 
 	<title>Sobre Nós | CMHandyMans - Multi-serviços</title>
 
@@ -11,7 +11,7 @@
 
 <body>
 	
-	<?php include './layout/navbar.php' ?>
+	<?php require SITE_ROOT . '/App/views/front-pages/layout/navbar.php' ?>
 
 	<div class="body">
 		<!-- {{-- <header id="header" class="header-effect-shrink bg-color-tertiary custom-header" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 100, 'stickyHeaderContainerHeight': 83}">
@@ -143,7 +143,7 @@
 					<div class="row">
 						<div class="col-md-12 align-self-center">
 							<ul class="breadcrumb custom-breadcrumb d-block text-center text-4">
-								<li><a href="../../../index.html">Início</a></li>
+								<li><a href="/trabalho_ti/public/">Início</a></li>
 								<li class="active">Sobre Nós</li>
 							</ul>
 						</div>
@@ -238,21 +238,21 @@
 					<div class="row row-gutter-sm my-4 py-2 lightbox"
 						data-plugin-options="{'delegate': 'a', 'type': 'image', 'gallery': {'enabled': true}, 'mainClass': 'mfp-with-zoom', 'zoom': {'enabled': true, 'duration': 300}}">
 						<div class="col-md-4 pb-4 pb-md-0">
-							<a href="../../img/sobre-nos-1.jpg" class="appear-animation"
+							<a href="/trabalho_ti/public/assets/img/sobre-nos-1.jpg" class="appear-animation"
 								data-appear-animation="fadeInDownShorter" data-appear-animation-delay="100">
-								<img src="../../img/sobre-nos-1.jpg" class="img-fluid" alt="">
+								<img src="/trabalho_ti/public/assets/img/sobre-nos-1.jpg" class="img-fluid" alt="">
 							</a>
 						</div>
 						<div class="col-md-4 pb-4 pb-md-0">
-							<a href="../../img/sobre-nos-2.jpg" class="appear-animation"
+							<a href="/trabalho_ti/public/assets/img/sobre-nos-2.jpg" class="appear-animation"
 								data-appear-animation="fadeInDownShorter" data-appear-animation-delay="300">
-								<img src="../../img/sobre-nos-2.jpg" class="img-fluid" alt="">
+								<img src="/trabalho_ti/public/assets/img/sobre-nos-2.jpg" class="img-fluid" alt="">
 							</a>
 						</div>
 						<div class="col-md-4">
-							<a href="../../img/sobre-nos-3.jpg" class="appear-animation"
+							<a href="/trabalho_ti/public/assets/img/sobre-nos-3.jpg" class="appear-animation"
 								data-appear-animation="fadeInDownShorter" data-appear-animation-delay="500">
-								<img src="../../img/sobre-nos-3.jpg" class="img-fluid" alt="">
+								<img src="/trabalho_ti/public/assets/img/sobre-nos-3.jpg" class="img-fluid" alt="">
 							</a>
 						</div>
 					</div>
@@ -323,7 +323,7 @@
 						class="d-flex flex-column flex-md-row align-items-center justify-content-center px-3">
 						<span class="p-3">
 							<a href="https://www.gresdias.pt/" target="_blank">
-								<img src="../../img/parcerias/logo-gresdias.png" alt="gresdiaslogo" class="img-fluid">
+								<img src="/trabalho_ti/public/assets/img/parcerias/logo-gresdias.png" alt="gresdiaslogo" class="img-fluid">
 							</a>
 						</span>
 					</div>
@@ -335,7 +335,7 @@
 				<div class="row justify-content-md-center py-5">
 					<div
 						class="col-md-6 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-start m-5 mb-lg-0">
-						<a href="index.html"><img src="../../img/logo/cmhandy_logo_branco.png" alt="cmhandymanlogo"
+						<a href="index.html"><img src="/trabalho_ti/public/assets/img/logo/cmhandy_logo_branco.png" alt="cmhandymanlogo"
 								class="img-fluid logo"></a>
 					</div>
 					<div class="col-md-6 col-lg-4 text-center text-md-start m-5">
@@ -398,7 +398,7 @@
 		</footer>
 	</div>
 
-	<?php include './layout/script_base.php' ?>
+	<?php require SITE_ROOT . '/App/views/front-pages/layout/script_base.php' ?>
 
 </body>
 

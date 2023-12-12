@@ -1,10 +1,15 @@
 <?php
+
+namespace MVC;
+
+use PDO, PDOException, Exception;
+
 class connect{
     private $driver;
     private $host, $user, $pass, $database, $charset;
   
     public function __construct() {
-        $db_cfg = require_once '../config/database.php';
+        $db_cfg = require_once SITE_ROOT . '/App/config/database.php';
         $this->driver=DB_DRIVER;
         $this->host=DB_HOST;
         $this->user=DB_USERNAME;
@@ -20,7 +25,6 @@ class connect{
         try {
             $connection = new PDO($bbdd, $this->user, $this->pass);
             $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo 'sucesso';
             return $connection;
         } catch (PDOException $e) {
             //We throw the exception
@@ -30,9 +34,5 @@ class connect{
     }
 
 }
-
-$try = new connect();
-
-$try->Connection();
 
 ?>

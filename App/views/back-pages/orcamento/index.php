@@ -51,7 +51,7 @@
                                 <td>Rua josé ninguem</td>
                                 <td>
                                     <!-- Irá redirecionar para a página de criar orçamentos mas com dados já preenchidos e será só consulta n podendo alterar nada -->
-                                    <a href="ver_orcamento.html"><i class="fa fa-eye text-cmhandy" data-bs-toggle="tooltip" data-bs-placement="right" title="Consultar"></i></a>
+                                    <a href="details.php"><i class="fa fa-eye text-cmhandy" data-bs-toggle="tooltip" data-bs-placement="right" title="Consultar"></i></a>
                                 </td>
                             </tr>
                         </tbody>

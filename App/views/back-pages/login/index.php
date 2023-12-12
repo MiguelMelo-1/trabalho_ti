@@ -46,11 +46,11 @@
                         <div class="intro-x flex text-xs sm:text-sm mt-4">
                             <a class="text-agrodireto-3" href=" {{ route('ForgetPasswordGet') }}">Recuperar a Palavra-passe?</a>
                         </div>
-                        <div class="intro-x mt-5 xl:mt-8 text-center">
-                            <button id="btn-login" onclick="location.href='/trabalho_ti/App/views/back-pages/index.php'" class="btn btn-cmhandy py-3 px-4 w-full sm:w-32 mr-3 align-top">Entrar</button>
-                            <a href="/trabalho_ti/App/views/back-pages/login/register.php"> <button class="btn btn-outline-secondary py-3 px-4 w-full sm:w-32 sm:mt-0 mt-3 align-top text-white">Registar-me</button></a>
-                        </div>
                     </form>
+                </div>
+                <div class="intro-x mt-5 xl:mt-8 text-center">
+                    <button id="btn-login" onclick="location.href='/trabalho_ti/App/views/back-pages/index.php'" class="btn btn-cmhandy py-3 px-4 w-full sm:w-32 mr-3 align-top">Entrar</button>
+                    <a href="/trabalho_ti/App/views/back-pages/login/register.php"> <button class="btn btn-outline-secondary py-3 px-4 w-full sm:w-32 sm:mt-0 mt-3 align-top text-white">Registar-me</button></a>
                 </div>
                 <div class="intro-x mt-5 text-slate-400 text-center">
                     Ao prosseguir está a concordar com os nossos<br> <a class="text-agrodireto-3" href="#">Termos e Condições</a> & <a class="text-agrodireto-3" href="#">Política de Privacidade.</a>

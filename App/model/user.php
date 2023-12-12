@@ -1,5 +1,9 @@
 <?php
 
+namespace MVC\models;
+
+use Exception;
+
 class User {
 
     // Variaveis

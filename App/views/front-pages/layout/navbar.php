@@ -19,22 +19,22 @@
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
                                         <li class="dropdown">
-                                            <a class="dropdown-item" style="color: black;" href="/trabalho_ti/public/index.php">
+                                            <a class="dropdown-item" style="color: black;" href="/trabalho_ti/public/">
                                                 Início
                                             </a>
                                         </li>
                                         <li class="dropdown">
-                                            <a class="dropdown-item" style="color: black;" href="/trabalho_ti/App/views/front-pages/sobre_nos.php">
+                                            <a class="dropdown-item" style="color: black;" href="/trabalho_ti/public/sobre-nos">
                                                 Sobre nós
                                             </a>
                                         </li>
                                         <li class="dropdown">
-                                            <a class="dropdown-item" style="color: black;" href="/trabalho_ti/App/views/front-pages/servicos.php">
+                                            <a class="dropdown-item" style="color: black;" href="/trabalho_ti/public/servicos">
                                                 Serviços
                                             </a>
                                         </li>
                                         <li class="dropdown">
-                                            <a class="dropdown-item" style="color: black;" href="/trabalho_ti/App/views/front-pages/contactos.php">
+                                            <a class="dropdown-item" style="color: black;" href="/trabalho_ti/public/contactos">
                                                 Contactos
                                             </a>
                                         </li>
