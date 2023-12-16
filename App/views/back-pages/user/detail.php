@@ -3,7 +3,7 @@
 
 <head>
 
-    <?php include SITE_ROOT . '/App/views/back-pages/layout/head_base.php' ?>
+    <?php require SITE_ROOT . '/App/views/back-pages/layout/head_base.php' ?>
 
     <title>CMHandyMans - Detalhes do Utilizador</title>
 
@@ -20,12 +20,12 @@
         </div>
         <!-- Spinner End -->
 
-        <?php include SITE_ROOT . '/App/views/back-pages/layout/sidebar.php' ?>
+        <?php require SITE_ROOT . '/App/views/back-pages/layout/sidebar.php' ?>
 
         <!-- Content Start -->
         <div class="content">
 
-            <?php include SITE_ROOT . '/App/views/back-pages/layout/navbar.php' ?>
+            <?php require SITE_ROOT . '/App/views/back-pages/layout/navbar.php' ?>
 
             <!-- Main Content Start -->
             <div class="container-fluid px-4">
@@ -65,7 +65,7 @@
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-    <?php include SITE_ROOT . '/App/views/back-pages/layout/script_base.php' ?>
+    <?php require SITE_ROOT . '/App/views/back-pages/layout/script_base.php' ?>
 
 </body>
 

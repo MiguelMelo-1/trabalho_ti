@@ -3,7 +3,7 @@
 
 <head>
     
-    <?php include './../layout/head_base.php' ?>
+    <?php require './../layout/head_base.php' ?>
 
     <title>CMHandyMan - Consultar orcamento</title>
 
@@ -20,12 +20,12 @@
         </div>
         <!-- Spinner End -->
 
-    <?php include './../layout/sidebar.php' ?>
+    <?php require './../layout/sidebar.php' ?>
         
         <!-- Content Start -->
         <div class="content">
             
-            <?php include './../layout/navbar.php' ?>
+            <?php require './../layout/navbar.php' ?>
 
             <!-- table Start -->
             <div class="container-fluid pt-4 px-4">
@@ -85,7 +85,7 @@
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-    <?php include './../layout/script_base.php' ?>
+    <?php require './../layout/script_base.php' ?>
 
     <!-- tooltip script -->
     <script>
