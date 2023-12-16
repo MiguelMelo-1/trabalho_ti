@@ -56,7 +56,7 @@
 												<ul class="nav nav-pills" id="mainNav">
 													<li class="dropdown">
 
-														<a class="dropdown-item active" href="/trabalho_ti/public/index.php?view=index">
+														<a class="dropdown-item active" href="/trabalho_ti/public/">
 															Início
 														</a>													
 													</li>
@@ -66,12 +66,12 @@
 														</a>
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item" href="../App/views/front-pages/servicos.php">
+														<a class="dropdown-item" href="/trabalho_ti/public/servicos">
 															Serviços
 														</a>
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item" href="../App/views/front-pages/contactos.php">
+														<a class="dropdown-item" href="/trabalho_ti/public/contactos">
 															Contactos
 														</a>
 													</li>

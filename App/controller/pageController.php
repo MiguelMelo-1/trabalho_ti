@@ -30,6 +30,16 @@ class PageController extends Controller {
         $this->view("front-pages/sobre_nos");
 
     }
+    public function servicos() {
+
+        $this->view("front-pages/servicos");
+
+    }
+    public function contactos() {
+
+        $this->view("front-pages/contactos");
+
+    }
 
 
 

@@ -17,7 +17,6 @@ class Router {
             $controller = new $controller();
             $controller->$action();
         } else {
-            echo "nao";
             throw new \Exception("No route found for URI: $uri");
         }
     }

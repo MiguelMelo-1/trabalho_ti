@@ -3,7 +3,7 @@
 
 <head>
 
-	<?php include './layout/head_base.php' ?>
+	<?php require SITE_ROOT . '/App/views/front-pages/layout/head_base.php' ?>
 
 	<title>Serviços | CMHandyMans - Multi-serviços</title>
 
@@ -11,7 +11,7 @@
 
 <body>
 
-	<?php include './layout/navbar.php' ?>	
+	<?php require SITE_ROOT . '/App/views/front-pages/layout/navbar.php' ?>	
 
 	<div class="body">
 
@@ -20,12 +20,12 @@
 			<section
 				class="page-header bg-color-tertiary custom-page-header page-header-modern page-header-background page-header-background-sm parallax mt-0"
 				data-plugin-parallax data-plugin-options="{'speed': 1.2}"
-				data-image-src="img/demos/construction-2/page-header.jpg">
+				data-image-src="/trabalho_ti/public/assets/img/demos/construction-2/page-header.jpg">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 align-self-center">
 							<ul class="breadcrumb custom-breadcrumb d-block text-center text-4">
-								<li><a href="../../../index.html">Início</a></li>
+								<li><a href="/trabalho_ti/public/">Início</a></li>
 								<li class="active">Serviços</li>
 							</ul>
 						</div>
@@ -44,7 +44,7 @@
 							<div class="card-body text-center py-3">
 								<div class="feature-box-icon d-flex justify-content-center w-auto my-2 py-4">
 									<img class="icon-animated" width="80"
-										src="../../img/demos/construction-2/icons/icon-plumbing.svg" alt="" data-icon
+										src="/trabalho_ti/public/assets/img/demos/construction-2/icons/icon-plumbing.svg" alt="" data-icon
 										data-plugin-options="{'color': '#220c3c', 'animated': true, 'delay': 0, 'strokeBased': true}" />
 								</div>
 								<h4 class="card-title mb-3 text-5 text-secondary font-weight-bold">limpeza de terrenos
@@ -63,7 +63,7 @@
 							<div class="card-body text-center py-3">
 								<div class="feature-box-icon d-flex justify-content-center w-auto my-2 py-4">
 									<img class="icon-animated" width="80"
-										src="../../img/demos/construction-2/icons/icon-construction.svg" alt=""
+										src="/trabalho_ti/public/assets/img/demos/construction-2/icons/icon-construction.svg" alt=""
 										data-icon
 										data-plugin-options="{'color': '#220c3c', 'animated': true, 'delay': 200, 'strokeBased': true}" />
 								</div>
@@ -83,7 +83,7 @@
 							<div class="card-body text-center py-3">
 								<div class="feature-box-icon d-flex justify-content-center w-auto my-2 py-4">
 									<img class="icon-animated" width="80"
-										src="../../img/demos/construction-2/icons/icon-painting.svg" alt="" data-icon
+										src="/trabalho_ti/public/assets/img/demos/construction-2/icons/icon-painting.svg" alt="" data-icon
 										data-plugin-options="{'color': '#220c3c', 'animated': true, 'delay': 400, 'strokeBased': true}" />
 								</div>
 								<h4 class="card-title mb-3 text-5 text-secondary font-weight-bold">Pinturas</h4>
@@ -179,7 +179,7 @@
 					<div class="col-lg-6 px-0 d-none d-lg-flex">
 						<section
 							class="section section-angled custom-angled section-angled-reverse section-center bg-secondary border-top-0 flex-grow-1 lazyload"
-							data-bg-src="../../img/entrepreneur-working-with-bills.jpg" style="align-self: right;">
+							data-bg-src="/trabalho_ti/public/assets/img/entrepreneur-working-with-bills.jpg" style="align-self: right;">
 							<div class="section-angled-layer-top bg-light d-none d-lg-block"></div>
 							<div class="section-angled-layer-bottom bg-light"></div>
 							<div class="section-angled-content">
@@ -202,7 +202,7 @@
 						class="d-flex flex-column flex-md-row align-items-center justify-content-center px-3">
 						<span class="p-3">
 							<a href="https://www.gresdias.pt/" target="_blank">
-								<img src="../../img/parcerias/logo-gresdias.png" alt="gresdiaslogo" class="img-fluid">
+								<img src="/trabalho_ti/public/assets/img/parcerias/logo-gresdias.png" alt="gresdiaslogo" class="img-fluid">
 							</a>
 						</span>
 					</div>
@@ -214,7 +214,7 @@
 				<div class="row justify-content-md-center py-5">
 					<div
 						class="col-md-6 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-start m-5 mb-lg-0">
-						<a href="index.html"><img src="../../img/logo/cmhandy_logo_branco.png" alt="cmhandymanlogo"
+						<a href="index.html"><img src="/trabalho_ti/public/assets/img/logo/cmhandy_logo_branco.png" alt="cmhandymanlogo"
 								class="img-fluid logo"></a>
 					</div>
 					<div class="col-md-6 col-lg-4 text-center text-md-start m-5">
@@ -277,7 +277,7 @@
 		</footer>
 	</div>
 
-	<?php include './layout/script_base.php' ?>
+	<?php require SITE_ROOT . '/App/views/front-pages/layout/script_base.php' ?>
 
 </body>
 
