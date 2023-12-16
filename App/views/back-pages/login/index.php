@@ -14,6 +14,7 @@
     <meta name="author" content="LEFT4CODE">
     <link rel="stylesheet" href="/trabalho_ti/public/assets/css/app.css" />
     <link rel="stylesheet" href="/trabalho_ti/public/assets/fontawesome-free-6.1.1-web\css\all.css">
+
     <title>CMHandyMans - Login</title>
 
     <style>
@@ -34,9 +35,9 @@
                 <img alt="cmhandymanlogo" src="/trabalho_ti/public/assets/img/logo/cmhandy_logo_branco.png" height="81px" width="350px">
                 <h2 class="intro-x font-bold text-2xl xl:text-3xl text-center xl:text-left text-white mt-5">Entrar</h2>
                 <div class="intro-x mt-3">
-                    <form id="login-form">
-                        <input id="email" type="text" class="intro-x login__input form-control py-3 px-4 block" placeholder="Email">
-                        <input id="password" type="password" class="intro-x login__input form-control py-3 px-4 block mt-4" placeholder="Palavra-passe">
+                    <form id="login-form" action="/trabalho_ti/login/verify" method="POST">
+                        <input name="email" id="email" type="text" class="intro-x login__input form-control py-3 px-4 block" placeholder="Email" required>
+                        <input name="password" id="password" type="password" class="intro-x login__input form-control py-3 px-4 block mt-4" placeholder="Palavra-passe" required>
                         <div id="error-password" class="login__input-error text-danger mt-2"></div>
                         <div class="mt-5 text-white">
                             <input type="checkbox" class="h-4 w-4" onclick="myFunction()"><label class="ml-2">Vizualizar
@@ -46,18 +47,18 @@
                         <div class="intro-x flex text-xs sm:text-sm mt-4">
                             <a class="text-agrodireto-3" href=" {{ route('ForgetPasswordGet') }}">Recuperar a Palavra-passe?</a>
                         </div>
+                        <div class="intro-x mt-5 xl:mt-8 text-center">
+                            <input name="btn-login" id="btn-login" type="submit" formmethod="POST" class="btn btn-cmhandy py-3 px-4 w-full sm:w-32 mr-3 align-top" value="Entrar">
+                            <!-- <button id="btn-login" type="submit" class="btn btn-cmhandy py-3 px-4 w-full sm:w-32 mr-3 align-top">Entrar</button> -->
+                            <a href="/trabalho_ti/register"> <button class="btn btn-outline-secondary py-3 px-4 w-full sm:w-32 sm:mt-0 mt-3 align-top text-white">Registar-me</button></a>
+                        </div>
                     </form>
-                </div>
-                <div class="intro-x mt-5 xl:mt-8 text-center">
-                    <button id="btn-login" onclick="location.href='/trabalho_ti/App/views/back-pages/index.php'" class="btn btn-cmhandy py-3 px-4 w-full sm:w-32 mr-3 align-top">Entrar</button>
-                    <a href="/trabalho_ti/App/views/back-pages/login/register.php"> <button class="btn btn-outline-secondary py-3 px-4 w-full sm:w-32 sm:mt-0 mt-3 align-top text-white">Registar-me</button></a>
                 </div>
                 <div class="intro-x mt-5 text-slate-400 text-center">
                     Ao prosseguir está a concordar com os nossos<br> <a class="text-agrodireto-3" href="#">Termos e Condições</a> & <a class="text-agrodireto-3" href="#">Política de Privacidade.</a>
                 </div>
                 <div>
-                    <button onclick="location.href='/trabalho_ti/public/index.php'" class="btn btn-outline-secondary py-3 px-4 w-full sm:w-32 sm:mt-0 mt-3 absolute top-0 left-0 text-white">Voltar
-                        atrás</button>
+                    <button onclick="location.href='/trabalho_ti/public/'" class="btn btn-outline-secondary py-3 px-4 w-full sm:w-32 sm:mt-0 mt-3 absolute top-0 left-0 text-white">Voltar atrás</button>
                 </div>
                 <div class="flex text-slate-600 mt-5">
                     <div class="flex w-full justify-center">
@@ -89,7 +90,7 @@
         }
     </script>
 
-    <script>
+    <!-- <script>
         (function() {
             async function login() {
                 // Reset state
@@ -134,7 +135,7 @@
                 login()
             })
         })
-    </script>
+    </script> -->
 
 </body>
 

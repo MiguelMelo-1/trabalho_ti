@@ -20,6 +20,7 @@ class PageController extends Controller {
         
     }
     
+    //Public pages
     public function index() {
 
         $this->view("front-pages/index");
@@ -39,6 +40,25 @@ class PageController extends Controller {
 
         $this->view("front-pages/contactos");
 
+    }
+
+    //verification pages
+    public function login() {
+
+        $this->view("back-pages/login/index");
+
+    }
+    public function register() {
+
+        $this->view("back-pages/login/register");
+
+    }
+
+    //private pages
+    public function dashboard() {
+
+        $this->view("back-pages/index");
+        
     }
 
 

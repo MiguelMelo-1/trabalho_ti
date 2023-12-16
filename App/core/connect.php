@@ -28,7 +28,6 @@ class connect{
             return $connection;
         } catch (PDOException $e) {
             //We throw the exception
-            echo 'nao';
             throw new Exception('Problem establishing the connection.');
         }
     }

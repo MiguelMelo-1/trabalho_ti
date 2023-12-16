@@ -10,11 +10,11 @@ class User {
     private $table = "user";
     private $connection;
 
-    private $id;
+    protected $id;
     private $nome;
     private $email;
     private $acesso;
-    private $password;
+    protected $password;
     private $nif;
     private $morada;
     private $cod_postal;
@@ -181,10 +181,10 @@ class User {
 
     public function fetchById($id) {
 
-        $query = $this->connection->prepare("SELECT * FROM ". $this->table . "WHERE id=:id");
+        $query = $this->connection->prepare(" SELECT * FROM ". $this->table . " WHERE id=:id ");
 
         $query->execute(array(
-            "id" => $this->id
+            "id" => $id
         ));
 
         $result = $query->fetchObject();
@@ -195,18 +195,18 @@ class User {
 
     }
 
-    public function getBy($coluna,$valor) {
+    public function fetchBy($coluna, $valor) {
 
-        $query = $this->connection->prepare("SELECT * FROM " . $this->table . " WHERE :coluna = :valor");
+        $query = $this->connection->prepare(" SELECT * FROM " . $this->table .  " WHERE $coluna = :valor " ); 
 
         $query->execute(array(
-            "coluna" => $coluna,
             "valor" => $valor
         ));
 
         $result = $query->fetchAll();
 
         $this->connection = null;
+
 
         return $result;
 
@@ -234,7 +234,7 @@ class User {
 
         try {
 
-            $query = $this->connection->prepare("DELETE FROM " . $this->table . " WHERE :coluna = :valor");
+            $query = $this->connection->prepare("DELETE FROM " . $this->table . " WHERE :coluna=:valor ");
             $query->execute(array(
                 "coluna" => $coluna,
                 "valor" => $valor,

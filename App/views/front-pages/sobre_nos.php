@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	
+
 	<?php require SITE_ROOT . '/App/views/front-pages/layout/navbar.php' ?>
 
 	<div class="body">
@@ -135,10 +135,7 @@
 			</header> --}} -->
 
 		<div role="main" class="main">
-			<section
-				class="page-header bg-color-tertiary custom-page-header page-header-modern page-header-background page-header-background-sm parallax mt-0"
-				data-plugin-parallax data-plugin-options="{'speed': 1.2}"
-				data-image-src="img/demos/construction-2/page-header.jpg">
+			<section class="page-header bg-color-tertiary custom-page-header page-header-modern page-header-background page-header-background-sm parallax mt-0" data-plugin-parallax data-plugin-options="{'speed': 1.2}" data-image-src="img/demos/construction-2/page-header.jpg">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 align-self-center">
@@ -169,10 +166,8 @@
 					<div class="col">
 						<div class="featured-boxes featured-boxes-style-7">
 							<div class="row">
-								<div class="col-lg-4 appear-animation" data-appear-animation="fadeInUpShorter"
-									data-appear-animation-delay="150">
-									<div
-										class="featured-box custom-featured-box featured-box-primary featured-box-effect-7">
+								<div class="col-lg-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="150">
+									<div class="featured-box custom-featured-box featured-box-primary featured-box-effect-7">
 										<div class="box-content d-flex text-start align-items-center">
 											<div>
 												<i class="icon-featured fas fa-building text-8 text-secondary ms-0"></i>
@@ -188,14 +183,11 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-4 appear-animation" data-appear-animation="fadeInUpShorter"
-									data-appear-animation-delay="150">
-									<div
-										class="featured-box custom-featured-box featured-box-primary featured-box-effect-7">
+								<div class="col-lg-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="150">
+									<div class="featured-box custom-featured-box featured-box-primary featured-box-effect-7">
 										<div class="box-content d-flex text-start align-items-center">
 											<div>
-												<i
-													class="icon-featured fas fa-clipboard text-8 text-secondary ms-0"></i>
+												<i class="icon-featured fas fa-clipboard text-8 text-secondary ms-0"></i>
 											</div>
 											<div>
 												<h4 class="font-weight-bold text-5 text-secondary my-2">Trabalho de
@@ -208,10 +200,8 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-4 appear-animation" data-appear-animation="fadeInUpShorter"
-									data-appear-animation-delay="150">
-									<div
-										class="featured-box custom-featured-box featured-box-primary featured-box-effect-7">
+								<div class="col-lg-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="150">
+									<div class="featured-box custom-featured-box featured-box-primary featured-box-effect-7">
 										<div class="box-content d-flex text-start align-items-center">
 											<div>
 												<i class="icon-featured fas fa-home text-8 text-secondary ms-0"></i>
@@ -235,23 +225,19 @@
 
 			<section class="section bg-primary border-0 my-5">
 				<div class="container container-xl-custom">
-					<div class="row row-gutter-sm my-4 py-2 lightbox"
-						data-plugin-options="{'delegate': 'a', 'type': 'image', 'gallery': {'enabled': true}, 'mainClass': 'mfp-with-zoom', 'zoom': {'enabled': true, 'duration': 300}}">
+					<div class="row row-gutter-sm my-4 py-2 lightbox" data-plugin-options="{'delegate': 'a', 'type': 'image', 'gallery': {'enabled': true}, 'mainClass': 'mfp-with-zoom', 'zoom': {'enabled': true, 'duration': 300}}">
 						<div class="col-md-4 pb-4 pb-md-0">
-							<a href="/trabalho_ti/public/assets/img/sobre-nos-1.jpg" class="appear-animation"
-								data-appear-animation="fadeInDownShorter" data-appear-animation-delay="100">
+							<a href="/trabalho_ti/public/assets/img/sobre-nos-1.jpg" class="appear-animation" data-appear-animation="fadeInDownShorter" data-appear-animation-delay="100">
 								<img src="/trabalho_ti/public/assets/img/sobre-nos-1.jpg" class="img-fluid" alt="">
 							</a>
 						</div>
 						<div class="col-md-4 pb-4 pb-md-0">
-							<a href="/trabalho_ti/public/assets/img/sobre-nos-2.jpg" class="appear-animation"
-								data-appear-animation="fadeInDownShorter" data-appear-animation-delay="300">
+							<a href="/trabalho_ti/public/assets/img/sobre-nos-2.jpg" class="appear-animation" data-appear-animation="fadeInDownShorter" data-appear-animation-delay="300">
 								<img src="/trabalho_ti/public/assets/img/sobre-nos-2.jpg" class="img-fluid" alt="">
 							</a>
 						</div>
 						<div class="col-md-4">
-							<a href="/trabalho_ti/public/assets/img/sobre-nos-3.jpg" class="appear-animation"
-								data-appear-animation="fadeInDownShorter" data-appear-animation-delay="500">
+							<a href="/trabalho_ti/public/assets/img/sobre-nos-3.jpg" class="appear-animation" data-appear-animation="fadeInDownShorter" data-appear-animation-delay="500">
 								<img src="/trabalho_ti/public/assets/img/sobre-nos-3.jpg" class="img-fluid" alt="">
 							</a>
 						</div>
@@ -279,8 +265,7 @@
 
 					</div>
 				</div>
-				<div class="row counters counters-md text-secondary appear-animation pb-5"
-					data-appear-animation="fadeIn" data-appear-animation-delay="100">
+				<div class="row counters counters-md text-secondary appear-animation pb-5" data-appear-animation="fadeIn" data-appear-animation-delay="100">
 					<div class="col-7 col-lg-4 mb-4 mb-lg-0 mt-4">
 						<div class="counter">
 							<strong data-to="10" data-append="+">10+</strong>
@@ -319,8 +304,7 @@
 
 			<div class="container-fluid">
 				<div class="container container-xl-custom py-5">
-					<div
-						class="d-flex flex-column flex-md-row align-items-center justify-content-center px-3">
+					<div class="d-flex flex-column flex-md-row align-items-center justify-content-center px-3">
 						<span class="p-3">
 							<a href="https://www.gresdias.pt/" target="_blank">
 								<img src="/trabalho_ti/public/assets/img/parcerias/logo-gresdias.png" alt="gresdiaslogo" class="img-fluid">
@@ -330,75 +314,18 @@
 				</div>
 			</div>
 		</section>
-		<footer id="footer" class="bg-color-secondary border-top-0 mt-0 custom-footer">
-			<div class="container container-xl-custom py-md-4">
-				<div class="row justify-content-md-center py-5">
-					<div
-						class="col-md-6 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-start m-5 mb-lg-0">
-						<a href="index.html"><img src="/trabalho_ti/public/assets/img/logo/cmhandy_logo_branco.png" alt="cmhandymanlogo"
-								class="img-fluid logo"></a>
-					</div>
-					<div class="col-md-6 col-lg-4 text-center text-md-start m-5">
-						<p class="text-5 text-color-light font-weight-bold mb-3 mt-4 mt-lg-0">Entre em contacto</p>
-						<p class="text-3 mb-0 font-weight-bold text-color-light opacity-7 text-uppercase">Morada</p>
-						<p class="text-3 mb-2 text-color-light">Av. João de deus, 2070-011, Cartaxo.</p>
-						<p class="text-3 mb-0 font-weight-bold text-color-light opacity-7 text-uppercase">Telemóvel</p>
-						<p class="text-3 mb-2 text-color-light"><a href="tel:123456789"
-								class="text-color-light">123456789</a></p>
-						<p class="text-3 mb-0 font-weight-bold text-color-light opacity-7 text-uppercase">Email</p>
-						<p class="text-3 mb-2 "><a href="mailto:geral@cmhandymans.pt"
-								class="text-color-light">geral@cmhandymans.pt</a></p>
-						<ul class="social-icons social-icons-dark social-icons-clean">
-							<li class="social-icons-instagram">
-								<a href="http://www.instagram.com/" target="_blank" title="Instagram">
-									<i class="fab fa-instagram font-weight-semibold"></i>
-								</a>
-							</li>
-							<li class="social-icons-twitter">
-								<a href="http://www.twitter.com/" target="_blank" title="Twitter">
-									<i class="fab fa-twitter font-weight-semibold"></i>
-								</a>
-							</li>
-							<li class="social-icons-facebook">
-								<a href="http://www.facebook.com/" target="_blank" title="Facebook">
-									<i class="fab fa-facebook-f font-weight-semibold"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<!-- <div class="col-md-3 text-center text-md-start m-5">
-							<p class="text-5 text-color-light font-weight-bold mb-3 mt-4 mt-lg-0">Últimos Projetos</p>
 
-							<p class="text-3 mb-0 text-color-light opacity-7">Painting, Plumbing</p>
-							<p class="text-3 mb-0 font-weight-bold text-color-light">House Renovation - New York / NY</p>
-							<p class="text-3 mb-4 font-weight-bold"><a href="#" class="link-hover-style-1 text-primary">VIEW MORE+</a></p>
+		<?php require SITE_ROOT . '/App/views/front-pages/layout/footer.php' ?>
 
-							<p class="text-3 mb-0 text-color-light opacity-7">Eletrical Maitenance</p>
-							<p class="text-3 mb-0 font-weight-bold text-color-light">Building Repair - Detroit / MI</p>
-							<p class="text-3 mb-4 font-weight-bold"><a href="#" class="link-hover-style-1 text-primary">VIEW MORE+</a></p>
-
-							<p class="text-3 mb-0 text-color-light opacity-7">Flooring</p>
-							<p class="text-3 mb-0 font-weight-bold text-color-light">House Repair - New York / NY</p>
-							<p class="text-3 font-weight-bold"><a href="#" class="link-hover-style-1 text-primary">VIEW MORE+</a></p>
-						</div> -->
-				</div>
-			</div>
-			<div class="container container-xl-custom">
-				<div class="footer-copyright footer-copyright-style-2 bg-color-secondary">
-					<div class="py-2">
-						<div class="row py-4">
-							<div class="col d-flex align-items-center justify-content-center mb-4 mb-lg-0">
-								<p class="text-3 text-color-light"><b class="text-white">CMHandyMans</b>. © 2023. Todos
-									os Direitos Reservados</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
 	</div>
 
 	<?php require SITE_ROOT . '/App/views/front-pages/layout/script_base.php' ?>
+
+	<script>
+		window.onload = function() {
+			document.getElementById('sobreNosPage').className = 'dropdown-item active';
+		};
+	</script>
 
 </body>
 

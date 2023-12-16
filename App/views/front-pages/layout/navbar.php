@@ -24,17 +24,17 @@
                                             </a>
                                         </li>
                                         <li class="dropdown">
-                                            <a class="dropdown-item" style="color: black;" href="/trabalho_ti/public/sobre-nos">
+                                            <a id="sobreNosPage" class="dropdown-item" style="color: black;" href="/trabalho_ti/public/sobre-nos">
                                                 Sobre nós
                                             </a>
                                         </li>
                                         <li class="dropdown">
-                                            <a class="dropdown-item" style="color: black;" href="/trabalho_ti/public/servicos">
+                                            <a id="servicosPage" class="dropdown-item" style="color: black;" href="/trabalho_ti/public/servicos">
                                                 Serviços
                                             </a>
                                         </li>
                                         <li class="dropdown">
-                                            <a class="dropdown-item" style="color: black;" href="/trabalho_ti/public/contactos">
+                                            <a id="contactosPage" class="dropdown-item" style="color: black;" href="/trabalho_ti/public/contactos">
                                                 Contactos
                                             </a>
                                         </li>
@@ -66,7 +66,7 @@
 											</div> -->
                             <div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
                                 <div class="header-nav-feature header-nav-features-user d-inline-flex mx-2 pe-2 signin" id="headerAccount">
-                                    <a href="/trabalho_ti/App/views/back-pages/login/index.php" class="signin">
+                                    <a href="/trabalho_ti/login" class="signin">
                                         <i class="far fa-user"></i> Login
                                     </a>
                                 </div>
