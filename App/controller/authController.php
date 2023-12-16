@@ -69,6 +69,7 @@ class AuthController extends Controller
                 foreach ($errors as $error) {
                     echo $error . "<br>";
                 }
+                header("location: /trabalho_ti/login");
             }
     }
 

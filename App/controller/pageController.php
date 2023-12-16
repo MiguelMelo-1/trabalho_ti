@@ -20,6 +20,13 @@ class PageController extends Controller {
         
     }
     
+    //Error pages
+    public function error404(){
+
+        $this->view("error/404");
+
+    }
+
     //Public pages
     public function index() {
 
@@ -56,9 +63,11 @@ class PageController extends Controller {
 
     //private pages
     public function dashboard() {
-
-        $this->view("back-pages/index");
-        
+        if(session_status() == PHP_SESSION_ACTIVE) {
+            $this->view("back-pages/index");
+        }else{
+            $this->view("back-pages/login/index");
+        }
     }
 
 
