@@ -10,11 +10,11 @@ class User {
     private $table = "user";
     private $connection;
 
-    protected $id;
+    private $id;
     private $nome;
     private $email;
     private $acesso;
-    protected $password;
+    private $password;
     private $nif;
     private $morada;
     private $cod_postal;

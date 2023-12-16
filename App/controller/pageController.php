@@ -69,6 +69,21 @@ class PageController extends Controller {
             $this->view("back-pages/login/index");
         }
     }
+    public function viewUsers() {
+        if(session_status() == PHP_SESSION_ACTIVE) {
+            $this->view("back-pages/user/index");
+        }else{
+            $this->view("back-pages/login/index");
+        }
+    }
+    public function profile() {
+        if(session_status() == PHP_SESSION_ACTIVE) {
+            $this->view("back-pages/user/detail");
+        }else{
+            $this->view("back-pages/login/index");
+        }
+    }
+
 
 
 
