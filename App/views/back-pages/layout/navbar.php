@@ -78,12 +78,12 @@
             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 <!-- <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;"> -->
                 <i class="fa fa-user fa-2x"></i>
-                <span class="d-none d-lg-inline-flex">John Doe</span>
+                <span class="d-none d-lg-inline-flex"><?= $_SESSION['nome'] ?></span>
             </a>
             <div class="dropdown-menu dropdown-menu-end bg-transparente border-0 rounded-0 rounded-bottom m-0">
                 <a href="/trabalho_ti/App/views/back-pages/user/index.php" class="dropdown-item">Ver perfil</a>
                             <!-- <a href="#" class="dropdown-item">Settings</a> -->
-                <a href="/trabalho_ti/public/index.php" class="dropdown-item">Log Out</a>
+                <a href="/trabalho_ti/logout" class="dropdown-item">Log Out</a>
             </div>
         </div>
     </div>

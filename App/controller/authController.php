@@ -41,13 +41,10 @@ class AuthController extends Controller
     
                 $user = $user->fetchBy("email", $email);
                 
-                
-                var_dump($user[0]);
                 if (!empty($user)) {
                     if ($password == $user[0]['password']){
-
-                        //session start and variables
-                        session_start();
+ 
+                        //session variables
                         $_SESSION['id'] = $user[0]['id'];
                         $_SESSION['nome'] = $user[0]['nome'];
                         $_SESSION['email'] = $user[0]['email'];
@@ -58,8 +55,7 @@ class AuthController extends Controller
                         $_SESSION['localidade'] = $user[0]['localidade'];
                         $_SESSION['telefone'] = $user[0]['telefone'];
 
-                        header("location: /trabalho_ti/private/");
-                        exit();
+                        header("location: /trabalho_ti/private");
                     }else {
                         array_push($errors, "Senha incorreta");
                     }
@@ -74,6 +70,12 @@ class AuthController extends Controller
                     echo $error . "<br>";
                 }
             }
+    }
+
+    public function logout(){
+        session_destroy();
+        
+        header("location: /trabalho_ti/public/");
     }
 
 

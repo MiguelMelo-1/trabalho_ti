@@ -23,8 +23,11 @@ $router->addRoute('register', PageController::class, 'register');
 //--------------------------------------------------------------------------\\
 $router->addRoute('login/verify', AuthController::class, 'verifyLogin');
 $router->addRoute('register/verify', AuthController::class, 'verifyRegister');
+$router->addRoute('logout', AuthController::class, 'logout');
 
+if(session_status() == PHP_SESSION_ACTIVE) {
+    $router->addRoute('private', PageController::class, 'dashboard');
+}
 //Private area
-$router->addRoute('private/', PageController::class, 'dashboard');
 
 ?>
