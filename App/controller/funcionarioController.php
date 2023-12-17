@@ -33,13 +33,15 @@ class FuncionarioController extends Controller
 
         $funcionario = $funcionario->fetchAll();
 
+
+
         $this->view("back-pages/funcionario/index", ['funcionarios' => $funcionario]);
     }
 
     public function add()
     {
         //Verificar POST
-        if (isset($_POST)) {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Verificar campos preenchidos
             foreach ($_POST as $data) {
@@ -98,7 +100,8 @@ class FuncionarioController extends Controller
                 }
                 //voltar a verificar se há erros e mostrá los
                 if (!empty($errors)) {
-                    $this->view("back-pages/funcionario/index", ['errors' => $this->errors]);
+                    // $this->view("back-pages/funcionario/index", ['errors' => $this->errors]);
+                    $this->view("back-pages/index", ['errors' => $this->errors]);
                     exit();
                 }
             }
@@ -129,6 +132,10 @@ class FuncionarioController extends Controller
         }
 
     }
+
+    public function remove() {
+
+    } 
 
 }
 

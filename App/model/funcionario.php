@@ -124,10 +124,9 @@ class Funcionario
     public function insert()
     {
         try {
-            $query = $this->connection->prepare("INSERT INTO " . $this->table . " (id, nome, nif, data_nascimento, preco_hora, tlm, email, localidade, cod_postal) VALUES (:id, :nome, :nif, :dataNascimento, :precoHora, :tlm, :email, :localidade, :codPostal)");
+            $query = $this->connection->prepare("INSERT INTO " . $this->table . " ( nome, nif, data_nascimento, preco_hora, tlm, email, localidade, cod_postal) VALUES ( :nome, :nif, :dataNascimento, :precoHora, :tlm, :email, :localidade, :codPostal)");
 
             $execute = $query->execute(array(
-                "id" => $this->id,
                 "nome" => $this->nome,
                 "nif" => $this->nif,
                 "dataNascimento" => $this->dataNascimento,

@@ -40,7 +40,7 @@
                         <div class="modal fade overflow-hidden text-black" id="adicionarFuncionario" tabindex="-1" aria-labelledby="adicionarFuncionarioLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-lg">
                                                     <div class="modal-content">
-                                                        <form>
+                                                        <form method="POST" action="/trabalho_ti/private/funcionarios/add">
                                                             <div class="modal-header">
                                                                 <h5 class="modal-title text-dark" id="adicionarFuncionarioLabel">Adicionar Funcionario</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -50,51 +50,55 @@
                                                                 <div class="row g-3 mt-2">
                                                                     <div class="col-6">
                                                                         <label for="inputNome" class="form-label">Nome</label>
-                                                                        <input type="text" class="form-control" id="inputNome" placeholder="Insira o nome" style="color: white;" required>
+                                                                        <input type="text" class="form-control" name="inputNome" placeholder="Insira o nome" style="color: white;" required>
                                                                     </div>
                                                                     <div class="col-6">
                                                                         <label for="inputNif" class="form-label">NIF</label>
-                                                                        <input type="number" class="form-control" id="inputNif" style="color: white;" placeholder="Insira o NIF" pattern="[0-9]{9}" required>
+                                                                        <input type="number" class="form-control" name="inputNif" style="color: white;" placeholder="Insira o NIF" pattern="[0-9]{9}" required>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row g-3 mt-2">
                                                                     <div class="col-6">
                                                                         <label for="inputNascimento" class="form-label">Data de nascimento</label>
-                                                                        <input type="date" class="form-control" id="inputNascimento" style="color: white;" required>
+                                                                        <input type="date" class="form-control" name="inputNascimento" style="color: white;" required>
                                                                     </div>
                                                                     <div class="col-6">
                                                                         <label for="inputPrecoHora" class="form-label">Valor por hora</label>
-                                                                        <input type="number" class="form-control" id="inputPrecoHora" placeholder="Insira o valor" style="color: white;" required>
+                                                                        <input type="number" class="form-control" name="inputPrecoHora" placeholder="Insira o valor" style="color: white;" required>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row g-3 mt-2">
                                                                     <div class="col-6">
                                                                         <label for="inputTlm" class="form-label">Telemóvel</label>
-                                                                        <input type="tel" class="form-control" id="inputTlm" style="color: white;" placeholder="insira o numero de Tlm" required>
+                                                                        <input type="tel" class="form-control" name="inputTlm" style="color: white;" placeholder="insira o numero de Tlm" required>
                                                                     </div>
                                                                     <div class="col-6">
                                                                         <label for="inputEmail" class="form-label">Email</label>
-                                                                        <input type="email" class="form-control" id="inputEmail" style="color: white;" placeholder="Insira o email" required>
+                                                                        <input type="email" class="form-control" name="inputEmail" style="color: white;" placeholder="Insira o email" required>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row g-3 mt-2">
                                                                     <div class="col-6">
                                                                         <label for="inputCodPostal" class="form-label">Cód.Postal <i class="text-danger">*</i></label>
-                                                                        <input type="text" class="form-control" id="inputCodPostal" style="color: white;" aria-describedby="nifcodPostalFormat" placeholder="Insira o cód. postal" maxlength="8" minlength="8" required>
+                                                                        <input type="text" class="form-control" name="inputCodPostal" style="color: white;" aria-describedby="nifcodPostalFormat" placeholder="Insira o cód. postal" maxlength="8" minlength="8" required>
                                                                         <div id="codPostalFormat" class="form-text">Formato: 1234-123
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-6">
                                                                         <label for="inputLocalidade" class="form-label">Localidade</label>
-                                                                        <input type="text" class="form-control" id="inputLocalidade" placeholder="Insira a Localidade" style="color: white;" required>
+                                                                        <input type="text" class="form-control" name="inputLocalidade" placeholder="Insira a Localidade" style="color: white;" required>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="modal-footer">
-                                                                <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Salvar</button>
+                                                                <button type="submit" class="btn btn-success">Concluido</button>
                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                                                             </div>
                                                         </form>
+                                                        <?php var_dump($resultado); ?>
+                                                        <?php foreach($errors as $error){ ?>
+                                                            <p><?php var_dump($error)?></p>
+                                                        <?php }?> 
                                                     </div>
                                                 </div>
                                             </div>
@@ -114,8 +118,8 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <?php foreach ($funcionarios as $funcionario) { ?>
+                            <?php foreach ($funcionarios as $funcionario) { ?>
+                                <tr>
                                     <td scope="row"><?= $funcionario['id_funcionario']; ?></th>
                                     <td><?= $funcionario['nome']; ?></td>
                                     <td><?= $funcionario['nif']; ?></td>
@@ -222,8 +226,8 @@
 
                                         </div>
                                     </td>
+                                </tr>
                                 <?php } ?>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
