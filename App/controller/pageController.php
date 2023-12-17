@@ -2,10 +2,12 @@
 namespace MVC\controllers;
 
 require_once SITE_ROOT . '/App/controller/controller.php';
+require_once SITE_ROOT . '/App/controller/funcionarioController.php';
 require_once SITE_ROOT . '/App/core/connect.php';
 
 use MVC\Controller;
 use MVC\connect;
+use MVC\controllers\FuncionarioController;
 
 class PageController extends Controller {
 
@@ -72,7 +74,7 @@ class PageController extends Controller {
 
     public function funcionarios() {
         if(session_status() == PHP_SESSION_ACTIVE) {
-            $funcionario = new UserController;
+            $funcionario = new FuncionarioController;
             $funcionario->index();
         }else{
             $this->view("back-pages/login/index");
