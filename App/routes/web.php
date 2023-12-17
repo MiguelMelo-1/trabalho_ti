@@ -6,6 +6,7 @@ require_once SITE_ROOT . '/App/controller/pageController.php';
 require_once SITE_ROOT . '/App/controller/authController.php';
 
 use MVC\controllers\AuthController;
+use MVC\controllers\FuncionarioController;
 use MVC\controllers\PageController;
 use MVC\Router;
 
@@ -30,8 +31,11 @@ $router->addRoute('logout', AuthController::class, 'logout');
 
 //Private area
 $router->addRoute('private', PageController::class, 'dashboard');
+//--------------------------------------------------------------------------\\
 $router->addRoute('private/funcionarios', PageController::class, 'funcionarios');
-
+$router->addRoute('private/funcionarios/add', FuncionarioController::class, 'add');
+$router->addRoute('private/funcionarios/remove', FuncionarioController::class, 'remove');
+//--------------------------------------------------------------------------\\
 $router->addRoute('private/users', PageController::class, 'viewUsers');
 $router->addRoute('private/profile', PageController::class, 'profile');
 

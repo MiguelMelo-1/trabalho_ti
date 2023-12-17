@@ -37,7 +37,7 @@
                         <button type="button" class="btn btn-cmhandy mx-1 alig" data-bs-toggle="modal" data-bs-target="#adicionarFuncionario"><i class="fa fa-plus me-2"></i>Novo Funcionário</button>
                         <!-- Button trigger modal end -->
                         <!-- Modal start -->
-                        <div class="modal fade overflow-hidden" id="adicionarFuncionario" tabindex="-1" aria-labelledby="adicionarFuncionarioLabel" aria-hidden="true">
+                        <div class="modal fade overflow-hidden text-black" id="adicionarFuncionario" tabindex="-1" aria-labelledby="adicionarFuncionarioLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-lg">
                                                     <div class="modal-content">
                                                         <form>
@@ -70,11 +70,11 @@
                                                                 <div class="row g-3 mt-2">
                                                                     <div class="col-6">
                                                                         <label for="inputTlm" class="form-label">Telemóvel</label>
-                                                                        <input type="tel" class="form-control" id="inputTlm" style="color: white;" required>
+                                                                        <input type="tel" class="form-control" id="inputTlm" style="color: white;" placeholder="insira o numero de Tlm" required>
                                                                     </div>
                                                                     <div class="col-6">
                                                                         <label for="inputEmail" class="form-label">Email</label>
-                                                                        <input type="email" class="form-control" id="inputEmail" style="color: white;" placeholder="Insira o valor" required>
+                                                                        <input type="email" class="form-control" id="inputEmail" style="color: white;" placeholder="Insira o email" required>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row g-3 mt-2">
