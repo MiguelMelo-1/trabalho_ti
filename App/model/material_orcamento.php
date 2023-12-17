@@ -58,7 +58,7 @@ class MaterialOrcamento {
 
     public function insert() {
         try {
-            $query = $this->connection->prepare("INSERT INTO " . self::TABLE_NAME . " (orcamento_id, id_material, quantidade) VALUES (:orcamentoId, :idMaterial, :quantidade)");
+            $query = $this->connection->prepare("INSERT INTO " . $this->table . " (orcamento_id, id_material, quantidade) VALUES (:orcamentoId, :idMaterial, :quantidade)");
 
             $execute = $query->execute(array(
                 "orcamentoId" => $this->orcamentoId,
@@ -77,7 +77,7 @@ class MaterialOrcamento {
 
     public function update() {
         try {
-            $query = $this->connection->prepare("UPDATE " . self::TABLE_NAME . 
+            $query = $this->connection->prepare("UPDATE " . $this->table . 
             " SET 
             orcamento_id = :orcamentoId, 
             id_material = :idMaterial, 

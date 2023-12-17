@@ -67,7 +67,7 @@ class FuncionarioTrabalho {
 
     public function insert() {
         try {
-            $query = $this->connection->prepare("INSERT INTO " . self::TABLE_NAME . " (trabalho_id, funcionario_id, n_horas, data) VALUES (:trabalhoId, :funcionarioId, :nHoras, :data)");
+            $query = $this->connection->prepare("INSERT INTO " . $this->table . " (trabalho_id, funcionario_id, n_horas, data) VALUES (:trabalhoId, :funcionarioId, :nHoras, :data)");
 
             $execute = $query->execute(array(
                 "trabalhoId" => $this->trabalhoId,
@@ -87,7 +87,7 @@ class FuncionarioTrabalho {
 
     public function update() {
         try {
-            $query = $this->connection->prepare("UPDATE " . self::TABLE_NAME . 
+            $query = $this->connection->prepare("UPDATE " . $this->table . 
             " SET 
             trabalho_id = :trabalhoId, 
             funcionario_id = :funcionarioId, 

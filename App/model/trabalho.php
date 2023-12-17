@@ -138,7 +138,7 @@ class Trabalho {
 // Métodos
 public function insert() {
     try {
-        $query = $this->connection->prepare("INSERT INTO " . self::TABLE_NAME . " 
+        $query = $this->connection->prepare("INSERT INTO " . $this->table . " 
             (estado, tipo_trabalho, nome, morada, nif, cod_postal, localidade, email, tlm, descricao, observacoes, total) 
             VALUES (:estado, :tipoTrabalho, :nome, :morada, :nif, :codPostal, :localidade, :email, :tlm, :descricao, :observacoes, :total)");
 
@@ -168,7 +168,7 @@ public function insert() {
 
 public function update() {
     try {
-        $query = $this->connection->prepare("UPDATE " . self::TABLE_NAME . " SET 
+        $query = $this->connection->prepare("UPDATE " . $this->table . " SET 
             estado = :estado,
             tipo_trabalho = :tipoTrabalho,
             nome = :nome,

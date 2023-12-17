@@ -157,7 +157,7 @@ class Orcamento {
 
     public function insert() {
         try {
-            $query = $this->connection->prepare("INSERT INTO " . self::TABLE_NAME . " (id_user, id_trabalho, tipo_trabalho, nome, morada, nif, cod_postal, localidade, email, tlm, estado, pdf_path, observacoes, total) VALUES (:idUser, :idTrabalho, :tipoTrabalho, :nome, :morada, :nif, :codPostal, :localidade, :email, :tlm, :estado, :pdfPath, :observacoes, :total)");
+            $query = $this->connection->prepare("INSERT INTO " . $this->table . " (id_user, id_trabalho, tipo_trabalho, nome, morada, nif, cod_postal, localidade, email, tlm, estado, pdf_path, observacoes, total) VALUES (:idUser, :idTrabalho, :tipoTrabalho, :nome, :morada, :nif, :codPostal, :localidade, :email, :tlm, :estado, :pdfPath, :observacoes, :total)");
 
             $execute = $query->execute(array(
                 "idUser" => $this->idUser,
@@ -187,7 +187,7 @@ class Orcamento {
 
     public function update() {
         try {
-            $query = $this->connection->prepare("UPDATE " . self::TABLE_NAME . 
+            $query = $this->connection->prepare("UPDATE " . $this->table . 
             " SET 
             id_user = :idUser, 
             id_trabalho = :idTrabalho, 

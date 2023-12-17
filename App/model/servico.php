@@ -49,7 +49,7 @@ class Servico {
 
     public function insert() {
         try {
-            $query = $this->connection->prepare("INSERT INTO " . self::TABLE_NAME . " (descricao, valor_uni) VALUES (:descricao, :valorUni)");
+            $query = $this->connection->prepare("INSERT INTO " . $this->table . " (descricao, valor_uni) VALUES (:descricao, :valorUni)");
 
             $execute = $query->execute(array(
                 "descricao" => $this->descricao,
@@ -67,7 +67,7 @@ class Servico {
 
     public function update() {
         try {
-            $query = $this->connection->prepare("UPDATE " . self::TABLE_NAME . 
+            $query = $this->connection->prepare("UPDATE " . $this->table . 
             " SET 
             descricao = :descricao, 
             valor_uni = :valorUni WHERE id_servico = :idServico

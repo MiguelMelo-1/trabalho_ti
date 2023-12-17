@@ -58,7 +58,7 @@ class Material {
 
     public function insert() {
         try {
-            $query = $this->connection->prepare("INSERT INTO " . self::TABLE_NAME . " (descricao, valor_uni, unidade) VALUES (:descricao, :valorUni, :unidade)");
+            $query = $this->connection->prepare("INSERT INTO " . $this->table . " (descricao, valor_uni, unidade) VALUES (:descricao, :valorUni, :unidade)");
 
             $execute = $query->execute(array(
                 "descricao" => $this->descricao,
@@ -77,7 +77,7 @@ class Material {
 
     public function update() {
         try {
-            $query = $this->connection->prepare("UPDATE " . self::TABLE_NAME . 
+            $query = $this->connection->prepare("UPDATE " . $this->table . 
             " SET 
             descricao = :descricao, 
             valor_uni = :valorUni, 
