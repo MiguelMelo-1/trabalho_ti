@@ -10,6 +10,12 @@
 .text-cmhandy{
     color: #FF7A13;
 }
+.text-black{
+    color: black;
+}
+.text-white{
+    color: white;
+}
 
 /* botoes */
 .btn-cmhandy {

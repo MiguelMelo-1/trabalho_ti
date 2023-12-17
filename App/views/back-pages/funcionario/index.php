@@ -34,19 +34,19 @@
                     <div class="d-flex justify-content-between">
                         <h6 class="mb-4">Funcionários</h6>
                         <!-- Button trigger modal start -->
-                        <button type="button" class="btn btn-cmhandy mx-1 alig" data-bs-toggle="modal" data-bs-target="#adicionarFuncionario<?= $funcionario['id_funcionario']; ?>"><i class="fa fa-plus me-2"></i>Novo Funcionário</button>
+                        <button type="button" class="btn btn-cmhandy mx-1 alig" data-bs-toggle="modal" data-bs-target="#adicionarFuncionario"><i class="fa fa-plus me-2"></i>Novo Funcionário</button>
                         <!-- Button trigger modal end -->
                         <!-- Modal start -->
-                        <div class="modal fade overflow-hidden" id="adicionarFuncionario<?= $funcionario['id_funcionario']; ?>" tabindex="-1" aria-labelledby="adicionarFuncionarioLabe<?= $funcionario['id_funcionario']; ?>l" aria-hidden="true">
+                        <div class="modal fade overflow-hidden" id="adicionarFuncionario" tabindex="-1" aria-labelledby="adicionarFuncionarioLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-lg">
                                                     <div class="modal-content">
                                                         <form>
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title text-dark" id="adicionarFuncionarioLabel<?= $funcionario['id_funcionario']; ?>">Editar Funcionario Nº<?= $funcionario['id_funcionario']; ?></h5>
+                                                                <h5 class="modal-title text-dark" id="adicionarFuncionarioLabel">Adicionar Funcionario</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                <i class="fa fa-pen-to-square fa-3x text-warning my-3 d-block mx-auto"></i>
+                                                                <i class="fa fa-address-card fa-3x text-cmhandy my-3 d-block mx-auto"></i>
                                                                 <div class="row g-3 mt-2">
                                                                     <div class="col-6">
                                                                         <label for="inputNome" class="form-label">Nome</label>
@@ -64,7 +64,7 @@
                                                                     </div>
                                                                     <div class="col-6">
                                                                         <label for="inputPrecoHora" class="form-label">Valor por hora</label>
-                                                                        <input type="number" class="form-control" id="inputPrecoHora" placeholder="Insira o valor" style="color: white;" required value="<?= $funcionario['preco_hora']; ?>">
+                                                                        <input type="number" class="form-control" id="inputPrecoHora" placeholder="Insira o valor" style="color: white;" required>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row g-3 mt-2">
@@ -157,7 +157,7 @@
                                             <!-- Button trigger modal end -->
 
                                             <!-- Modal start -->
-                                            <div class="modal fade overflow-hidden" id="editarFuncionario<?= $funcionario['id_funcionario']; ?>" tabindex="-1" aria-labelledby="editarFuncionarioLabe<?= $funcionario['id_funcionario']; ?>l" aria-hidden="true">
+                                            <div class="modal fade overflow-hidden" id="editarFuncionario<?= $funcionario['id_funcionario']; ?>" tabindex="-1" aria-labelledby="editarFuncionarioLabel<?= $funcionario['id_funcionario']; ?>" aria-hidden="true">
                                                 <div class="modal-dialog modal-lg">
                                                     <div class="modal-content">
                                                         <form>
@@ -166,7 +166,7 @@
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                <i class="fa fa-pen-to-square fa-3x text-warning my-3 d-block mx-auto"></i>
+                                                                <i class="fa fa-pen-to-square fa-3x text-info my-3 d-block mx-auto"></i>
                                                                 <div class="row g-3 mt-2">
                                                                     <div class="col-6">
                                                                         <label for="inputNome" class="form-label">Nome</label>
