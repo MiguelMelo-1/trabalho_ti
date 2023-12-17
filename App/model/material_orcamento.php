@@ -6,7 +6,7 @@ use Exception;
 
 class MaterialOrcamento {
 
-    private const TABLE_NAME = "material_orcamento";
+    private $table = "material_orcamento";
     private $connection;
 
     private $id;

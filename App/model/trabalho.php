@@ -6,7 +6,7 @@ use Exception;
 
 class Trabalho {
 
-    private const TABLE_NAME = "trabalho";
+    private $table = "trabalho";
     private $connection;
 
     private $id;
