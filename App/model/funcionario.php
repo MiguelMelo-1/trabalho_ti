@@ -122,7 +122,8 @@ class Funcionario {
     }
 
     public function update() {
-        $query = $this->connection->prepare("UPDATE " . $this->table . " SET 
+        $query = $this->connection->prepare("UPDATE " . $this->table . 
+        " SET 
             nome = :nome,
             nif = :nif,
             data_nascimento = :dataNascimento,
@@ -130,8 +131,7 @@ class Funcionario {
             tlm = :tlm,
             email = :email,
             localidade = :localidade,
-            cod_postal = :codPostal
-            WHERE id = :id
+            cod_postal = :codPostal WHERE id = :id
         ");
     
         $execute = $query->execute(array(
