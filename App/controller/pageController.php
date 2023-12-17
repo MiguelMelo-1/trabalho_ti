@@ -72,7 +72,8 @@ class PageController extends Controller {
 
     public function funcionarios() {
         if(session_status() == PHP_SESSION_ACTIVE) {
-            $this->view("back-pages/funcionario/index");
+            $funcionario = new UserController;
+            $funcionario->index();
         }else{
             $this->view("back-pages/login/index");
         }
