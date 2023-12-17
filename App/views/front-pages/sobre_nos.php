@@ -227,19 +227,17 @@
 				<div class="container container-xl-custom">
 					<div class="row row-gutter-sm my-4 py-2 lightbox" data-plugin-options="{'delegate': 'a', 'type': 'image', 'gallery': {'enabled': true}, 'mainClass': 'mfp-with-zoom', 'zoom': {'enabled': true, 'duration': 300}}">
 						<div class="col-md-4 pb-4 pb-md-0">
-							<a href="/trabalho_ti/public/assets/img/sobre-nos-1.jpg" class="appear-animation" data-appear-animation="fadeInDownShorter" data-appear-animation-delay="100">
-								<img src="/trabalho_ti/public/assets/img/sobre-nos-1.jpg" class="img-fluid" alt="">
-							</a>
+							<img src="/trabalho_ti/public/assets/img/sobre-nos-1.jpg" class="img-fluid" alt="">
 						</div>
 						<div class="col-md-4 pb-4 pb-md-0">
-							<a href="/trabalho_ti/public/assets/img/sobre-nos-2.jpg" class="appear-animation" data-appear-animation="fadeInDownShorter" data-appear-animation-delay="300">
-								<img src="/trabalho_ti/public/assets/img/sobre-nos-2.jpg" class="img-fluid" alt="">
-							</a>
+
+							<img src="/trabalho_ti/public/assets/img/sobre-nos-2.jpg" class="img-fluid" alt="">
+
 						</div>
 						<div class="col-md-4">
-							<a href="/trabalho_ti/public/assets/img/sobre-nos-3.jpg" class="appear-animation" data-appear-animation="fadeInDownShorter" data-appear-animation-delay="500">
-								<img src="/trabalho_ti/public/assets/img/sobre-nos-3.jpg" class="img-fluid" alt="">
-							</a>
+
+							<img src="/trabalho_ti/public/assets/img/sobre-nos-3.jpg" class="img-fluid" alt="">
+
 						</div>
 					</div>
 				</div>

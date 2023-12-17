@@ -30,6 +30,8 @@ $router->addRoute('logout', AuthController::class, 'logout');
 
 //Private area
 $router->addRoute('private', PageController::class, 'dashboard');
+$router->addRoute('private/funcionarios', PageController::class, 'funcionarios');
+
 $router->addRoute('private/users', PageController::class, 'viewUsers');
 $router->addRoute('private/profile', PageController::class, 'profile');
 

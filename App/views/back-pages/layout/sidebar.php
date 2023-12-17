@@ -17,10 +17,10 @@
             </div>
         </div>
         <div class="navbar-nav w-100">
-            <a href="/trabalho_ti/App/views/back-pages/index.php" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-            <a href="/trabalho_ti/App/views/back-pages/funcionario/index.php" class="nav-item nav-link"><i class="fa fa-hard-hat me-2"></i>Funcionário</a>
-            <a href="/trabalho_ti/123" class="nav-item nav-link"><i class="fa fa-hammer me-2"></i>Trabalho</a>
-            <a href="/trabalho_ti/App/views/back-pages/orcamento/index.php" class="nav-item nav-link"><i class="fa fa-file-alt me-2"></i>Orçamento</a>
+            <a id="dashboard" href="/trabalho_ti/private" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+            <a id="funcionario" href="/trabalho_ti/private/funcionarios" class="nav-item nav-link"><i class="fa fa-hard-hat me-2"></i>Funcionário</a>
+            <a id="trabalho" href="/trabalho_ti/123" class="nav-item nav-link"><i class="fa fa-hammer me-2"></i>Trabalho</a>
+            <a id="orcamento" href="/trabalho_ti/App/views/back-pages/orcamento/index.php" class="nav-item nav-link"><i class="fa fa-file-alt me-2"></i>Orçamento</a>
         </div>
     </nav>
 </div>

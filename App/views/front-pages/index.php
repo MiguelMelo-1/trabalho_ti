@@ -42,7 +42,7 @@
 							<div class="header-column">
 								<div class="header-row">
 									<div class="header-logo">
-										<a href="index.php">
+										<a href="/trabalho_ti/public">
 											<img alt="cmhandyman" width="190" height="48" data-sticky-width="82" data-sticky-height="40" src="/trabalho_ti/public/assets/img/logo/cmhandy_logo_preto.png" id="imagem-sticky">
 										</a>
 									</div>
@@ -492,7 +492,7 @@
 													trabalho...
 												</p>
 												<p class="font-weight-bold mb-3">
-													<a href="../App/views/front-pages/sobre_nos.php" class="link-hover-style-1 text-color-primary">Ver Mais</a>
+													<a href="/trabalho_ti/sobre-nos" class="link-hover-style-1 text-color-primary">Ver Mais</a>
 												</p>
 												<!-- {{-- <div class="row mb-4 counters counters-sm text-secondary">
 													<div class="col-6 col-lg-3 mb-4 mb-lg-0 mt-4">
@@ -622,7 +622,7 @@
 														</p>
 
 														<p class="mb-2 font-weight-bold">
-															<a href="../App/views/front-pages/contactos.php" class="link-hover-style-1 text-color-primary" style="text-decoration: none;">Contactar</a>
+															<a href="/trabalho_ti/contactos" class="link-hover-style-1 text-color-primary" style="text-decoration: none;">Contactar</a>
 														</p>
 													</div>
 												</div>

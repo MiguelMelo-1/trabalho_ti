@@ -164,7 +164,7 @@
 													</p>
 
 													<p class="mb-2 font-weight-bold">
-														<a href="contactos.html"
+														<a href="/trabalho_ti/public/contactos"
 															class="link-hover-style-1 text-color-primary"
 															style="text-decoration: none;">Contactar</a>
 													</p>
