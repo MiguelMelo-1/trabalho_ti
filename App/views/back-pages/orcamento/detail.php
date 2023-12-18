@@ -3,7 +3,7 @@
 
 <head>
 
-<?php include './../layout/head_base.php' ?>
+<?php require './../layout/head_base.php' ?>
 
     
     <title>CMHandyMans - Ver Orçamento</title>
@@ -307,9 +307,10 @@
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-    <?php include './../layout/script_base.php' ?>
+    <?php require './../layout/script_base.php' ?>
 
 
 </body>
 
 </html>
+
