@@ -133,10 +133,42 @@ class FuncionarioController extends Controller
 
     }
 
-    public function remove() {
+    public function remove()
+    {
+        // Verificar se é uma requisição POST
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            // Verificar se o ID do funcionário a ser removido foi enviado
+            if (isset($_POST['funcionario_id_to_remove'])) {
+                $funcionarioIdToRemove = $_POST['funcionario_id_to_remove'];
+                
+                // Lógica para remover o funcionário com base no ID
+                $funcionario = new Funcionario($this->connection);
+                $funcionario->deleteById($funcionarioIdToRemove);
 
-    } 
+                // Redirecionar para a mesma página
+                header('location: /trabalho_ti/private/funcionarios');
+            }
+        }
+    }
 
+    public function edit()
+    {
+        // Verificar se é uma requisição POST
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            // Verificar se o ID do funcionário a ser editado foi enviado
+            if (isset($_POST['funcionario_id_to_edit'])) {
+                $funcionarioIdToEdit = $_POST['funcionario_id_to_edit'];
+                
+                // Lógica para obter dados do funcionário com base no ID
+                $funcionario = new Funcionario($this->connection);
+                $funcionarioData = $funcionario->getById($funcionarioIdToEdit);
+
+                // Você pode passar os dados do funcionário para a view de edição
+                $this->view("back-pages/funcionario/edit", ['funcionario' => $funcionarioData]);
+            }
+        }
+        
+    }
 }
 
 ?>
