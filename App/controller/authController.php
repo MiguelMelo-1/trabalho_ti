@@ -30,6 +30,10 @@ class AuthController extends Controller
 
         if (isset($_POST['btn-login'])) {
 
+            if(!(session_status() == PHP_SESSION_ACTIVE)) {
+                session_start();
+            }
+
             $email = $_POST['email'];
             $password = $_POST['password'];
 

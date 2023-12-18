@@ -8,7 +8,7 @@ require_once SITE_ROOT . '/App/routes/web.php';
 
 $url = isset($_GET['url']) ? $_GET['url'] : '/';
 
-echo $url;
+// echo $url;
 
 
 // if(session_status() !== PHP_SESSION_ACTIVE) {

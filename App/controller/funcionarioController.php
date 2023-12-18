@@ -105,7 +105,6 @@ class FuncionarioController extends Controller
                     exit();
                 }
             }
-
             
             //Adicionar o funcionar
             $funcionario = new Funcionario($this->connection);
@@ -137,17 +136,23 @@ class FuncionarioController extends Controller
     {
         // Verificar se é uma requisição POST
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
             // Verificar se o ID do funcionário a ser removido foi enviado
-            if (isset($_POST['funcionario_id_to_remove'])) {
-                $funcionarioIdToRemove = $_POST['funcionario_id_to_remove'];
+            if (isset($_POST['id_funcionario'])) {
                 
                 // Lógica para remover o funcionário com base no ID
                 $funcionario = new Funcionario($this->connection);
-                $funcionario->deleteById($funcionarioIdToRemove);
+                $funcionario->deleteById($_POST['id_funcionario']);
 
                 // Redirecionar para a mesma página
                 header('location: /trabalho_ti/private/funcionarios');
+
             }
+        }else{
+
+            //pagina de erro
+            header('location: /trabalho_ti/404');
+
         }
     }
 
@@ -155,13 +160,102 @@ class FuncionarioController extends Controller
     {
         // Verificar se é uma requisição POST
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+            if (isset($_POST['inputNome'])){
+                //validar nome
+                if (!preg_match("/^[a-zA-Z-' ]*$/", $_POST['inputNome'])) {
+                    array_push($this->errors, "Nome inválido!");
+                }
+            }else{
+                array_push($this->errors, "O campo Nome é obrigatório ser preenchido!");
+            }
+
+            if (isset($_POST['inputNif'])){
+                //validar nif
+                if (strlen($_POST['inputNif']) != 9 || !is_numeric($_POST['inputNif'])) {
+                    array_push($this->errors, "NIF inválido!");
+                }
+            }else{
+                array_push($this->errors, "O campo NIF é obrigatório ser preenchido!");
+            }
+
+            if (isset($_POST['inputNascimento'])){
+                // validar data de nascimento
+                if (DateTime::createFromFormat("Y-m-d", $_POST['inputNascimento']) == False) {
+                    array_push($this->errors, DateTime::getLastErrors());
+                    $verifyAge = (date('Y' - 18) . '-' . date('m-d'));
+                    if ($_POST['inputNascimento'] > $verifyAge) {
+                        array_push($this->errors, 'Data inválida, tem que ter mais de 18 anos');
+                    }
+                }
+            }else{
+                array_push($this->errors, "O campo Data de Nascimento é obrigatório ser preenchido!");
+            }
+
+            if (isset($_POST['inputPrecoHora'])) {
+                //validar preco hora
+                if (!is_numeric($_POST['inputPrecoHora'])) {
+                    array_push($this->errors, 'Valor por hora inválido!');
+                }
+            }else{
+                array_push($this->errors, "O campo Preço por hora é obrigatório ser preenchido!");
+            }
+
+            if (isset($_POST['inputTlm'])){
+                //validar tlm
+                if (strlen($_POST['inputTlm']) != 9 || !is_numeric($_POST['inputTlm'])) {
+                    array_push($this->errors, "Telemóvel inválido!");
+                }
+            }else{
+                array_push($this->errors, "O campo Telemóvel é obrigatório ser preenchido!");
+            }
+
+            if (isset($_POST['inputEmail'])){
+                //validar email
+                if (!filter_var($_POST['inputEmail'], FILTER_VALIDATE_EMAIL)) {
+                    array_push($this->errors, 'Email inválido');
+                }
+            }else{
+                array_push($this->errors, "O campo Email é obrigatório ser preenchido!");
+            }
+
+            if (isset($_POST['inputCodPostal'])){
+                //validar código postal
+                if (!preg_match("/^\d{4}-\d{3}$/", $_POST['inputCodPostal'])) {
+                    array_push($this->errors, 'Código postal inválido');
+                }
+            }else{
+                array_push($this->errors, "O campo Código postal é obrigatório ser preenchido!");
+            }
+
+            if (isset($_POST['inputLocalidade'])){
+                //validar localidade
+                if (!preg_match("/^[a-zA-Z-' ]*$/", $_POST['inputLocalidade'])) {
+                    array_push($this->errors, "Localidade inválida!");
+                }
+            }else{
+                array_push($this->errors, "O campo Localidade é obrigatório ser preenchido!");
+            }
+
+            if (!empty($errors)) {
+                // $this->view("back-pages/funcionario/index", ['errors' => $this->errors]);
+                $funcionario = new Funcionario($this->connection);
+                $funcionario->fetchAll();
+                $this->view("back-pages/funcionarios/index", ['errors' => $this->errors, 'funcionarios' => $funcionario]);
+                exit();
+            }
+
+
+
+
+
             // Verificar se o ID do funcionário a ser editado foi enviado
             if (isset($_POST['funcionario_id_to_edit'])) {
                 $funcionarioIdToEdit = $_POST['funcionario_id_to_edit'];
                 
                 // Lógica para obter dados do funcionário com base no ID
                 $funcionario = new Funcionario($this->connection);
-                $funcionarioData = $funcionario->getById($funcionarioIdToEdit);
+                $funcionarioData = $funcionario->fetchById($funcionarioIdToEdit);
 
                 // Você pode passar os dados do funcionário para a view de edição
                 $this->view("back-pages/funcionario/edit", ['funcionario' => $funcionarioData]);
