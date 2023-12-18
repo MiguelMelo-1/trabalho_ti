@@ -137,6 +137,8 @@
                                             <div class="modal fade" id="eliminarFuncionario<?= $funcionario['id_funcionario']; ?>" tabindex="-1" aria-labelledby="eliminarFuncionarioLabel<?= $funcionario['id_funcionario']; ?>" aria-hidden="true">
                                                 <div class="modal-dialog">
                                                     <div class="modal-content">
+                                                        <form action="/trabalho_ti/private/funcionarios/remove" method="POST">
+                                                            <input type="hidden" name="id_funcionario" value="<?= $funcionario['id_funcionario'] ?>">
                                                         <div class="modal-header">
                                                             <h5 class="modal-title text-dark" id="eliminarFuncionarioLabel<?= $funcionario['id_funcionario']; ?>">
                                                                 Remoção permanente de dados</h5>
@@ -148,9 +150,10 @@
                                                                 o funcionario Nº<?= $funcionario['id_funcionario']; ?>?</p>
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Sim</button>
+                                                            <button type="submit" class="btn btn-danger">Sim</button>
                                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                                                         </div>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
@@ -164,7 +167,7 @@
                                             <div class="modal fade overflow-hidden" id="editarFuncionario<?= $funcionario['id_funcionario']; ?>" tabindex="-1" aria-labelledby="editarFuncionarioLabel<?= $funcionario['id_funcionario']; ?>" aria-hidden="true">
                                                 <div class="modal-dialog modal-lg">
                                                     <div class="modal-content">
-                                                        <form>
+                                                        <form action="/trabalho_ti/private/funcionarios/edit" method="POST">
                                                             <div class="modal-header">
                                                                 <h5 class="modal-title text-dark" id="editarFuncionarioLabel<?= $funcionario['id_funcionario']; ?>">Editar Funcionario Nº<?= $funcionario['id_funcionario']; ?></h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -174,43 +177,43 @@
                                                                 <div class="row g-3 mt-2">
                                                                     <div class="col-6">
                                                                         <label for="inputNome" class="form-label">Nome</label>
-                                                                        <input type="text" class="form-control" id="inputNome" placeholder="Insira o nome" style="color: white;" required value="<?= $funcionario['nome']; ?>">
+                                                                        <input type="text" class="form-control" name="inputNome" placeholder="Insira o nome" style="color: white;" required value="<?= $funcionario['nome']; ?>">
                                                                     </div>
                                                                     <div class="col-6">
                                                                         <label for="inputNif" class="form-label">NIF</label>
-                                                                        <input type="number" class="form-control" id="inputNif" style="color: white;" placeholder="Insira o NIF" pattern="[0-9]{9}" required value="<?= $funcionario['nif']; ?>">
+                                                                        <input type="number" class="form-control" name="inputNif" style="color: white;" placeholder="Insira o NIF" pattern="[0-9]{9}" required value="<?= $funcionario['nif']; ?>">
                                                                     </div>
                                                                 </div>
                                                                 <div class="row g-3 mt-2">
                                                                     <div class="col-6">
                                                                         <label for="inputNascimento" class="form-label">Data de nascimento</label>
-                                                                        <input type="date" class="form-control" id="inputNascimento" style="color: white;" required value="<?= $funcionario['data_nascimento']; ?>">
+                                                                        <input type="date" class="form-control" name="inputNascimento" style="color: white;" required value="<?= $funcionario['data_nascimento']; ?>">
                                                                     </div>
                                                                     <div class="col-6">
                                                                         <label for="inputPrecoHora" class="form-label">Valor por hora</label>
-                                                                        <input type="number" class="form-control" id="inputPrecoHora" placeholder="Insira o valor" style="color: white;" required value="<?= $funcionario['preco_hora']; ?>">
+                                                                        <input type="number" class="form-control" name="inputPrecoHora" placeholder="Insira o valor" style="color: white;" required value="<?= $funcionario['preco_hora']; ?>">
                                                                     </div>
                                                                 </div>
                                                                 <div class="row g-3 mt-2">
                                                                     <div class="col-6">
                                                                         <label for="inputTlm" class="form-label">Telemóvel</label>
-                                                                        <input type="tel" class="form-control" id="inputTlm" style="color: white;" required value="<?= $funcionario['tlm']; ?>">
+                                                                        <input type="tel" class="form-control" name="inputTlm" style="color: white;" required value="<?= $funcionario['tlm']; ?>">
                                                                     </div>
                                                                     <div class="col-6">
                                                                         <label for="inputEmail" class="form-label">Email</label>
-                                                                        <input type="email" class="form-control" id="inputEmail" style="color: white;" placeholder="Insira o valor" required value="<?= $funcionario['email']; ?>">
+                                                                        <input type="email" class="form-control" name="inputEmail" style="color: white;" placeholder="Insira o valor" required value="<?= $funcionario['email']; ?>">
                                                                     </div>
                                                                 </div>
                                                                 <div class="row g-3 mt-2">
                                                                     <div class="col-6">
                                                                         <label for="inputCodPostal" class="form-label">Cód.Postal <i class="text-danger">*</i></label>
-                                                                        <input type="text" class="form-control" id="inputCodPostal" style="color: white;" aria-describedby="nifcodPostalFormat" placeholder="Insira o cód. postal" maxlength="8" minlength="8" required value="<?= $funcionario['cod_postal']; ?>">
+                                                                        <input type="text" class="form-control" name="inputCodPostal" style="color: white;" aria-describedby="nifcodPostalFormat" placeholder="Insira o cód. postal" maxlength="8" minlength="8" required value="<?= $funcionario['cod_postal']; ?>">
                                                                         <div id="codPostalFormat" class="form-text">Formato: 1234-123
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-6">
                                                                         <label for="inputLocalidade" class="form-label">Localidade</label>
-                                                                        <input type="text" class="form-control" id="inputLocalidade" placeholder="Insira a Localidade" style="color: white;" required value="<?= $funcionario['localidade']; ?>">
+                                                                        <input type="text" class="form-control" name="inputLocalidade" placeholder="Insira a Localidade" style="color: white;" required value="<?= $funcionario['localidade']; ?>">
                                                                     </div>
                                                                 </div>
                                                             </div>
