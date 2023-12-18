@@ -25,7 +25,7 @@ class connect{
         try {
             $connection = new PDO($bbdd, $this->user, $this->pass);
             $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            if(session_status() !== PHP_SESSION_ACTIVE) {
+            if(!(session_status() == PHP_SESSION_ACTIVE)) {
                 session_start();
             }
             return $connection;

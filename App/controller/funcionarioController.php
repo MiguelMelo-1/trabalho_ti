@@ -228,6 +228,23 @@ class FuncionarioController extends Controller
                 array_push($this->errors, "O campo Código postal é obrigatório ser preenchido!");
             }
 
+            if (isset($_POST['inputLocalidade'])){
+                //validar localidade
+                if (!preg_match("/^[a-zA-Z-' ]*$/", $_POST['inputLocalidade'])) {
+                    array_push($this->errors, "Localidade inválida!");
+                }
+            }else{
+                array_push($this->errors, "O campo Localidade é obrigatório ser preenchido!");
+            }
+
+            if (!empty($errors)) {
+                // $this->view("back-pages/funcionario/index", ['errors' => $this->errors]);
+                $funcionario = new Funcionario($this->connection);
+                $funcionario->fetchAll();
+                $this->view("back-pages/funcionarios/index", ['errors' => $this->errors, 'funcionarios' => $funcionario]);
+                exit();
+            }
+
 
 
 

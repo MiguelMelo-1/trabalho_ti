@@ -78,7 +78,7 @@ class PageController extends Controller
         if (session_status() == PHP_SESSION_ACTIVE) {
             $this->view("back-pages/index");
         } else {
-            $this->view("back-pages/login/index");
+            header("location: /trabalho_ti/login/1");
         }
     }
 
