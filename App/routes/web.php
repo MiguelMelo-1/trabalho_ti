@@ -37,6 +37,8 @@ $router->addRoute('private/funcionarios/add', FuncionarioController::class, 'add
 $router->addRoute('private/funcionarios/remove', FuncionarioController::class, 'remove');
 $router->addRoute('private/funcionarios/edit', FuncionarioController::class, 'edit');
 //--------------------------------------------------------------------------\\
+$router->addRoute('private/trabalhos', PageController::class, 'trabalhos');
+//--------------------------------------------------------------------------\\
 $router->addRoute('private/users', PageController::class, 'viewUsers');
 $router->addRoute('private/profile', PageController::class, 'profile');
 

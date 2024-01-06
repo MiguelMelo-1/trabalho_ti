@@ -245,21 +245,29 @@ class FuncionarioController extends Controller
                 exit();
             }
 
+            //Atualizar funcionário
+            $funcionario = new Funcionario($this->connection);
 
+            $funcionario->setId($_POST['id_funcionario']);
+            $funcionario->setNome($_POST['inputNome']);
+            $funcionario->setNif($_POST['inputNif']);
+            $funcionario->setDataNascimento($_POST['inputNascimento']);
+            $funcionario->setPrecoHora($_POST['inputPrecoHora']);
+            $funcionario->setTlm($_POST['inputTlm']);
+            $funcionario->setEmail($_POST['inputEmail']);
+            $funcionario->setLocalidade($_POST['inputLocalidade']);
+            $funcionario->setCodPostal($_POST['inputCodPostal']);
 
+            $funcionario->update();
 
+            // Redirecionar para a mesma página
+            header('location: /trabalho_ti/private/funcionarios');
+            
+        }else {
 
-            // Verificar se o ID do funcionário a ser editado foi enviado
-            if (isset($_POST['funcionario_id_to_edit'])) {
-                $funcionarioIdToEdit = $_POST['funcionario_id_to_edit'];
-                
-                // Lógica para obter dados do funcionário com base no ID
-                $funcionario = new Funcionario($this->connection);
-                $funcionarioData = $funcionario->fetchById($funcionarioIdToEdit);
+            //pagina de erro
+            header('location: /trabalho_ti/404');
 
-                // Você pode passar os dados do funcionário para a view de edição
-                $this->view("back-pages/funcionario/edit", ['funcionario' => $funcionarioData]);
-            }
         }
         
     }

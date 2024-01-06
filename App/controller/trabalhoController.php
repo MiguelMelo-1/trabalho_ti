@@ -53,9 +53,9 @@ class TrabalhoController extends Controller
                 $trabalho = new Trabalho($this->connection);
     
                 $trabalho->setDescricao($_POST['inputDescricao']);
-                $trabalho->setDataInicio($_POST['inputDataInicio']);
-                $trabalho->setDataFim($_POST['inputDataFim']);
-                $trabalho->setLocal($_POST['inputLocal']);
+                // $trabalho->setDataInicio($_POST['inputDataInicio']);
+                // $trabalho->setDataFim($_POST['inputDataFim']);
+                // $trabalho->setLocal($_POST['inputLocal']);
     
                 $trabalho->insert();
     
@@ -89,7 +89,7 @@ class TrabalhoController extends Controller
                 $trabalhoIdToEdit = $_POST['trabalho_id_to_edit'];
 
                 $trabalho = new Trabalho($this->connection);
-                $trabalhoData = $trabalho->getById($trabalhoIdToEdit);
+                $trabalhoData = $trabalho->fetchById($trabalhoIdToEdit);
 
                 $this->view("back-pages/trabalho/edit", ['trabalho' => $trabalhoData]);
             }

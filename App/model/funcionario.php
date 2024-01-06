@@ -158,7 +158,7 @@ class Funcionario
                 tlm = :tlm,
                 email = :email,
                 localidade = :localidade,
-                cod_postal = :codPostal WHERE id = :id
+                cod_postal = :codPostal WHERE id_funcionario = :id
         ");
 
             $execute = $query->execute(array(
@@ -177,7 +177,7 @@ class Funcionario
 
             return $execute;
         } catch (Exception $e) {
-            echo 'Failed INSERT: ' . $e->getMessage();
+            echo 'Failed UPDATE: ' . $e->getMessage();
             return false;
         }
     }
@@ -200,7 +200,7 @@ class Funcionario
     public function fetchById($id)
     {
 
-        $query = $this->connection->prepare(" SELECT * FROM " . $this->table . " WHERE id=:id ");
+        $query = $this->connection->prepare(" SELECT * FROM " . $this->table . " WHERE id_funcionario = :id ");
 
         $query->execute(array(
             "id" => $id
@@ -237,7 +237,7 @@ class Funcionario
 
         try {
 
-            $query = $this->connection->prepare("DELETE FROM " . $this->table . " WHERE id = :id");
+            $query = $this->connection->prepare("DELETE FROM " . $this->table . " WHERE id_funcionario = :id");
             $query->execute(array(
                 "id" => $id
             ));
@@ -256,10 +256,9 @@ class Funcionario
 
         try {
 
-            $query = $this->connection->prepare("DELETE FROM " . $this->table . " WHERE :coluna=:valor ");
+            $query = $this->connection->prepare("DELETE FROM " . $this->table . " WHERE $coluna = :valor ");
             $query->execute(array(
-                "coluna" => $coluna,
-                "valor" => $valor,
+                "valor" => $valor
             ));
             $this->connection = null;
 

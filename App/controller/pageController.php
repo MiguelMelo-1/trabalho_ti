@@ -3,11 +3,13 @@ namespace MVC\controllers;
 
 require_once SITE_ROOT . '/App/controller/controller.php';
 require_once SITE_ROOT . '/App/controller/funcionarioController.php';
+require_once SITE_ROOT . '/App/controller/trabalhoController.php';
 require_once SITE_ROOT . '/App/core/connect.php';
 
 use MVC\Controller;
 use MVC\connect;
 use MVC\controllers\FuncionarioController;
+use MVC\controllers\TrabalhoController;
 
 class PageController extends Controller
 {
@@ -87,6 +89,15 @@ class PageController extends Controller
         if (session_status() == PHP_SESSION_ACTIVE) {
             $funcionario = new FuncionarioController;
             $funcionario->index();
+        } else {
+            $this->view("back-pages/login/index");
+        }
+    }
+
+    public function trabalhos(){
+        if (session_status() == PHP_SESSION_ACTIVE) {
+            $trabalho = new TrabalhoController;
+            $trabalho->index();
         } else {
             $this->view("back-pages/login/index");
         }

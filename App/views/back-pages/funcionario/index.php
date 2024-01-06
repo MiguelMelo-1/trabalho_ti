@@ -95,10 +95,11 @@
                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                                                             </div>
                                                         </form>
-                                                        <?php var_dump($resultado); ?>
-                                                        <?php foreach($errors as $error){ ?>
-                                                            <p><?php var_dump($error)?></p>
-                                                        <?php }?> 
+                                                        <?php if(isset($errors)){ ?>
+                                                            <?php foreach($errors as $error){ ?>
+                                                                <p><?php var_dump($error)?></p>
+                                                            <?php } ?> 
+                                                        <?php } ?>
                                                     </div>
                                                 </div>
                                             </div>
@@ -168,6 +169,7 @@
                                                 <div class="modal-dialog modal-lg">
                                                     <div class="modal-content">
                                                         <form action="/trabalho_ti/private/funcionarios/edit" method="POST">
+                                                            <input type="hidden" name="id_funcionario" value="<?= $funcionario['id_funcionario']; ?>">
                                                             <div class="modal-header">
                                                                 <h5 class="modal-title text-dark" id="editarFuncionarioLabel<?= $funcionario['id_funcionario']; ?>">Editar Funcionario Nº<?= $funcionario['id_funcionario']; ?></h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -218,7 +220,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="modal-footer">
-                                                                <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Salvar</button>
+                                                                <button type="submit" class="btn btn-success">Salvar</button>
                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                                                             </div>
                                                         </form>
