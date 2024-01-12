@@ -24,13 +24,14 @@ class AuthController extends Controller
         $this->connection = $this->connect->Connection();
     }
 
+    //TODO: O login não está a funcionar não sei o porque, a session variables n estão a salvar
     public function verifyLogin()
     {
         $errors = array();
 
-        if (isset($_POST['btn-login'])) {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-            if(!(session_status() == PHP_SESSION_ACTIVE)) {
+            if (session_status() == PHP_SESSION_NONE){
                 session_start();
             }
 
@@ -47,7 +48,7 @@ class AuthController extends Controller
                 
                 if (!empty($user)) {
                     if ($password == $user[0]['password']){
- 
+                        
                         //session variables
                         $_SESSION['id'] = $user[0]['id'];
                         $_SESSION['nome'] = $user[0]['nome'];
@@ -59,6 +60,8 @@ class AuthController extends Controller
                         $_SESSION['localidade'] = $user[0]['localidade'];
                         $_SESSION['telefone'] = $user[0]['telefone'];
 
+                        // echo session_status();
+
                         header("location: /trabalho_ti/private");
                     }else {
                         array_push($errors, "Senha incorreta");
@@ -69,12 +72,11 @@ class AuthController extends Controller
             }
         }
 
-            if (!empty($errors)) {
-                foreach ($errors as $error) {
-                    echo $error . "<br>";
-                }
-                header("location: /trabalho_ti/login");
+        if (!empty($errors)) {
+            foreach ($errors as $error) {
+                echo $error . "<br>";
             }
+        }
     }
 
     public function logout(){

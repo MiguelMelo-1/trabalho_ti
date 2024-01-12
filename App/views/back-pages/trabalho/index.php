@@ -5,7 +5,7 @@
 
     <?php require_once SITE_ROOT . '/App/views/back-pages/layout/head_base.php' ?>
 
-    <title>CMHandyMans - Trabalhos Pendentes</title>
+    <title>CMHandyMans - Trabalhos</title>
 </head>
 
 <body>
@@ -42,6 +42,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <?php if (!empty($trabalhos)){ ?>
                             <tr>
                                 <th scope="row">1</th>
                                 <td>Construção</td>
@@ -49,9 +50,17 @@
                                 <td>John Doe</td>
                                 <td>Santarém</td>
                                 <td><!-- Irá redirecionar para a página de criar orçamentos mas com dados já preenchidos e será só consulta n podendo alterar nada -->
-                                    <a href="Ver_trabalho.html"><i class="fa fa-eye text-cmhandy" data-bs-toggle="tooltip" data-bs-placement="right" title="Consultar"></i></a>
+                                <form action="/trabalho_ti/private/trabalhos/detalhes" method="POST">
+                                    <input type="hidden" name="id_trabalho" value="<?= $trabalhos['id'] ?>">
+                                    <button type="submit" class="btn btn-cmhandy"><i class="fa fa-eye" data-bs-toggle="tooltip" data-bs-placement="right" title="Consultar"></i></button>
+                                </form>
                                 </td>
                             </tr>
+                            <?php }else{ ?>
+                                <tr>
+                                    <td colspan="6" class="text-center fs-2">Nenhum trabalho para mostrar.</td>
+                                </tr>
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>
@@ -68,6 +77,12 @@
     </div>
 
     <?php require_once SITE_ROOT . '/App/views/back-pages/layout/script_base.php' ?>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('trabalho').className = 'nav-item nav-link active';
+        };
+    </script>
 
 </body>
 

@@ -7,6 +7,7 @@ require_once SITE_ROOT . '/App/controller/authController.php';
 
 use MVC\controllers\AuthController;
 use MVC\controllers\FuncionarioController;
+use MVC\controllers\OrcamentoController;
 use MVC\controllers\PageController;
 use MVC\Router;
 
@@ -38,6 +39,10 @@ $router->addRoute('private/funcionarios/remove', FuncionarioController::class, '
 $router->addRoute('private/funcionarios/edit', FuncionarioController::class, 'edit');
 //--------------------------------------------------------------------------\\
 $router->addRoute('private/trabalhos', PageController::class, 'trabalhos');
+$router->addRoute('private/trabalhos/detalhes', PageController::class, 'trabalhoDetails');
+//--------------------------------------------------------------------------\\
+$router->addRoute('private/orcamentos', PageController::class, 'orcamentos');
+$router->addRoute('private/orcamentos/adicionar', PageController::class, 'OrcamentosAdd');
 //--------------------------------------------------------------------------\\
 $router->addRoute('private/users', PageController::class, 'viewUsers');
 $router->addRoute('private/profile', PageController::class, 'profile');

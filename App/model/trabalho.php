@@ -181,7 +181,7 @@ public function update() {
             descricao = :descricao,
             observacoes = :observacoes,
             total = :total
-            WHERE id = :id");
+            WHERE id_trabalho = :id");
 
         $execute = $query->execute(array(
             "estado" => $this->estado,
@@ -224,7 +224,7 @@ public function fetchAll() {
 
 public function fetchById($id) {
 
-    $query = $this->connection->prepare(" SELECT * FROM ". $this->table . " WHERE id=:id ");
+    $query = $this->connection->prepare(" SELECT * FROM ". $this->table . " WHERE id_trabalho =:id ");
 
     $query->execute(array(
         "id" => $id
@@ -259,7 +259,7 @@ public function deleteById($id){
 
     try {
 
-        $query = $this->connection->prepare("DELETE FROM " . $this->table . " WHERE id = :id");
+        $query = $this->connection->prepare("DELETE FROM " . $this->table . " WHERE id_trabalho = :id");
         $query->execute(array(
             "id" => $id
         ));
@@ -277,10 +277,9 @@ public function deleteBy($coluna,$valor){
 
     try {
 
-        $query = $this->connection->prepare("DELETE FROM " . $this->table . " WHERE :coluna=:valor ");
+        $query = $this->connection->prepare("DELETE FROM " . $this->table . " WHERE $coluna =:valor ");
         $query->execute(array(
-            "coluna" => $coluna,
-            "valor" => $valor,
+            "valor" => $valor
         ));
         $this->connection = null;
 

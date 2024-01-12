@@ -4,12 +4,16 @@ namespace MVC\controllers;
 require_once SITE_ROOT . '/App/controller/controller.php';
 require_once SITE_ROOT . '/App/controller/funcionarioController.php';
 require_once SITE_ROOT . '/App/controller/trabalhoController.php';
+require_once SITE_ROOT . '/App/controller/orcamentoController.php';
 require_once SITE_ROOT . '/App/core/connect.php';
 
 use MVC\Controller;
 use MVC\connect;
 use MVC\controllers\FuncionarioController;
 use MVC\controllers\TrabalhoController;
+use MVC\controllers\OrcamentoController;
+use MVC\models\Orcamento;
+use MVC\models\Trabalho;
 
 class PageController extends Controller
 {
@@ -63,8 +67,12 @@ class PageController extends Controller
     //verification pages
     public function login()
     {
+        // if (session_status() == PHP_SESSION_ACTIVE) {
+            // $this->view("back-pages/index");
+        // } else {
+            $this->view("back-pages/login/index");
+        // }
 
-        $this->view("back-pages/login/index");
 
     }
     public function register()
@@ -77,10 +85,11 @@ class PageController extends Controller
     //private pages
     public function dashboard()
     {
+        // echo session_status();
         if (session_status() == PHP_SESSION_ACTIVE) {
             $this->view("back-pages/index");
         } else {
-            header("location: /trabalho_ti/login/1");
+            // header("location: /trabalho_ti/login");
         }
     }
 
@@ -100,6 +109,38 @@ class PageController extends Controller
             $trabalho->index();
         } else {
             $this->view("back-pages/login/index");
+        }
+    }
+
+    public function trabalhoDetails(){
+        if (session_status() == PHP_SESSION_ACTIVE) {
+
+            if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+                $trabalho = new Trabalho($this->connection);
+                $trabalho->fetchById($_POST['id_trabalho']);
+                
+                $this->view("back-pages/trabalho/detail", ['trabalho' => $trabalho]);
+                
+            }
+
+        } else {
+            $this->view("back-pages/login/index");
+        }
+    }
+
+    public function orcamentos(){
+        if (session_status() == PHP_SESSION_ACTIVE) {
+            $orcamentos = new OrcamentoController;
+            $orcamentos->index();
+        } else {
+            $this->view("back-pages/login/index");
+        }
+    }
+
+    public function OrcamentosAdd(){
+        if (session_status() == PHP_SESSION_ACTIVE){
+            $this->
         }
     }
 

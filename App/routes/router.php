@@ -17,8 +17,8 @@ class Router {
             $controller = new $controller();
             $controller->$action();
         } else {
-            header("location: /trabalho_ti/404");
-            // throw new \Exception("No route found for URI: $uri");
+            // header("location: /trabalho_ti/404");
+            throw new \Exception("No route found for URI: $uri");
         }
     }
 }

@@ -27,7 +27,7 @@
 
 <body class="py-5">
 
-
+    <?php var_dump($_SERVER['REQUEST_METHOD']); ?>
     <!-- BEGIN: Login Form -->
     <div class="relative">
         <div class="flex items-center h-screen py-5 xl:py-0 ">
@@ -48,9 +48,9 @@
                             <a class="text-agrodireto-3" href=" {{ route('ForgetPasswordGet') }}">Recuperar a Palavra-passe?</a>
                         </div>
                         <div class="intro-x mt-5 xl:mt-8 text-center">
-                            <input name="btn-login" id="btn-login" type="submit" formmethod="POST" class="btn btn-cmhandy py-3 px-4 w-full sm:w-32 mr-3 align-top" value="Entrar">
+                            <input name="btn-login" id="btn-login" type="submit" class="btn btn-cmhandy py-3 px-4 w-full sm:w-32 mr-3 align-top" value="Entrar">
                             <!-- <button id="btn-login" type="submit" class="btn btn-cmhandy py-3 px-4 w-full sm:w-32 mr-3 align-top">Entrar</button> -->
-                            <a href="/trabalho_ti/register"> <button class="btn btn-outline-secondary py-3 px-4 w-full sm:w-32 sm:mt-0 mt-3 align-top text-white">Registar-me</button></a>
+                            <a href="/trabalho_ti/register" class="btn btn-outline-secondary py-3 px-4 w-full sm:w-32 sm:mt-0 mt-3 align-top text-white">Registar-me</a>
                         </div>
                     </form>
                 </div>

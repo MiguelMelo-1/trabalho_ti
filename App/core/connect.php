@@ -22,12 +22,13 @@ class connect{
 
         $bbdd = $this->driver .':host='. $this->host .  ';dbname=' . $this->database . ';charset=' . $this->charset;
         //$bbdd = ' mysql:host=localhost;dbname=mvc1;charset=utf8';
+        if (session_status() == PHP_SESSION_NONE){
+            session_start();
+        }
+
         try {
             $connection = new PDO($bbdd, $this->user, $this->pass);
             $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            if(!(session_status() == PHP_SESSION_ACTIVE)) {
-                session_start();
-            }
             return $connection;
         } catch (PDOException $e) {
             //We throw the exception
