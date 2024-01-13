@@ -138,9 +138,11 @@ class PageController extends Controller
         }
     }
 
-    public function OrcamentosAdd(){
+    public function OrcamentosAddPage(){
         if (session_status() == PHP_SESSION_ACTIVE){
-            
+            $this->view("back-pages/orcamento/create");
+        } else {
+            $this->view("back-pages/login/index");
         }
     }
 

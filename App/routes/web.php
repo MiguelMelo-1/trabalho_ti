@@ -42,7 +42,7 @@ $router->addRoute('private/trabalhos', PageController::class, 'trabalhos');
 $router->addRoute('private/trabalhos/detalhes', PageController::class, 'trabalhoDetails');
 //--------------------------------------------------------------------------\\
 $router->addRoute('private/orcamentos', PageController::class, 'orcamentos');
-$router->addRoute('private/orcamentos/adicionar', PageController::class, 'OrcamentosAdd');
+$router->addRoute('private/orcamentos/add_page', PageController::class, 'OrcamentosAddPage');
 //--------------------------------------------------------------------------\\
 $router->addRoute('private/users', PageController::class, 'viewUsers');
 $router->addRoute('private/profile', PageController::class, 'profile');

@@ -32,7 +32,7 @@
                 <div class="bg-transparente rounded h-100 p-4">
                     <div class="d-flex justify-content-between">
                         <h6 class="mb-4">Orçamentos</h6>
-                        <a url="/trabalho_ti/private/orcamentos/add" class="btn btn-cmhandy mx-1 alig"><i class="fa fa-plus me-2"></i>Novo Orçamento</a>
+                        <a href="/trabalho_ti/private/orcamentos/add_page" class="btn btn-cmhandy mx-1 alig"><i class="fa fa-plus me-2"></i>Novo Orçamento</a>
                     </div>
                     <table class="table table-hover">
                         <thead>
