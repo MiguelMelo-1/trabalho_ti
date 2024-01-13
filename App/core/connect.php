@@ -22,9 +22,9 @@ class connect{
 
         $bbdd = $this->driver .':host='. $this->host .  ';dbname=' . $this->database . ';charset=' . $this->charset;
         //$bbdd = ' mysql:host=localhost;dbname=mvc1;charset=utf8';
-        if (session_status() == PHP_SESSION_NONE){
-            session_start();
-        }
+        // if (session_status() == PHP_SESSION_NONE){
+        //     session_start();
+        // }
 
         try {
             $connection = new PDO($bbdd, $this->user, $this->pass);

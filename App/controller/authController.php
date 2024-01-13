@@ -31,24 +31,27 @@ class AuthController extends Controller
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-            if (session_status() == PHP_SESSION_NONE){
-                session_start();
-            }
-
+            
             $email = $_POST['email'];
             $password = $_POST['password'];
-
+            
+            // var_dump($email);
+            
             if (empty($email)) { array_push($errors, "Email é obrigatório"); }
             if (empty($password)){ array_push($errors, "Password é obrigatório"); }
-
+            
             if (count($errors) == 0) {
                 $user = new User($this->connection);
-    
+                
                 $user = $user->fetchBy("email", $email);
                 
                 if (!empty($user)) {
                     if ($password == $user[0]['password']){
                         
+                        
+                        session_start();
+                        
+
                         //session variables
                         $_SESSION['id'] = $user[0]['id'];
                         $_SESSION['nome'] = $user[0]['nome'];
@@ -60,9 +63,11 @@ class AuthController extends Controller
                         $_SESSION['localidade'] = $user[0]['localidade'];
                         $_SESSION['telefone'] = $user[0]['telefone'];
 
+                        // var_dump($_SESSION['id']);
+
                         // echo session_status();
 
-                        header("location: /trabalho_ti/private");
+                        header("location: /trabalho_ti/private/trabalhos");
                     }else {
                         array_push($errors, "Senha incorreta");
                     }
