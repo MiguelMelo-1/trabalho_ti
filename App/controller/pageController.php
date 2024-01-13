@@ -68,7 +68,7 @@ class PageController extends Controller
     public function login()
     {
         if (isset($_SESSION["id"])) {
-            $this->view("back-pages/index");
+            header("location: /trabalho_ti/private");
         } else {
             $this->view("back-pages/login/index");
         }

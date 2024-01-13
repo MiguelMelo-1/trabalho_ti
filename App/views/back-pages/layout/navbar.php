@@ -81,7 +81,7 @@
                 <span class="d-none d-lg-inline-flex"><?= $_SESSION['nome'] ?></span>
             </a>
             <div class="dropdown-menu dropdown-menu-end bg-transparente border-0 rounded-0 rounded-bottom m-0">
-                <a href="/trabalho_ti/App/views/back-pages/user/index.php" class="dropdown-item">Ver perfil</a>
+                <a href="/trabalho_ti/private/profile" class="dropdown-item">Ver perfil</a>
                             <!-- <a href="#" class="dropdown-item">Settings</a> -->
                 <a href="/trabalho_ti/logout" class="dropdown-item">Log Out</a>
             </div>

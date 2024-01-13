@@ -47,10 +47,6 @@ class AuthController extends Controller
                 
                 if (!empty($user)) {
                     if ($password == $user[0]['password']){
-                        
-                        
-                        session_start();
-                        
 
                         //session variables
                         $_SESSION['id'] = $user[0]['id'];
@@ -67,7 +63,7 @@ class AuthController extends Controller
 
                         // echo session_status();
 
-                        header("location: /trabalho_ti/private/trabalhos");
+                        header("location: /trabalho_ti/private");
                     }else {
                         array_push($errors, "Senha incorreta");
                     }

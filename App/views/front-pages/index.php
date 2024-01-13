@@ -82,16 +82,17 @@
 											<i class="fas fa-bars"></i>
 										</button>
 									</div>
-									<!-- <div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
+									<?php if(isset($_SESSION['id'])){ ?>
+									<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
 												<div class="header-nav-feature header-nav-features-user header-nav-features-user-logged d-inline-flex mx-2 pe-2" id="headerAccount">
 													<a href="#" class="header-nav-features-toggle logout">
-														<i class="far fa-user"></i> {{ session('userNome') }}
+														<i class="far fa-user"></i> <?= $_SESSION['nome'] ?>
 													</a>
 													<div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed header-nav-features-dropdown-force-right" id="headerTopUserDropdown">
 														<div class="row">
 															<div class="col-8">
 																<p class="mb-0 pb-0 text-2 line-height-1 pt-1">Olá,</p>
-																<p><strong class="text-color-dark text-4">{{ session('userNome') }}</strong></p>
+																<p><strong class="text-color-dark text-4"><?= $_SESSION['nome'] ?></strong></p>
 															</div>
 															<div class="col-4">
 																<div class="d-flex justify-content-end">
@@ -102,17 +103,16 @@
 														<div class="row">	
 															<div class="col">
 																<ul class="nav nav-list-simple flex-column text-3">
-																	{{-- <li class="nav-item"><a class="nav-link" href="#">My Orders</a></li> --}}
-																	@if (session('estado') == 'activo')
-																	<li class="nav-item"><a class="nav-link" href="{{ route('pagina-inicio') }}">Aplicação</a></li>
-																	@endif
-																	<li class="nav-item"><a class="nav-link border-bottom-0" href="{{ route('logout') }}">Log Out</a></li>
+																	<!-- {{-- <li class="nav-item"><a class="nav-link" href="#">My Orders</a></li> --}} -->
+																	<li class="nav-item"><a class="nav-link" href="/trabalho_ti/private">Aplicação</a></li>
+																	<li class="nav-item"><a class="nav-link border-bottom-0" href="/trabalho_ti/logout">Log Out</a></li>
 																</ul>
 															</div>
 														</div>
 													</div>
 												</div>
-											</div> -->
+											</div>
+											<?php } else {?>
 
 									<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
 										<div class="header-nav-feature header-nav-features-user d-inline-flex mx-2 pe-2 signin" id="headerAccount">
@@ -121,6 +121,7 @@
 											</a>
 										</div>
 									</div>
+									<?php } ?>
 								</div>
 							</div>
 						</div>

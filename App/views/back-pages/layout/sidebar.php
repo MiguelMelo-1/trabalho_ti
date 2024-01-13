@@ -21,6 +21,7 @@
             <a id="funcionario" href="/trabalho_ti/private/funcionarios" class="nav-item nav-link"><i class="fa fa-hard-hat me-2"></i>Funcionário</a>
             <a id="trabalho" href="/trabalho_ti/private/trabalhos" class="nav-item nav-link"><i class="fa fa-hammer me-2"></i>Trabalho</a>
             <a id="orcamento" href="/trabalho_ti/private/orcamentos" class="nav-item nav-link"><i class="fa fa-file-alt me-2"></i>Orçamento</a>
+            <a id="orcamento" href="/trabalho_ti/private/users" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Utilizadores</a>
         </div>
     </nav>
 </div>
