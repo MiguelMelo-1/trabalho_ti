@@ -4,7 +4,8 @@ namespace MVC\models;
 
 use Exception;
 
-class User {
+class User
+{
 
     // Variaveis
     private $table = "user";
@@ -22,118 +23,144 @@ class User {
     private $telefone;
 
     // Construtor
-    public function __construct($connection) {
+    public function __construct($connection)
+    {
         $this->connection = $connection;
     }
 
     // Acessores
-    public function getId() {
+    public function getId()
+    {
         return $this->id;
     }
 
-    public function setId($id) {
+    public function setId($id)
+    {
         $this->id = $id;
     }
 
-    public function getNome() {
+    public function getNome()
+    {
         return $this->nome;
     }
 
-    public function setNome($nome) {
+    public function setNome($nome)
+    {
         $this->nome = $nome;
     }
 
-    public function getEmail() {
+    public function getEmail()
+    {
         return $this->nome;
     }
 
-    public function setEmail($email) {
+    public function setEmail($email)
+    {
         $this->email = $email;
     }
 
-    public function getAcesso() {
+    public function getAcesso()
+    {
         return $this->acesso;
     }
 
-    public function setAcesso($acesso) {
+    public function setAcesso($acesso)
+    {
         $this->acesso = $acesso;
     }
 
-    public function getPassword() {
+    public function getPassword()
+    {
         return $this->password;
     }
 
-    public function setPassword($password) {
+    public function setPassword($password)
+    {
         $this->password = $password;
     }
 
-    public function getNif() {
+    public function getNif()
+    {
         return $this->nif;
     }
 
-    public function setNif($nif) {
+    public function setNif($nif)
+    {
         $this->nif = $nif;
     }
 
-    public function getMorada() {
+    public function getMorada()
+    {
         return $this->morada;
     }
 
-    public function setMorada($morada) {
+    public function setMorada($morada)
+    {
         $this->morada = $morada;
     }
 
-    public function getCod_postal() {
+    public function getCod_postal()
+    {
         return $this->cod_postal;
     }
 
-    public function setCod_postal($cod_postal) {
+    public function setCod_postal($cod_postal)
+    {
         $this->cod_postal = $cod_postal;
     }
 
-    public function getLocalidade() {
+    public function getLocalidade()
+    {
         return $this->localidade;
     }
 
-    public function setLocalidade($localidade) {
+    public function setLocalidade($localidade)
+    {
         $this->localidade = $localidade;
     }
 
-    public function getTelefone() {
+    public function getTelefone()
+    {
         return $this->telefone;
     }
 
-    public function setTelefone($telefone) {
+    public function setTelefone($telefone)
+    {
         $this->telefone = $telefone;
     }
 
     // Métodos
-    public function insert() {
+    public function insert()
+    {
+        try {
+            $query = $this->connection->prepare("INSERT INTO " . $this->table . "(nome, email, acesso, password, nif, morada, cod_postal, localidade, telefone) valorS (:nome, :email, :acesso, :password, :nif, :morada, :cod_postal, :localidade, :telefone");
 
-        $query = $this->connection->prepare("INSERT INTO " . $this->table . "(nome, email, acesso, password, nif, morada, cod_postal, localidade, telefone) valorS (:nome, :email, :acesso, :password, :nif, :morada, :cod_postal, :localidade, :telefone");
+            $execute = $query->execute(array(
+                "nome" => $this->nome,
+                "email" => $this->email,
+                "acesso" => $this->acesso,
+                "password" => $this->password,
+                "nif" => $this->nif,
+                "morada" => $this->morada,
+                "cod_postal" => $this->cod_postal,
+                "localidade" => $this->localidade,
+                "telefone" => $this->telefone
+            ));
 
-        $execute = $query->execute(array(
-            "nome" => $this->nome,
-            "email" => $this->email,
-            "acesso" => $this->acesso,
-            "password" => $this->password,
-            "nif" => $this->nif,
-            "morada" => $this->morada,
-            "cod_postal" => $this->cod_postal,
-            "localidade" => $this->localidade,
-            "telefone" => $this->telefone
-        ));
+            $this->connection = null;
 
-        $this->connection = null;
-
-        return $execute;
-
+            return $execute;
+        } catch (Exception $e) {
+            echo 'Failed INSERT: ' . $e->getMessage();
+            return false;
+        }
     }
 
-    public function update() {
-        
-        $query = $this->connection->prepare(" UPDATE " . $this->table . 
-        "SET 
+    public function update()
+    {
+
+        $query = $this->connection->prepare(" UPDATE " . $this->table .
+            "SET 
             nome = :nome,
             email = :email,
             acesso = :acesso,
@@ -148,7 +175,7 @@ class User {
 
         $execute = $query->execute(array(
             "nome" => $this->nome,
-            "email" => $this->email, 
+            "email" => $this->email,
             "acesso" => $this->acesso,
             "password" => $this->password,
             "nif" => $this->nif,
@@ -160,13 +187,13 @@ class User {
         ));
 
         $this->connection = null;
-        
-        return $execute;
 
+        return $execute;
     }
 
-    public function fetchAll() {
-       
+    public function fetchAll()
+    {
+
         $query = $this->connection->prepare("SELECT * FROM " . $this->table);
 
         $query->execute();
@@ -176,12 +203,12 @@ class User {
         $this->connection = null;
 
         return $result;
-
     }
 
-    public function fetchById($id) {
+    public function fetchById($id)
+    {
 
-        $query = $this->connection->prepare(" SELECT * FROM ". $this->table . " WHERE id=:id ");
+        $query = $this->connection->prepare(" SELECT * FROM " . $this->table . " WHERE id=:id ");
 
         $query->execute(array(
             "id" => $id
@@ -192,12 +219,12 @@ class User {
         $this->connection = null;
 
         return $result;
-
     }
 
-    public function fetchBy($coluna, $valor) {
+    public function fetchBy($coluna, $valor)
+    {
 
-        $query = $this->connection->prepare(" SELECT * FROM " . $this->table .  " WHERE $coluna = :valor " ); 
+        $query = $this->connection->prepare(" SELECT * FROM " . $this->table .  " WHERE $coluna = :valor ");
 
         $query->execute(array(
             "valor" => $valor
@@ -209,10 +236,10 @@ class User {
 
 
         return $result;
-
     }
 
-    public function deleteById($id){
+    public function deleteById($id)
+    {
 
         try {
 
@@ -221,16 +248,15 @@ class User {
                 "id" => $id
             ));
             $this->connection = null;
-
         } catch (Exception $e) {
 
             echo 'Failed DELETE (deleteById): ' . $e->getMessage();
             return -1;
-
         }
     }
-    
-    public function deleteBy($coluna,$valor){
+
+    public function deleteBy($coluna, $valor)
+    {
 
         try {
 
@@ -240,16 +266,10 @@ class User {
                 "valor" => $valor,
             ));
             $this->connection = null;
-
         } catch (Exception $e) {
 
             echo 'Failed DELETE (deleteBy): ' . $e->getMessage();
             return -1;
-
         }
     }
-
-
 }
-
-?>

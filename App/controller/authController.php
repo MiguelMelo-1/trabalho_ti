@@ -71,6 +71,8 @@ class AuthController extends Controller
                     array_push($errors, "Usuário não encontrado");
                 }   
             }
+        } else {
+            header("location: /trabalho_ti/404");
         }
 
         if (!empty($errors)) {
@@ -89,5 +91,28 @@ class AuthController extends Controller
 
     public function verifyRegister()
     {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            echo 1;
+
+            if ($_POST['text_userPassword'] == $_POST['text_userPassword_confirmation']){
+                echo 2;
+                $utilizador = new User($this->connection);
+                $utilizador->fetchBy("email", $_POST['text_userEmail']);
+                if (empty($utilizador->getId())){
+                    echo 3;
+                    $utilizador->setNome($_POST['text_userNome']);
+                    $utilizador->setEmail($_POST['text_userEmail']);
+                    $utilizador->setAcesso("cliente");
+                    $utilizador->setPassword($_POST['text_userPassword']);
+
+                    $utilizador->insert();
+
+                    header("location: /trabalho_ti/login");
+                }
+            }
+
+        } else {
+            header("location: /trabalho_ti/404");
+        }
     }
 }
